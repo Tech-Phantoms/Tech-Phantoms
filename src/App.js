@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import Index from './pages/index'
 import Team from './pages/team'
 import Hacktoberfest from './pages/hacktoberfest'
+import Events from './pages/events'
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/team" exact component={Team} />
 
         <Route path="/hacktoberfest" exact component={Hacktoberfest} />
+
+        <Route path="/events" exact component={Events} />
 
       </Switch>
 
