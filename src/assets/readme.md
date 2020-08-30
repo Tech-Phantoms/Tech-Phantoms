@@ -53,7 +53,7 @@
 <tr> 
 
 <td>MLSA Badge<br/><code>DarkMode_MLSA_badge.svg</code></td>
-<td><center><img src="./DarkMode_MLSA_badge.svg" width=60%></center></td>
+<td><center><img src="./DarkMode_MLSA_Badge.svg" width=60%></center></td>
 
 </tr>
 <th>Light Mode</th>
@@ -73,7 +73,7 @@
 <tr> 
 
 <td>MLSA Badge<br/><code>LightMode_MLSA_badge.svg</code></td>
-<td><center><img src="./LightMode_MLSA_badge.svg" width=60%></center></td>
+<td><center><img src="./LightMode_MLSA_Badge.svg" width=60%></center></td>
 
 </tr>
 </table>
