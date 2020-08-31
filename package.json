@@ -11,7 +11,6 @@
     "@testing-library/user-event": "^7.2.1",
     "airtable": "^0.9.0",
     "emotion-theming": "^10.0.27",
-    "jest": "^26.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
