@@ -22,7 +22,7 @@ const Navbar = props => {
                 </Flex>
                 <Flex >
                     <Box style={{ cursor: 'pointer' }}>
-                        <img src={menu} width="20px" onClick={onOpen} />
+                        <img src={menu} width="20px" onClick={onOpen} alt="menu" />
                     </Box>
                 </Flex>
             </Flex>
