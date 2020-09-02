@@ -4,10 +4,17 @@ import {
     Drawer,
     DrawerOverlay,
     DrawerContent,
-    DrawerBody
+    DrawerBody,
+    Link
 } from '@chakra-ui/core'
 
 const MenuDrawer = props => {
+
+    const paths = [
+        { name: 'Home', path: '/' },
+        { name: 'Team', path: '/team' },
+        { name: 'Event', path: '/events' }
+    ]
 
 
     return <Drawer
@@ -17,7 +24,7 @@ const MenuDrawer = props => {
         <DrawerOverlay>
             <DrawerContent>
                 <DrawerBody>
-                    {['Home', 'Event', 'Team'].map(el => <>{el} <br /></>)}
+                    {paths.map(el => <><Link href={el.path}>{el.name}</Link> <br /></>)}
                 </DrawerBody>
             </DrawerContent>
         </DrawerOverlay>
