@@ -18,8 +18,9 @@ const MenuDrawer = props => {
 
 
     return <Drawer
-        isOpen={true}
+        isOpen={props.open}
         placement="right"
+        onClose={props.close}
     >
         <DrawerOverlay>
             <DrawerContent>

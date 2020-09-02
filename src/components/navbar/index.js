@@ -1,7 +1,8 @@
 import React from 'react'
 import {
     Box,
-    Flex
+    Flex,
+    useDisclosure
 } from '@chakra-ui/core'
 
 import Drawer from './drawer'
@@ -11,6 +12,8 @@ import menu from '../../assets/menu.svg'
 
 const Navbar = props => {
 
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
     return (
         <Box w="100%" py={4} px={6}>
             <Flex>
@@ -19,12 +22,12 @@ const Navbar = props => {
                 </Flex>
                 <Flex >
                     <Box style={{ cursor: 'pointer' }}>
-                        <img src={menu} width="20px" />
+                        <img src={menu} width="20px" onClick={onOpen} />
                     </Box>
                 </Flex>
             </Flex>
 
-            <Drawer />
+            <Drawer open={isOpen} close={onClose} />
         </Box>
     )
 }
