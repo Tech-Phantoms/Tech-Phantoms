@@ -7,9 +7,14 @@ import Team from './pages/team'
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 
+// importing components 
+import Navbar from './components/navbar'
+
 function App() {
   return (
     <div>
+
+      <Navbar />
 
       <Switch>
         <Route path="/" exact component={Index} />
