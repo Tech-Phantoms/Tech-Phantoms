@@ -10,7 +10,7 @@ const useEvents = () => {
         base('Events').select({
             view: 'Grid view'
         }).firstPage().then(result => {
-            setData(result.map(el => el.fields))
+            setData(result)
         }).catch(err => {
             throw err
         })
