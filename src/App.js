@@ -9,6 +9,7 @@ import Events from './pages/events'
 
 // importing components 
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/events" exact component={Events} />
 
       </Switch>
+
+      <Footer />
 
     </div>
   );
