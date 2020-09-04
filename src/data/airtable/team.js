@@ -12,7 +12,7 @@ const useTeam = tableName => {
         base(tableName).select({
             view: "Grid view"
         }).firstPage().then(result => {
-            setData(result.map(el => el.fields))
+            setData(result)
         }).catch(err => {
             throw err
         })
