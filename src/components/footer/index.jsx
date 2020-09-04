@@ -20,3 +20,5 @@ const Footer = props => {
         </Box>
     </>
 }
+
+export default Footer
