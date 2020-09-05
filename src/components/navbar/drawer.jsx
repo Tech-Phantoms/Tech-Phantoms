@@ -13,8 +13,12 @@ const MenuDrawer = props => {
     const paths = [
         { name: 'Home', path: '/' },
         { name: 'Team', path: '/team' },
+<<<<<<< HEAD
         { name: 'Event', path: '/events' },
     
+=======
+        { name: 'Event', path: '/events' }
+>>>>>>> origin/master
     ]
 
 
