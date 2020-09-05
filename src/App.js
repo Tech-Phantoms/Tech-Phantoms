@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-
+import "./index.css";
 // importing pages 
 import Index from './pages/index'
 import Team from './pages/team'
@@ -38,6 +38,7 @@ function App() {
         <Route path ="/dark_landing" exact component={MainLandingDark}/>
 
       </Switch>
+      
 
     </div>
   );
