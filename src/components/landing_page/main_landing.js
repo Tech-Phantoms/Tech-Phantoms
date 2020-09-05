@@ -1,9 +1,11 @@
 import React from 'react';
-
-import LandingMiddle from './landing_middle';
 import LandingTop from './landing_top';
+import LandingMiddle from './landing_middle';
 
- const MainLandingDark = props =>  {
+
+
+
+ const MainLanding = props =>  {
     return (
         <div>
            <LandingTop/>
@@ -12,4 +14,4 @@ import LandingTop from './landing_top';
     );
 }
 
-export default MainLandingDark ;
+export default MainLanding ;

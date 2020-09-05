@@ -8,8 +8,7 @@ import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 
 //routes just for preview purpose
-import MainLandingLight from './components/landing_page/light_landing/main_landing' 
-import MainLandingDark from  './components/landing_page/dark_landing/main_landing'
+import MainLanding from './components/landing_page/main_landing' 
 
 
 
@@ -34,8 +33,8 @@ function App() {
 
 
          {/*routes for preview purpose*/}
-        <Route path ="/light_landing" exact component={MainLandingLight}/>  
-        <Route path ="/dark_landing" exact component={MainLandingDark}/>
+        <Route path ="/landing" exact component={MainLanding}/>  
+       
 
       </Switch>
       

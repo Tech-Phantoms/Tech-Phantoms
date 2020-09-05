@@ -1,8 +1,8 @@
 import React from 'react';
 //assests
-import logo from '../../../assets/logo.svg';
-import LightMode_techphantoms from '../../../assets/LightMode_techphantoms.svg';
-import LightMode_MLSA_Badge from '../../../assets/LightMode_MLSA_Badge.svg';
+import logo from '../../assets/logo.svg';
+import LightMode_techphantoms from '../../assets/LightMode_techphantoms.svg';
+import LightMode_MLSA_Badge from '../../assets/LightMode_MLSA_Badge.svg';
 //css
 import { Box,Flex } from "@chakra-ui/core";
 
