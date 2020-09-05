@@ -7,7 +7,6 @@ import Team from './pages/team'
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 
-<<<<<<< HEAD
 //routes just for preview purpose
 import Main_landing_light from './components/landing_page/light_landing/main_landing' 
 import Main_landing_dark from  './components/landing_page/dark_landing/main_landing'
@@ -16,14 +15,8 @@ import Main_landing_dark from  './components/landing_page/dark_landing/main_land
 
 // importing components 
 import Navbar from './components/navbar'
-import Footer from './components/footer'
 
 
-=======
-// importing components 
-import Navbar from './components/navbar'
-
->>>>>>> origin/master
 function App() {
   return (
     <div>
@@ -39,17 +32,12 @@ function App() {
 
         <Route path="/events" exact component={Events} />
 
-<<<<<<< HEAD
 
          {/*routes for preview purpose*/}
         <Route path ="/light_landing" exact component={Main_landing_light}/>  
         <Route path ="/dark_landing" exact component={Main_landing_dark}/>
 
-=======
->>>>>>> origin/master
       </Switch>
-
-      <Footer />
 
     </div>
   );
