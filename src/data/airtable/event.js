@@ -10,7 +10,11 @@ const useEvents = () => {
         base('Events').select({
             view: 'Grid view'
         }).firstPage().then(result => {
+<<<<<<< HEAD
             setData(result.map(el => el.fields))
+=======
+            setData(result)
+>>>>>>> upstream/master
         }).catch(err => {
             throw err
         })

@@ -16,6 +16,7 @@ import Main_landing_dark from  './components/landing_page/dark_landing/main_land
 
 // importing components 
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 
 =======
@@ -47,6 +48,8 @@ function App() {
 =======
 >>>>>>> origin/master
       </Switch>
+
+      <Footer />
 
     </div>
   );
