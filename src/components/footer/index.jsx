@@ -15,8 +15,8 @@ import linkedin from '../../assets/linkedin.svg'
 const Footer = props => {
 
     return <>
-        <Box p={10} style={{ marginTop: '120px' }} bg="tomato" color="white">
-            <SimpleGrid columns={2} spacing={4}>
+        <Box p={10} style={{ marginTop: '120px' }} style={{height:'150px'    }} bg="tomato" color="white">
+            <SimpleGrid columns={2} spacing={1}>
                 <Box>
                     <Text>@2020 Tech_Phantoms</Text>
                 </Box>

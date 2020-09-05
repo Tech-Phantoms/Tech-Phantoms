@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-
+import "./index.css";
 // importing pages 
 import Index from './pages/index'
 import Team from './pages/team'
@@ -9,7 +9,8 @@ import Events from './pages/events'
 
 // importing components 
 import Navbar from './components/navbar'
-import Footer from './components/footer'
+
+
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
 
       </Switch>
 
-      <Footer />
+      
 
     </div>
   );
