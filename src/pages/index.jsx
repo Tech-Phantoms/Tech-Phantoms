@@ -1,10 +1,10 @@
 import React from 'react'
-import MainLanding from '../components/landing_page/main_landing'
+import { LandingTop } from '../components/sections'
 
 const Index = props => {
 
     return <>
-        <MainLanding/>
+        <LandingTop />
     </>
 }
 

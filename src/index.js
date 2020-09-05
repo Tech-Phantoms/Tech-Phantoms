@@ -10,21 +10,21 @@ import FooterContent from './components/footer'
 
 const Footer = () => (
   <footer className="footer">
-     <FooterContent/>
+    <FooterContent />
   </footer>
 );
 
-const MainApp=()=>{
-  return(
- 
-        <ThemeProvider theme={theme} >
-        <CSSReset />
-        <Router>
+const MainApp = () => {
+  return (
+
+    <ThemeProvider theme={theme} >
+      <CSSReset />
+      <Router>
         <div className="content">
           <App />
-          </div>
-        </Router>
-        </ThemeProvider>
+        </div>
+      </Router>
+    </ThemeProvider>
 
   )
 }
