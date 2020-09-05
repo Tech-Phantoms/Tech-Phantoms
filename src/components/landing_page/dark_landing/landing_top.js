@@ -11,7 +11,7 @@ import { Box,Flex } from "@chakra-ui/core";
  const LandingTop = props =>  {
     return (
       <div>
-        <Box bg="#203A61" w="100%" p={10} color="#FEC761">
+        <Box  w="100%" p={10} color="#FEC761">
             <Flex align="center">
                 <Box  w="50%" >
                   <center><img src={logo} width="60%" alt="dark_logo" /></center>   
