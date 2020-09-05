@@ -7,9 +7,6 @@ import Team from './pages/team'
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 
-//routes just for preview purpose
-import MainLanding from './components/landing_page/main_landing' 
-
 
 
 // importing components 
@@ -32,9 +29,7 @@ function App() {
         <Route path="/events" exact component={Events} />
 
 
-         {/*routes for preview purpose*/}
-        <Route path ="/landing" exact component={MainLanding}/>  
-       
+      
 
       </Switch>
       
