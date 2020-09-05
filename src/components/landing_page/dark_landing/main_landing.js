@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Landing_middle from './landing_middle';
-import Landing_top from './landing_top';
+import LandingMiddle from './landing_middle';
+import LandingTop from './landing_top';
 
- const Main_landing_dark = props =>  {
+ const MainLandingDark = props =>  {
     return (
         <div>
-           <Landing_top/>
-           <Landing_middle/>
+           <LandingTop/>
+           <LandingMiddle/>
         </div>
     );
 }
 
-export default Main_landing_dark ;
+export default MainLandingDark ;

@@ -1,11 +1,11 @@
 import React from 'react';
 
 
- const Landing_middle = props =>  {
+ const LandingMiddle = props =>  {
     return (
         <div>
           middle  section to be here 
         </div> 
     );
 }
-export default Landing_middle ;
+export default LandingMiddle ;

@@ -1,17 +1,17 @@
 import React from 'react';
-import Landing_top from './landing_top';
-import Landing_middle from './landing_middle';
+import LandingTop from './landing_top';
+import LandingMiddle from './landing_middle';
 
 
 
 
- const Main_landing_light = props =>  {
+ const MainLandingLight = props =>  {
     return (
         <div>
-           <Landing_top/>
-           <Landing_middle/>
+           <LandingTop/>
+           <LandingMiddle/>
         </div>
     );
 }
 
-export default Main_landing_light ;
+export default MainLandingLight ;
