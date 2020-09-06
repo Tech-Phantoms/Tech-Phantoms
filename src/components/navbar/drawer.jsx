@@ -24,11 +24,12 @@ const MenuDrawer = props => {
         isOpen={props.open}
         placement="right"
         onClose={props.close}
+        
     >
         {/* Overlaying the background  */}
         <DrawerOverlay>
         
-            <DrawerContent background="black" color="white" width={200} letterSpacing={5} lineHeight={3} textDecoration="none" fontFamily="Segoe UI">
+            <DrawerContent  background="black" color="white" width={200} letterSpacing={5} lineHeight={3} textDecoration="none" fontFamily="Segoe UI">
                 <DrawerBody>
                     {/* Using map function to create Links and all */}
                     {paths.map(el => <><Link href={el.path}>{el.name}</Link> <br /></>)}

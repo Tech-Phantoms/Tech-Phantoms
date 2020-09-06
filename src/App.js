@@ -16,7 +16,7 @@ import Navbar from './components/navbar'
 function App() {
   return (
     <div>
-
+{/* Routing */}
       <Navbar />
 
       <Switch>
@@ -27,15 +27,11 @@ function App() {
         <Route path="/hacktoberfest" exact component={Hacktoberfest} />
 
         <Route path="/events" exact component={Events} />
-
-
-      
-
       </Switch>
       
 
     </div>
   );
 }
-
+// Exporting App
 export default App;
