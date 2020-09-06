@@ -8,7 +8,7 @@ import {
     DrawerBody,
     Link
 } from '@chakra-ui/core'
-import CloseButtton from '../../assets/sidenavbar/closeSideBar.svg'
+
 import Logo from '../../assets/sidenavbar/top_logo.svg'
 // Side Navigation Drawer 
 const MenuDrawer = props => {
@@ -35,7 +35,7 @@ const MenuDrawer = props => {
                   
                     <center><Link href='/' ><img src={Logo} width="160px" alt=""/></Link><br/></center>
                   {/* Using map function to create Links and all */}
-                    <center><Link onClick={props.close} ><img alt="" src={CloseButtton}/></Link><br/></center>
+                   
                     {paths.map(el => <><Link href={el.path}>{el.name}</Link> <br /></>)}
             
                 </DrawerBody>
