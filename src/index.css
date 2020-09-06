@@ -13,14 +13,17 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+
 }
 
 .content {
   flex: 1 0 auto;
- 
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .footer {
   flex-shrink: 0;
   color: white;
+  
 }
