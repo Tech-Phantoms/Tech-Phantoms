@@ -2,8 +2,6 @@
 import React from 'react'
 import {
     Box,
-    Link,
-    Badge,
     Image,
     Button
 } from '@chakra-ui/core'
@@ -29,36 +27,35 @@ const EventHolder =props=>{
 
     return(
 
-        <Box height={["100%","50%"]} width={["90%","40%","30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
+        <Box boxShadow="4px 2px 21px 10px #E5E0E0" height={["100%","50%"]} width={["90%","40%","30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
         <center>
             {/* Fallback Image Added, when error in src */}
             <Image fallbackSrc={fallbackEventImage}   objectFit="cover" src={props.eventImg} alt="event" />
         </center>
         <Box p="6">
-          <Box d="flex" alignItems="baseline">
+          <Box d="flex" flexDirection="row" justifyContent="space-around">
             
-            {/* RSVP Badge */}
-            <Button as="a" px="2" variantColor="teal" target="_blank" variant="outline" href="https://chakra-ui.com">
+         
+             {/* Date and Time  */}
+          <Box
+                color="gray.500"
+                fontWeight="semibold"
+                letterSpacing="wide"
+                fontSize="sm"
+                textTransform="uppercase"
+                ml="2"
+                textAlign="right"
+                paddingBottom="5"
+                
+                >
+             {props.eventDate}<br/>{props.eventTime}
+          </Box>  
+             {/* RSVP Badge */}
+             <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.eventRSVP}>
               RSVP
-            </Button>
-
-
-            <Badge rounded="full" px="2" variantColor="teal">
-            <Link fontSize={20} target="blank" href={props.eventRSVP}>RSVP</Link>            
-            </Badge>
-
-            {/* Date and Time  */}
-            <Box
-            color="gray.500"
-            fontWeight="semibold"
-            letterSpacing="wide"
-            fontSize="xs"
-            textTransform="uppercase"
-            ml="2"
-          >
-           &bull; {props.eventDate}<br/> &bull; {props.eventTime}
+            </Button>        
           </Box>
-          </Box>
+         
 
   {/*Event Title  */}
           <Box
