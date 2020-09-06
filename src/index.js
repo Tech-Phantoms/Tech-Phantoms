@@ -39,7 +39,7 @@ ReactDOM.render(
                   <Router>
                    <WrapperWithFooter /> 
                   </Router>
-              </ThemeProvider>,
+            </ThemeProvider>,
   document.getElementById('root')
 );
 
