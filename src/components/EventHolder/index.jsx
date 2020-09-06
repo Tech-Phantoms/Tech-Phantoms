@@ -44,11 +44,11 @@ const EventHolder =props=>{
                 fontSize="sm"
                 textTransform="uppercase"
                 ml="2"
-                textAlign="right"
+                textAlign="left"
                 paddingBottom="5"
                 
                 >
-             {props.eventDate}<br/>{props.eventTime}
+             Date: {props.eventDate}<br/> Time(GMT): {props.eventTime}
           </Box>  
              {/* RSVP Badge */}
              <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.eventRSVP}>
@@ -79,8 +79,8 @@ const EventHolder =props=>{
                 {
                     props.mlsaEvent &&
                     <div>
-                            <h2>Event By:</h2>
-                            <img width="50%" alt="" src={MLSABadge}/>
+                            <center><h2>Event By:</h2>
+                            <Image rounded={12} width="50%" alt="" src={MLSABadge} py={2}/></center>
                     </div>
                 }
           </Box>
