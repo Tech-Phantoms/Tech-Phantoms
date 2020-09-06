@@ -4,7 +4,8 @@ import {
     Box,
     Link,
     Badge,
-    Image
+    Image,
+    Button
 } from '@chakra-ui/core'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
@@ -37,6 +38,11 @@ const EventHolder =props=>{
           <Box d="flex" alignItems="baseline">
             
             {/* RSVP Badge */}
+            <Button as="a" px="2" variantColor="teal" target="_blank" variant="outline" href="https://chakra-ui.com">
+              RSVP
+            </Button>
+
+
             <Badge rounded="full" px="2" variantColor="teal">
             <Link fontSize={20} target="blank" href={props.eventRSVP}>RSVP</Link>            
             </Badge>
