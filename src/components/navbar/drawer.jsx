@@ -8,7 +8,7 @@ import {
     DrawerBody,
     Link
 } from '@chakra-ui/core'
-import CloseButtton from '../../assets/sidenavbar/closeSideBar.svg'
+
 import Logo from '../../assets/sidenavbar/top_logo.svg'
 import {useHistory } from 'react-router-dom'
 
@@ -44,11 +44,11 @@ const MenuDrawer = props => {
                   
                     <center><Link onClick={    () => {router(paths[0].path)}  } ><img src={Logo} width="160px" alt=""/></Link><br/></center>
                   {/* Using map function to create Links and all */}
-                    <center><Link onClick={props.close} ><img alt="" src={CloseButtton}/></Link><br/></center>
+                    
              
-                    
-                    {paths.map(route => <><Link onClick={    () => {router(route.path)}  }>{route.name}</Link> <br /></>)}
-                    
+                    <center>    
+                         {paths.map(route => <><Link onClick={    () => {router(route.path)}  }>{route.name}</Link> <br /></>)}
+                    </center>
                
                 </DrawerBody>
             </DrawerContent>
