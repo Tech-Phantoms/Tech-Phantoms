@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/core'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
-const fallbackEventImage='../../assets/fallbackIMG.svg'
+import fallbackEventImage from '../../assets/fallbackIMG.svg'
 
 const EventHolder =props=>{
                         /*
