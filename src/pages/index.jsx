@@ -1,9 +1,10 @@
 import React from 'react'
+import { LandingTop } from '../components/sections'
 
 const Index = props => {
 
     return <>
-        <h1>Index Page</h1>
+        <LandingTop />
     </>
 }
 
