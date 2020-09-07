@@ -13,6 +13,7 @@ const Events = props => {
          eventTitle="HacktoberFest with Tech Phantoms"
          eventTime="4:00PM"
          mlsaEvent={true} 
+         eventRec="sadsd"
          />
     </>
 }

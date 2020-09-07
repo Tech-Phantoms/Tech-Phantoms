@@ -3,7 +3,8 @@ import React from 'react'
 import {
     Box,
     Image,
-    Button
+    Button,
+    SimpleGrid
 } from '@chakra-ui/core'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
@@ -26,37 +27,51 @@ const EventHolder =props=>{
 
 
     return(
-
-        <Box boxShadow="4px 2px 21px 10px #E5E0E0" height={["100%","50%"]} width={["90%","40%","30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
+       
+        <Box boxShadow="4px 2px 21px 10px #E5E0E0" height={["20%","50%"]} width={["90%","40%","30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
         <center>
             {/* Fallback Image Added, when error in src */}
             <Image fallbackSrc={fallbackEventImage}   objectFit="cover" src={props.eventImg} alt="event" />
         </center>
         <Box p="6">
-          <Box d="flex" flexDirection="row" justifyContent="space-around">
+
             
          
              {/* Date and Time  */}
-          <Box
+              <Box
                 color="gray.500"
                 fontWeight="semibold"
                 letterSpacing="wide"
-                fontSize="sm"
+                fontSize="lg"
                 textTransform="uppercase"
                 ml="2"
-                textAlign="left"
+                textAlign="center"
                 paddingBottom="5"
                 
                 >
-             Date: {props.eventDate}<br/> Time(GMT): {props.eventTime}
-          </Box>  
-             {/* RSVP Badge */}
-             <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.eventRSVP}>
-              RSVP
-            </Button>        
-          </Box>
-         
+                    {props.eventDate}<br/>  {props.eventTime}
+               </Box>  
+        
 
+        
+
+
+        {/* Grid for RSVP and Recording */}
+         <SimpleGrid columns={{sm: 1, md: 1,lg: 2}} spacing={2} textAlign="justify">
+                {/* RSVP Badge */}
+                <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.eventRSVP}>
+                          RSVP
+                        </Button>
+
+                        
+                {/* Recording If Available */}
+                        { 
+                            props.eventRec &&
+                            <Button cursor="pointer" rounded="full" fontSize={15} as="a" px="2" variantColor="red" target="_blank" variant="outline" href={props.eventRec}>
+                            Recording
+                            </Button>            
+                        } 
+          </SimpleGrid>
   {/*Event Title  */}
           <Box
             mt="1"
@@ -74,7 +89,6 @@ const EventHolder =props=>{
           </Box>
           <Box paddingTop={4}>
 
-
   {/* Show MLSA Badge when mlsaEvent==true */}
                 {
                     props.mlsaEvent &&
@@ -86,6 +100,7 @@ const EventHolder =props=>{
           </Box>
         </Box>
       </Box>
+     
         )
 
 }
