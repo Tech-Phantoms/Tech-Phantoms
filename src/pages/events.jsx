@@ -5,8 +5,8 @@ import EventHolder from '../components/EventHolder'
 const Events = props => {
 
     return <>
-   <span style={{fontSize:50}}>Events</span><br/>
-  {/* Sample Event Holder */}
+        <span style={{ fontSize: 50 }}>Events</span><br />
+        {/* Sample Event Holder */}
         <EventHolder
          eventDesc="Git and GitHub 101"
          eventDate="23/08/2020"
@@ -15,6 +15,7 @@ const Events = props => {
          mlsaEvent={true} 
          eventRec="sadsd"
          />
+
     </>
 }
 

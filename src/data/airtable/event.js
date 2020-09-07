@@ -5,10 +5,12 @@ const base = new Airtable({ apiKey: process.env.REACT_APP_AIRTABLE_API_KEY }).ba
 
 const useEvents = () => {
     const [data, setData] = useState([])
+    const [dates, setDates] = useState([])
 
     const getData = async () => {
         base('Events').select({
-            view: 'Grid view'
+            view: 'Grid view',
+            sort: [{ field: 'date', direction: 'asc' }]
         }).firstPage().then(result => {
             setData(result)
         }).catch(err => {
@@ -16,11 +18,24 @@ const useEvents = () => {
         })
     }
 
+    const getDates = async () => {
+        base('Events').select({
+            view: 'Grid view',
+            fields: ["date"],
+            sort: [{ field: 'date', direction: 'asc' }]
+        }).firstPage().then(result => {
+            setDates(result)
+        }).catch(err => {
+            throw err
+        })
+    }
+
     useEffect(() => {
         getData()
+        getDates()
     }, [])
 
-    return data
+    return [data, dates]
 }
 
 const useRsvp = (name, eventId, email) => {
