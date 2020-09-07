@@ -10,7 +10,7 @@ const useEvents = () => {
     const getData = async () => {
         base('Events').select({
             view: 'Grid view',
-            sort: [{field: 'date', direction: 'asc'}]
+            sort: [{ field: 'date', direction: 'asc' }]
         }).firstPage().then(result => {
             setData(result)
         }).catch(err => {
@@ -22,7 +22,7 @@ const useEvents = () => {
         base('Events').select({
             view: 'Grid view',
             fields: ["date"],
-            sort: [{field: 'date', direction: 'asc'}]
+            sort: [{ field: 'date', direction: 'asc' }]
         }).firstPage().then(result => {
             setDates(result)
         }).catch(err => {
@@ -32,10 +32,7 @@ const useEvents = () => {
 
     useEffect(() => {
         getData()
-    }, [])
-
-    useEffect(() => {
-         getDates()
+        getDates()
     }, [])
 
     return [data, dates]
