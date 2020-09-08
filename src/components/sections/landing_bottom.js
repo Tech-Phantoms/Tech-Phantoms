@@ -1,6 +1,10 @@
 import React from 'react';
 import { Image,Box,SimpleGrid } from "@chakra-ui/core";
+
+//importing assets
 import bottomIcon from '../../assets/landingpage/Final.png'
+import loader from '../../assets/loader.gif'
+
  const LandingBottom = props =>  {
     return (
         <SimpleGrid columns={{"lg":2,"md":2,"xs":1,"sm":1}} spacing={1} padding={10}>
@@ -12,7 +16,7 @@ import bottomIcon from '../../assets/landingpage/Final.png'
            events, programs and services which will help the academics and research world.  </Box>
        </Box>
          <Box>
-         <cemter><Image  src={bottomIcon} width={{lg: "80%", md:"60%", sm:"50%", xs:"100%"}} py={4} alt="aboutIcon" /> </cemter>
+         <cemter><Image fallbackSrc={loader}  src={bottomIcon} width={{lg: "80%", md:"60%", sm:"50%", xs:"100%"}} py={4} alt="aboutIcon" /> </cemter>
          </Box>   
         
 
