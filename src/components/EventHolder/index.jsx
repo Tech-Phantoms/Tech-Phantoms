@@ -4,7 +4,8 @@ import {
     Box,
     Image,
     Button,
-    SimpleGrid
+    SimpleGrid,
+    Collapse,
 } from '@chakra-ui/core'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
@@ -24,14 +25,16 @@ const EventHolder =props=>{
                         mlsaEvent: MLSA Event(Options (yes or no))          
                         eventRSVP            
                         */
+                       const [show, setShow] = React.useState(false);
 
+                       const handleToggle = () => setShow(!show);
 
     return(
        
         <Box boxShadow="4px 2px 21px 10px #E5E0E0" height={["20%","50%"]} width={["90%","40%","30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
         <center>
             {/* Fallback Image Added, when error in src */}
-            <Image fallbackSrc={fallbackEventImage}   objectFit="cover" src={props.eventImg} alt="event" />
+            <Image fallbackSrc={fallbackEventImage} width="50%" objectFit="contain" src={props.eventImg} alt="event" />
         </center>
         <Box p="6">
 
@@ -46,7 +49,7 @@ const EventHolder =props=>{
                 textTransform="uppercase"
                 ml="2"
                 textAlign="center"
-                paddingBottom="5"
+                paddingBottom="2"
                 
                 >
                     {props.eventDate}<br/>  {props.eventTime}
@@ -55,7 +58,7 @@ const EventHolder =props=>{
 
         
 
-
+               <Collapse animateOpacity={true} isOpen={show}>
         {/* Grid for RSVP and Recording */}
          <SimpleGrid columns={{sm: 1, md: 1,lg: 2}} spacing={2} textAlign="justify">
                 {/* RSVP Badge */}
@@ -98,7 +101,12 @@ const EventHolder =props=>{
                     </div>
                 }
           </Box>
+          </Collapse><center>
+          <Button size="sm" onClick={handleToggle} mt="1rem">
+       {show ? "👨‍💻Hide" : "🙋‍♂️More Info"}
+      </Button></center>
         </Box>
+
       </Box>
      
         )
