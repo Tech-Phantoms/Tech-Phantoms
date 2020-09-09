@@ -16,13 +16,13 @@ const Footer = () => (
 const MainApp = () => {
   return (
         <div className="content">
-          <App />
+          <App/>
         </div>
  )
 }
 //Wrapping Parameter
 const Wrapper = () => (
-    <MainApp />
+    <MainApp/>
 );
 
 //function to wrap component with footer
