@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image,Box,SimpleGrid } from "@chakra-ui/core";
+import { Text,Image,Box,SimpleGrid } from "@chakra-ui/core";
 
 //importing assets
 import aboutIcon from '../../assets/landing_page/community.svg'
@@ -15,8 +15,13 @@ import loader from '../../assets/loader.gif'
         
 
         <Box paddingRight="10px"  justifyContent="space-around">
-         
-          <Box textAlign="justify">Armed with a vision to "make people achieve more", Tech Phantoms is a community in cooperation with Microsoft Learn Student Ambassadors, 
+        <Text fontSize="3xl" py={4}>Real growth happens when all of us
+grow together. We rise by lifting others.</Text>
+          <Box textAlign="justify">
+              
+           
+
+              Armed with a vision to "make people achieve more", Tech Phantoms is a community in cooperation with Microsoft Learn Student Ambassadors, 
               where we aim at developing a teaching-learning environment for everyone who has that charisma for technology. An environment where you can 
               collaborate, share and learn from the experts. </Box>
         </Box>
