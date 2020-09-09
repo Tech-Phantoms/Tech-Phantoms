@@ -13,13 +13,13 @@ const Events = props => {
         </center>
         {/* Sample Event Holder */}
 
-        <EventHolder
+        {/* <EventHolder
          description="Git and GitHub 101"
          date="23/08/2020"
          title="HacktoberFest with Tech Phantoms"
          mlsa_event={true} 
          event_recording_link="sadsd"
-         />
+         /> */}
 
         <Box style={{ margin: '12px 10px' }}>
             <Evnts />

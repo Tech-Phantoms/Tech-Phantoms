@@ -7,12 +7,19 @@ const Events = props => {
 
     return <>
 
-        {evnts.map(el => <>
-            <Holder
-                eventTitle={el.fields.title}
-                mlsaEvent={el.fields.mlsa_event}
-            />
-        </>)}
+        {evnts.map(el => {
+            console.log(el)
+
+            return <>
+                <Holder
+                    title={el.fields.title}
+                    mlsaEvent={el.fields.mlsa_event}
+                    eventImg={el.fields.eventImg[0].url}
+                    description={el.fields.description}
+                    date={el.fields.date}
+                />
+            </>
+        })}
     </>
 }
 
