@@ -12,7 +12,7 @@ const Events = props => {
          date="2013-03-10T02:00:00Z"
          title="HacktoberFest with Tech Phantoms"
          mlsa_event={true} 
-         event_recording_link="sadsd"
+         event_recording_link="some link"
          />
 
     </>
