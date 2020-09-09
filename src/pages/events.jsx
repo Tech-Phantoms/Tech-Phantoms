@@ -15,7 +15,7 @@ const Events = props => {
 
         {/* <EventHolder
          description="Git and GitHub 101"
-         date="23/08/2020"
+         date="2013-03-10T02:00:00Z"
          title="HacktoberFest with Tech Phantoms"
          mlsa_event={true} 
          event_recording_link="sadsd"
