@@ -2,12 +2,12 @@ import React from 'react';
 import { Image,Box,SimpleGrid } from "@chakra-ui/core";
 
 //importing assets
-import bottomIcon from '../../assets/landingpage/Final.png'
+import bottomIcon from '../../assets/landing_page/pair_programming.svg'
 import loader from '../../assets/loader.gif'
 
  const LandingBottom = props =>  {
     return (
-        <SimpleGrid columns={{"lg":2,"md":2,"xs":1,"sm":1}} spacing={1} padding={10}>
+        <SimpleGrid d='flex' flexDirection={{"xs":"column-reverse","sm":"column-reverse","md":"row","lg":"row"}}  columns={{"lg":2,"md":2,"xs":1,"sm":1}} spacing={1} padding={10}>
             
         <Box paddingRight="10px"  justifyContent="space-around">
          
@@ -16,7 +16,7 @@ import loader from '../../assets/loader.gif'
            events, programs and services which will help the academics and research world.  </Box>
        </Box>
          <Box>
-         <cemter><Image fallbackSrc={loader}  src={bottomIcon} width={{lg: "80%", md:"60%", sm:"50%", xs:"100%"}} py={4} alt="aboutIcon" /> </cemter>
+         <cemter><Image fallbackSrc={loader}  src={bottomIcon} width={{lg: "100%", md:"100%", sm:"50%", xs:"100%"}} py={4} alt="aboutIcon" /> </cemter>
          </Box>   
         
 

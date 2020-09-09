@@ -9,21 +9,31 @@ import {
 } from '@chakra-ui/core'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
-import fallbackEventImage from '../../assets/fallbackIMG.svg'
+import fallbackEventImage from '../../assets/loader.gif'
 
 const EventHolder =props=>{
                         /*
+
+
+
+
+
+
+duration
+rsvp
+
+
                         eventNo: Event Serial Number (required)
                         eventImg: Event Image Link (required, default image: https://drive.google.com/file/d/13UqDB73ie5a-2LhF4RpepZdWa4QhPWTz/view)
-                        eventTitle: Event Title (required)
-                        eventDesc: Event Description (required)
-                        eventDate: Event Date (required)
-                        eventReg: Event Register Link (required, can use a default table airtable for this see below 👇)
-                        eventRec: Event Recording Link (Optional, for past events, can be updated later)
+                        title: Event Title (required)
+                        description: Event Description (required)
+                        date: Event Date (required)
+                        reg_link: Event Register Link (required, can use a default table airtable for this see below 👇)
+                        event_recording_link: Event Recording Link (Optional, for past events, can be updated later)
                         eventTime: **Event Time (Time Zone) ** (required)
-                        eventDuration: Duration(required)
-                        mlsaEvent: MLSA Event(Options (yes or no))          
-                        eventRSVP            
+                        duration: Duration(required)
+                        mlsa_event: MLSA Event(Options (yes or no))          
+                        rsvp            
                         */
                        const [show, setShow] = React.useState(false);
 
@@ -49,7 +59,7 @@ const EventHolder =props=>{
                 
                 
                 >
-                    {props.eventDate}
+                    {props.date}
                </Box> 
              {/*Event Title  */}
         <center><Box
@@ -59,7 +69,7 @@ const EventHolder =props=>{
             lineHeight="tight"
             isTruncated
           >
-            {props.eventTitle}
+            {props.title}
           </Box></center>
              
 
@@ -82,15 +92,15 @@ const EventHolder =props=>{
         {/* Grid for RSVP and Recording */}
          <SimpleGrid columns={{sm: 1, md: 1,lg: 2}} spacing={2} textAlign="justify">
                 {/* RSVP Badge */}
-                <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.eventRSVP}>
+                <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.rsvp}>
                           RSVP
                         </Button>
 
                         
                 {/* Recording If Available */}
                         { 
-                            props.eventRec &&
-                            <Button cursor="pointer" rounded="full" fontSize={15} as="a" px="2" variantColor="red" target="_blank" variant="outline" href={props.eventRec}>
+                            props.event_recording_link &&
+                            <Button cursor="pointer" rounded="full" fontSize={15} as="a" px="2" variantColor="red" target="_blank" variant="outline" href={props.event_recording_link}>
                             Recording
                             </Button>            
                         } 
@@ -102,13 +112,13 @@ const EventHolder =props=>{
   {/* Event Description */}
           <Box py={3}>
             <b>Description</b><br/>
-            {props.eventDesc}
+            {props.description}
           </Box>
           <Box paddingTop={4}>
 
-  {/* Show MLSA Badge when mlsaEvent==true */}
+  {/* Show MLSA Badge when mlsa_event==true */}
                 {
-                    props.mlsaEvent &&
+                    props.mlsa_event &&
                     <div>
                             <center><h2>Event By:</h2>
                             <Image rounded={12} width="50%" alt="" src={MLSABadge} py={2}/></center>
