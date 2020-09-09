@@ -10,7 +10,7 @@ import loader from '../../assets/loader.gif'
         <SimpleGrid d='flex' flexDirection={{"xs":"column-reverse","sm":"column-reverse","md":"row","lg":"row"}}  columns={{"lg":2,"md":2,"xs":1,"sm":1}} spacing={1} padding={10}>
             
         <Box paddingRight="10px"  justifyContent="space-around">
-        <Text fontSize="3xl" py={4}>We 💓 Open Source </Text>
+        <Text fontSize="3xl" py={4}> We <span role="img" aria-label="Heart">💓</span> Open Source </Text>
          <Box textAlign="justify" maxWidth={{lg:"70%",md:"60%"}} >We commit to becoming a place where people, passionate about technology, collaborate and aim at enhancing their
           knowledge about the latest developer technologies and use them. creatively and ethically. And this we aim at doing by series of workshops,
            events, programs and services which will help the academics and research world.  </Box>
