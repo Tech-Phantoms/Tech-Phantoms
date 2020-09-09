@@ -12,7 +12,7 @@ import loader from '../../assets/loader.gif'
         <Box paddingRight="10px"  justifyContent="space-around">
          
          <Box textAlign="justify" >We commit to becoming a place where people, passionate about technology, collaborate and aim at enhancing their
-          knowledge about the latest developer technologies and use them creatively and ethically. And this we aim at doing by series of workshops,
+          knowledge about the latest developer technologies and use them. creatively and ethically. And this we aim at doing by series of workshops,
            events, programs and services which will help the academics and research world.  </Box>
        </Box>
          <Box>

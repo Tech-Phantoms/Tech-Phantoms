@@ -13,16 +13,6 @@ import fallbackEventImage from '../../assets/loader.gif'
 
 const EventHolder =props=>{
                         /*
-
-
-
-
-
-
-duration
-rsvp
-
-
                         eventNo: Event Serial Number (required)
                         eventImg: Event Image Link (required, default image: https://drive.google.com/file/d/13UqDB73ie5a-2LhF4RpepZdWa4QhPWTz/view)
                         title: Event Title (required)
@@ -38,6 +28,9 @@ rsvp
                        const [show, setShow] = React.useState(false);
 
                        const handleToggle = () => setShow(!show);
+                       const timeDetails=props.date.split('T');
+                       const eventTime=timeDetails[1]; 
+                       const eventDate=timeDetails[0];
 
     return(
        
@@ -59,7 +52,7 @@ rsvp
                 
                 
                 >
-                    {props.date}
+                  {eventDate} {eventTime}
                </Box> 
              {/*Event Title  */}
         <center><Box
@@ -76,19 +69,7 @@ rsvp
         
 
                <Collapse animateOpacity={true} isOpen={show}>
-               <Box
-                color="gray.500"
-                fontWeight="semibold"
-                letterSpacing="wide"
-                fontSize="lg"
-                textTransform="uppercase"
-                ml="2"
-                textAlign="center"
-                paddingBottom="2"
-                
-                >
-                      {props.eventTime}
-               </Box> 
+              
         {/* Grid for RSVP and Recording */}
          <SimpleGrid columns={{sm: 1, md: 1,lg: 2}} spacing={2} textAlign="justify">
                 {/* RSVP Badge */}
