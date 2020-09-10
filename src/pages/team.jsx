@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import TeamCard from '../components/teamCard';
-import {SimpleGrid, Heading} from "@chakra-ui/core";
+import React from 'react';
+import {Text} from "@chakra-ui/core";
 import Female from "../assets/team/_person.svg";
 import Male from "../assets/team/person.svg";
+import DisplayTeams from '../components/teamCard/index';
 
-class Team extends Component {
-    state={
-    people:[
+
+
+
+const Team=()=>{
+const members={
+    list:[ 
+        
         {   
             id:1,
-            name: 'Abir Pal',
+            name: 'Souvik De',
             imageUrl: Male,
             githubUrl: '',
             linkedinUrl: '',
@@ -17,6 +21,31 @@ class Team extends Component {
         },
         {   
             id:2,
+            name: 'Vinit Shahdeo',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+        {   
+            id:3,
+            name: 'Abir Pal',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+      
+        {   
+            id:4,
+            name: 'Tavleen',
+            imageUrl: Female,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'Female',
+        },
+        {   
+            id:5,
             name: 'Garima Singh',
             imageUrl: Female,
             githubUrl: '',
@@ -24,7 +53,7 @@ class Team extends Component {
             gender: 'female',
         },
         {   
-            id:3,
+            id:6,
             name: 'Joshua Poddoku',
             imageUrl: Male,
             githubUrl: '',
@@ -33,20 +62,11 @@ class Team extends Component {
         },
     ]
 }
-    
-    render() { 
-        return (<> 
-            <Heading fontFamily="Montserrat" as="h1" color="tomato"  marginBottom="40px" fontSize="3.8rem" textAlign="center">
-                Meet Our Team
-            </Heading>
-            <SimpleGrid columns={[1, 2, 3]} spacing="30px" marginLeft="15px" marginRight="15px" >
-                { this.state.people.map(person => (
-				    <TeamCard key={person.id} people={person}  />
-			    ))}
-            </SimpleGrid>
-            </>
-         );
-    }
+return(
+    <>
+    <center><Text fontSize="6xl" align="center"> Ones who made it possible ! </Text></center>
+        <DisplayTeams members={members}/>
+    </>
+)
 }
- 
 export default Team;

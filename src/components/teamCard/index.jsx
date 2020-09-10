@@ -1,50 +1,29 @@
-import React, { Component } from "react";
-import { Box, Image, Text, Flex, Link } from "@chakra-ui/core";
-import styles from './style.module.css';
-import Female from "../../assets/team/_person.svg";
-import Male from "../../assets/team/person.svg";
-import GitHub from "../../assets/team/github_.svg";
-import Linkedin from "../../assets/team/linkedin.svg";
+import React from "react";
+import { SimpleGrid } from "@chakra-ui/core";
 
-class TeamCard extends Component {
+import Holder  from "./holder";
 
-  render() {
-    const {
-      name,
-      imageUrl,
-      githubUrl,
-      linkedinUrl,
-      gender,
-    } = this.props.people;
+const DisplayTeams=(props)=>{
 
-    return (
-      <Box className={styles.container} >
-        <Flex className={styles.flexContainer}>
-          <Image
-            fallbackSrc={gender === "male" ? Male : Female}
-            src={imageUrl}
-            alt={name}
-            rounded="full"
-            size="150px"
-          />
+return (
+    <SimpleGrid spacing={{"lg":"4","md":"2","xs":"5","sm":"5"}} columns={{"lg":"3","md":"2","xs":"1","sm":"1"}}    justifyContent="center  " paddingTop="50px">
+    {
+    props.members.list.map((member)=>(
+    <Holder id={member.id}
+            name= {member.name}
+            imageUrl= {member.imageUrl}
+            githubUrl={member.githubUrl}
+            linkedinUrl={member.linkedinUrl}
+            gender={member.gender}/>
+))
+    }
+    </SimpleGrid>
 
-          <Text className={styles.name}>
-            {name}
-          </Text>
+    )
 
-          <Flex className={styles.linkFlex}>
-            <Link href={githubUrl} isExternal>
-              <Image src={GitHub} alt="GitHub" size="36px" />
-            </Link>
-
-            <Link href={linkedinUrl} isExternal>
-              <Image src={Linkedin} alt="Linkedin" size="32px" />
-            </Link>
-          </Flex>
-        </Flex>
-      </Box>
-    );
-  }
+  
 }
 
-export default TeamCard;
+
+
+export default DisplayTeams;

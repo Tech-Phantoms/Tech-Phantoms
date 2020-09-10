@@ -10,6 +10,7 @@
 }
 .container:hover .name{
   color: tomato;
+  cursor: pointer;
 }
 .flexContainer {
   align-items: center;
