@@ -1,5 +1,9 @@
 import Airtable from 'airtable'
 import { useState, useEffect } from 'react'
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 
 const base = new Airtable({ apiKey: process.env.REACT_APP_AIRTABLE_API_KEY }).base(process.env.REACT_APP_EVENT_BASE)
 
