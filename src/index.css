@@ -26,24 +26,9 @@ body {
   color: white;
   
 }
-<<<<<<< HEAD
-
-.event{
-  display: flex;
-  justify-content: space-around;
-  flex-direction:column;
-  align-items: center;
-}
-
-.event  .events{
-  display: flex;
-  justify-content: space-around;
-}
-=======
 @media  (max-width: 767px){
                         .reverseBottomSection{
                           display:flex;
                           flex-direction: column-reverse;
                         }
 }
->>>>>>> 1de91bca2c6b052ab4dd21d53553e7f54abdeebc
