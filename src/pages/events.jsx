@@ -1,33 +1,30 @@
 import React from 'react'
-import EventHolder from '../components/EventHolder'
-import CalendarComponent from '../components/EventHolder/CalendarComponent'
+import { Events as Evnts, Holder } from '../components/EventHolder'
 import {
     Box,
-    Flex
 } from '@chakra-ui/core'
+
 
 const Events = props => {
 
+    return <>
+        <center>
+            <span style={{ fontSize: 50 }}>Events</span><br />
+        </center>
+        {/* Sample Event Holder */}
 
-    return (
-        <div >
-        <Box className style={{ fontSize: 50 }}>Events</Box><br />
-        <Box pos="fixed" w="100%" zIndex={2}>
-        <CalendarComponent/>
+        {/* <EventHolder
+         description="Git and GitHub 101"
+         date="2013-03-10T02:00:00Z"
+         title="HacktoberFest with Tech Phantoms"
+         mlsa_event={true} 
+         event_recording_link="some link"
+         />*/}
+
+        <Box style={{ margin: '12px 10px' }}>
+            <Evnts />
         </Box>
-        <Flex align="center" justify="center">
-         <EventHolder
-         eventDesc="Git and GitHub 101"
-         eventDate="23/08/2020"
-         eventTitle="HacktoberFest with Tech Phantoms"
-         eventTime="4:00PM"
-         mlsaEvent={true} 
-         eventRec="sadsd"
-         />
-         
-        </Flex>
-         </div>
-    )
+    </>
 }
 
 export default Events
