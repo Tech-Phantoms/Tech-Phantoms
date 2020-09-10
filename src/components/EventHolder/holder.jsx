@@ -10,7 +10,7 @@ import {
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
 import fallbackEventImage from '../../assets/loader.gif'
-import { Holder } from '.'
+
 
 const EventHolder = props => {
   /*
@@ -33,7 +33,7 @@ const EventHolder = props => {
 
   return (
 
-    <Box boxShadow="4px 2px 21px 10px #E5E0E0" height={["20%", "50%"]} width={["90%", "40%", "30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
+    <Box minHeight="100%"boxShadow="4px 2px 21px 10px #E5E0E0" height={["20%", "50%"]} width={["90%", "40%", "30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
       <center>
         {/* Fallback Image Added, when error in src */}
         <Image fallbackSrc={fallbackEventImage} width={["80%", "80%", "100%"]} objectFit="contain" src={props.eventImg} alt="event" />
