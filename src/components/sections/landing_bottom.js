@@ -16,7 +16,7 @@ import loader from '../../assets/loader.gif'
            events, programs and services which will help the academics and research world.  </Box>
        </Box>
          <Box minWidth="40%">
-         <cemter><Image fallbackSrc={loader}  src={bottomIcon} width={{lg: "100%", md:"100%", sm:"50%", xs:"100%"}} py={4} alt="aboutIcon" /> </cemter>
+         <cemter><Image  src={bottomIcon} width={{lg: "100%", md:"100%", sm:"50%", xs:"100%"}} py={4} alt="aboutIcon" /> </cemter>
          </Box>   
         
 

@@ -10,7 +10,7 @@ import loader from '../../assets/loader.gif'
         <SimpleGrid columns={{"lg":2,"md":2,"xs":1,"sm":1}} spacing={1} bg="#F2F2F2" padding={10}>
             
          <Box>
-         <cemter><Image fallbackSrc={loader} src={aboutIcon} width={{lg: "80%", md:"60%", sm:"100%", xs:"100%"}} alt="aboutIcon" /> </cemter>
+         <cemter><Image  src={aboutIcon} width={{lg: "80%", md:"60%", sm:"100%", xs:"100%"}} alt="aboutIcon" /> </cemter>
          </Box>   
         
 
