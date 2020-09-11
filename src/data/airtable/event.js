@@ -46,7 +46,7 @@ const useRsvp = (name, eventId, email) => {
 
     const [data, setData] = useState(false)
 
-    const rsvp = async () => {
+    const rsvp = async (name, eventId, email) => {
         base('rsvp').create([
             {
                 "fields": {
@@ -62,8 +62,8 @@ const useRsvp = (name, eventId, email) => {
         })
     }
 
-    useEffect(() => {
-        rsvp()
+    useEffect((name, eventId, email) => {
+        rsvp(name, eventId, email)
     }, [])
 
     return data
