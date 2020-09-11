@@ -54,12 +54,78 @@ const members={
         },
         {   
             id:6,
+            name: 'Prachi Agarwal',
+            imageUrl: Female,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'female',
+        },
+        {   
+            id:6,
+            name: 'Purunjay Kwattra',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+        {   
+            id:6,
+            name: 'Ashish Chawda',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+        {   
+            id:6,
             name: 'Joshua Poddoku',
             imageUrl: Male,
             githubUrl: '',
             linkedinUrl: '',
             gender: 'male',
         },
+       
+        {   
+            id:6,
+            name: 'Maurice Yengkhom',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+        {   
+            id:6,
+            name: 'Nikhil Vulkundakar',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+        {   
+            id:6,
+            name: 'Jyoti Sharma',
+            imageUrl: Female,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'female',
+        },
+        {   
+            id:6,
+            name: 'Anubhav Madhav',
+            imageUrl: Male,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'male',
+        },
+        {   
+            id:6,
+            name: 'Nandini Uniyal',
+            imageUrl: Female,
+            githubUrl: '',
+            linkedinUrl: '',
+            gender: 'female',
+        },
+      
     ]
 }
 return(
