@@ -5,11 +5,11 @@ const base = new Airtable({ apiKey: process.env.REACT_APP_AIRTABLE_API_KEY }).ba
 
 
 
-const useTeam = tableName => {
+const useTeam = () => {
     const [data, setData] = useState([])
 
-    const getData = async tableName => {
-        base(tableName).select({
+    const getData = async () => {
+        base("core_team").select({
             view: "Grid view"
         }).firstPage().then(result => {
             setData(result)
@@ -19,7 +19,7 @@ const useTeam = tableName => {
     }
 
     useEffect(() => {
-        getData(tableName)
+        getData()
     }, [])
 
     return data
