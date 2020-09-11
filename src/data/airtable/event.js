@@ -1,5 +1,9 @@
 import Airtable from 'airtable'
 import { useState, useEffect } from 'react'
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 
 const base = new Airtable({ apiKey: process.env.REACT_APP_AIRTABLE_API_KEY }).base(process.env.REACT_APP_EVENT_BASE)
 
@@ -42,7 +46,7 @@ const useRsvp = (name, eventId, email) => {
 
     const [data, setData] = useState(false)
 
-    const rsvp = async () => {
+    const rsvp = async (name, eventId, email) => {
         base('rsvp').create([
             {
                 "fields": {
@@ -58,8 +62,8 @@ const useRsvp = (name, eventId, email) => {
         })
     }
 
-    useEffect(() => {
-        rsvp()
+    useEffect((name, eventId, email) => {
+        rsvp(name, eventId, email)
     }, [])
 
     return data

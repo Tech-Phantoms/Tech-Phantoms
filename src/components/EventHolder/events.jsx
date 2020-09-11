@@ -1,12 +1,15 @@
 import React from 'react'
 import { events } from '../../data/airtable'
 import Holder from './holder'
-
+import {
+    Box,
+   
+  } from '@chakra-ui/core'
 const Events = props => {
-    let [evnts, dates] = events.useEvents()
+    let [evnts] = events.useEvents()
 
     return <>
-
+        <Box>
         {evnts.map(el => {
             console.log(el)
 
@@ -17,9 +20,10 @@ const Events = props => {
                     eventImg={el.fields.eventImg[0].url}
                     description={el.fields.description}
                     date={el.fields.date}
-                />
+                /><br/>
             </>
         })}
+        </Box>
     </>
 }
 

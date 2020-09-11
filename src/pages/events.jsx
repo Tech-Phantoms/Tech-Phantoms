@@ -1,5 +1,5 @@
 import React from 'react'
-import { Events as Evnts, Holder } from '../components/EventHolder'
+import { Events as Evnts} from '../components/EventHolder'
 import {
     Box,
 } from '@chakra-ui/core'
