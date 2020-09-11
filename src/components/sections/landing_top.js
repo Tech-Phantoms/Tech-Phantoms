@@ -1,7 +1,6 @@
 import React from 'react';
 //assests
 import logo from '../../assets/logo.svg';
-import loader from '../../assets/loader.gif'
 import LightMode_techphantoms from '../../assets/LightMode_techphantoms.svg';
 import LightMode_MLSA_Badge from '../../assets/LightMode_MLSA_Badge.svg';
 //css
