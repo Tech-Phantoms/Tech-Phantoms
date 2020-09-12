@@ -38,7 +38,7 @@ const members={
       
         {   
             id:4,
-            name: 'Tavleen',
+            name: 'Tavleen Kaur',
             imageUrl: Female,
             githubUrl: '',
             linkedinUrl: '',
