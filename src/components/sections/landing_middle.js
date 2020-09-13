@@ -3,7 +3,6 @@ import { Text,Image,Box,SimpleGrid } from "@chakra-ui/core";
 
 //importing assets
 import aboutIcon from '../../assets/landing_page/community.svg'
-import loader from '../../assets/loader.gif'
 
  const LandingMiddle = props =>  {
     return (

@@ -3,7 +3,6 @@ import { Text,Image,Box,SimpleGrid } from "@chakra-ui/core";
 
 //importing assets
 import bottomIcon from '../../assets/landing_page/pair_programming.svg'
-import loader from '../../assets/loader.gif'
 
  const LandingBottom = props =>  {
     return (
