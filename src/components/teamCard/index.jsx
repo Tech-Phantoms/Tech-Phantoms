@@ -14,7 +14,9 @@ const DisplayTeams = (props) => {
                         imageUrl={member.imageUrl}
                         githubUrl={member.get('github_profile')}
                         linkedinUrl={member.get('linkedin_profile')}
-                        gender={member.get('gender')} />
+                        gender={member.get('gender')}
+                        instagramUrl={member.get('instagram_profile')}
+                        />
                 ))
             }
         </SimpleGrid>
