@@ -6,7 +6,7 @@ import Male from "../../assets/team/person.svg";
 import GitHub from "../../assets/team/github_.svg";
 import Linkedin from "../../assets/team/linkedin.svg";
 import Instagram from "../../assets/team/instagram.svg";
-
+import Medium from "../../assets/team/medium.svg"
 const Holder=(props)=>{
     const {
         name,
@@ -14,7 +14,8 @@ const Holder=(props)=>{
         githubUrl,
         linkedinUrl,
         gender,
-        instagramUrl
+        instagramUrl,
+        mediumUrl
       } = props;
       return (
         <Box margin={{"md":"40px"}} className={styles.container} >
@@ -50,7 +51,12 @@ const Holder=(props)=>{
                 <Image src={Instagram} alt="Instagram" size="32px" />
               </Link>
               }
-            
+              {
+                mediumUrl &&
+              <Link href={mediumUrl} isExternal>
+                <Image src={Medium} alt="Instagram" size="32px" />
+              </Link>
+              }
             </Flex>
           </Flex>
         </Box>

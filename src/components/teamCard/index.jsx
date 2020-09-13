@@ -16,6 +16,7 @@ const DisplayTeams = (props) => {
                         linkedinUrl={member.get('linkedin_profile')}
                         gender={member.get('gender')}
                         instagramUrl={member.get('instagram_profile')}
+                        mediumUrl={member.get('medium_profile')}
                         />
                 ))
             }
