@@ -34,7 +34,7 @@ const LandingTop = (props) => {
             <center>
               <Image
                 src={
-                  props.colorTheme == "light"
+                  props.colorTheme === "light"
                     ? LightMode_techphantoms
                     : DarkMode_techphantoms
                 }
@@ -43,14 +43,14 @@ const LandingTop = (props) => {
               />
             </center>
             <center>
-              <Text fontSize={["10px", "sm"]} p={[2, 4, 10]} color={props.colorTheme == "dark" ? "#D8A752" : "orange"}>
+              <Text fontSize={["10px", "sm"]} p={[2, 4, 10]} color={props.colorTheme === "dark" ? "#D8A752" : "orange"}>
                 A Technical Community <br /> By
               </Text>
             </center>
             <center>
               <img
                 src={
-                  props.colorTheme == "light"
+                  props.colorTheme === "light"
                     ? LightMode_MLSA_Badge
                     : DarkMode_MLSA_Badge
                 }

@@ -11,7 +11,7 @@ const LandingMiddle = (props) => {
         columns={{ lg: 2, md: 2, xs: 1, sm: 1 }}
         spacing={1}
         padding={10}
-        bg={props.colorTheme == "light" ? "#F2f2f2" : "#191F37"}
+        bg={props.colorTheme === "light" ? "#F2f2f2" : "#191F37"}
       >
         <Box>
           <cemter>
