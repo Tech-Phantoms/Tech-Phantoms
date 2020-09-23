@@ -11,9 +11,8 @@ const Events = props => {
     return <>
         <Box>
             {evnts.map(el => {
-                console.log(el)
 
-                if (el.fields.eventImage) {
+                if (el.fields.eventImg) {
                     return <>
                         <Holder
                             title={el.fields.title}
