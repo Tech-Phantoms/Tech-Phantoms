@@ -26,7 +26,7 @@ const useEvents = () => {
         base('Events').select({
             view: 'Grid view',
             fields: ["date"],
-            sort: [{ field: 'date', direction: 'asc' }]
+            sort: [{ field: 'date', direction: 'desc' }]
         }).firstPage().then(result => {
             setDates(result)
         }).catch(err => {
