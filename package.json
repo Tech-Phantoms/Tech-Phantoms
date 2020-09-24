@@ -18,7 +18,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "styled-components": "^5.2.0",
-    "styled-theming": "^2.2.0"
+    "styled-theming": "^2.2.0",
+    "tinytime": "^0.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
