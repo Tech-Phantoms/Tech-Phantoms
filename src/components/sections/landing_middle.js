@@ -3,15 +3,19 @@ import { Text, Image, Box, SimpleGrid } from "@chakra-ui/core";
 
 //importing assets
 import aboutIcon from "../../assets/landing_page/community.svg";
+import { useTheme } from "../themes"
 
 const LandingMiddle = (props) => {
+
+  const { theme } = useTheme();
+
   return (
     <div>
       <SimpleGrid
         columns={{ lg: 2, md: 2, xs: 1, sm: 1 }}
         spacing={1}
         padding={10}
-        bg={props.colorTheme === "light" ? "#F2f2f2" : "#191F37"}
+        bg={theme === "light" ? "#F2f2f2" : "#191F37"}
       >
         <Box>
           <cemter>
