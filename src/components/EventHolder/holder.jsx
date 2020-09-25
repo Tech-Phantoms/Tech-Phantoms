@@ -37,10 +37,7 @@ const EventHolder = props => {
   return (
 
     <Box
-      minHeight="100%"
       boxShadow="1px 4px 6px #E5E0E0"
-      height={["20%", "50%"]}
-      width={["90%", "40%", "30%"]}
       paddingTop="15px"
       maxW="sm"
       borderWidth="1px"
@@ -141,7 +138,7 @@ const EventHolder = props => {
               <a target="blank" href={props.reg_link}>
                 <Button
                   variant="outline"
-                >Register</Button>
+                >Check out</Button>
               </a>
             </Box>
 
