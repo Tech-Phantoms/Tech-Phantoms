@@ -3,20 +3,17 @@ import { events } from '../../data/airtable'
 import Holder from './holder'
 import {
     Box,
-
+    SimpleGrid,
+    Text,
+    Divider
 } from '@chakra-ui/core'
 import tt from 'tinytime'
 import _ from 'lodash'
+
+
 const Events = props => {
     let [evnts, dates] = events.useEvents()
     console.log(dates)
-
-    /**
-     * From the dates array we first need to 
-     * sort all the unique dates
-     * then we have to render only those events 
-     * from the events array that match the date
-     */
 
     const uniqueDates = _.uniqBy(dates, 'fields.date')
     console.log('unique', uniqueDates)
@@ -28,31 +25,45 @@ const Events = props => {
                     let ev = _.filter(evnts, e => e.fields.date === date.fields.date)
 
                     return <>
-                        <h1>{tt('{Do} {MMMM}').render(new Date(date.fields.date))}</h1>
-                        {ev.map(evs => {
-                            if (evs.fields.eventImg) {
-                                return <>
-                                    <Holder
-                                        title={evs.fields.title}
-                                        mlsa_event={evs.fields.mlsa_event}
-                                        eventImg={evs.fields.eventImg[0].url || ''}
-                                        description={evs.fields.desription}
-                                        date={evs.fields.date}
-                                        reg_link={evs.fields.reg_link}
-                                    />
-                                </>
-                            } else {
-                                return <>
-                                    <Holder
-                                        title={evs.fields.title}
-                                        mlsa_event={evs.fields.mlsa_event}
-                                        description={evs.fields.desription}
-                                        date={evs.fields.date}
-                                        reg_link={evs.fields.reg_link}
-                                    /><br />
-                                </>
-                            }
-                        })}
+                        <Box py={6}>
+
+                            <Text fontSize="xl" fontWeight="bold">
+                                {tt('{DD}/{MM}/{YYYY}  {dddd}').render(new Date(date.fields.date))}
+                            </Text>
+                        </Box>
+
+                        <SimpleGrid columns={[3, 1, 4]} >
+                            {ev.map(evs => {
+                                if (evs.fields.eventImg) {
+                                    return <Box>
+                                        <Holder
+                                            title={evs.fields.title}
+                                            mlsa_event={evs.fields.mlsa_event}
+                                            eventImg={evs.fields.eventImg[0].url || ''}
+                                            description={evs.fields.desription}
+                                            date={evs.fields.time}
+                                            reg_link={evs.fields.reg_link}
+                                        />
+                                    </Box>
+
+                                } else {
+                                    return <Box>
+                                        <Holder
+                                            title={evs.fields.title}
+                                            mlsa_event={evs.fields.mlsa_event}
+                                            description={evs.fields.desription}
+                                            date={evs.fields.date}
+                                            reg_link={evs.fields.reg_link}
+                                        />
+                                    </Box>
+
+                                }
+                            })}
+                        </SimpleGrid>
+
+                        <Box py={6}>
+                            <Divider />
+                        </Box>
                     </>
                 })
             }
