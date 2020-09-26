@@ -1,4 +1,3 @@
-
 # Tech Phantoms Community Website
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
