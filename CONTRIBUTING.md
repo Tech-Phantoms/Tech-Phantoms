@@ -9,6 +9,12 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## ✨ Steps to follow
 
+# NOTE:
+All PRs will be merged to `development` branch. Periodically, our members will clean the code before merging to master branch. 
+So it might be possible that you dont see the exact result on the production website.
+
+Send PR to `development` branch only.
+
 ### 1. Fork it
 
 You can get your own fork/copy of [community-website](https://github.com/Ninja-Developers/Tech_Phantoms_website) by using the <kbd><b>Fork</b></kbd> button.
@@ -64,6 +70,7 @@ upstream  https://github.com/Ninja-Developers/Tech_Phantoms_website.git (push)
 
 ### 4. Sync it
 
+**If  you are a contributor, we recommend you to sync with development branch**
 **Always keep your local copy of repository updated with the original repository.**
 Before making any changes and/or in an appropriate interval, run the following commands *carefully* to update your local repository.
 
@@ -71,23 +78,25 @@ Before making any changes and/or in an appropriate interval, run the following c
 # Fetch all remote repositories and delete any deleted remote branches
 $ git fetch --all --prune
 
-# Switch to `master` branch
-$ git checkout master
+# Switch to `development` branch
+$ git checkout development
 
-# Reset local `master` branch to match `upstream` repository's `master` branch
-$ git reset --hard upstream/master
+# Reset local `development` branch to match `upstream` repository's `development` branch
+$ git reset --hard upstream/development
 
 # Push changes to your forked `community-website` repo
-$ git push origin master
+$ git push origin development
 ```
 
 ### 5. You're Ready to Go
 
 Once you have completed these steps, you are ready to start contributing by checking our Issues and creating [pull requests](https://github.com/Ninja-Developers/Tech_Phantoms_website/pulls).
 
-### 6. Create a new branch
 
-Whenever you are going to make contribution. Please create seperate branch using command and keep your `master` branch clean and most stable version of your project (i.e. synced with remote branch).
+
+### 6. Create a new branch
+When you are working on a feature for the website, we recommend that you create a branch with following convention
+Whenever you are going to make contribution. Please create seperate branch using command and keep your `development` branch clean and most stable version of your project (i.e. synced with remote branch).
 
 ```sh
 # It will create a new branch with name feature-<FEATURE YOU ARE WORKING ON> and switch to that branch
@@ -95,6 +104,7 @@ $ git checkout -b feature-<FEATURE YOU ARE WORKING ON>
 #Example
 #$ git checkout -b feature-eventsPage
 ```
+
 
 Create a separate branch for contribution and try to use same name of branch as of your contributing feature.
 
