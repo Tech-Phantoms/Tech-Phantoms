@@ -7,17 +7,34 @@ const GITHUB_REPO_URL = "https://api.github.com/orgs/Ninja-Developers/repos"
 
 const useRepo = () => {
     const [repos, setRepos] = useState([])
-    const getRepos = () => {
-        Axios({
+    const getRepos = async () => {
+
+        let res = await Axios({
             method: 'GET',
             url: GITHUB_REPO_URL
-        }).then(res => {
-            let { data } = res
-            let own_repo = _.filter(data, o => !o.fork)
-            setRepos(own_repo)
-        }).catch(err => {
-            console.log(err)
         })
+
+        let {data} = res
+
+        let own_repo = _.filter(data, o=>!o.fork)
+
+        let P = Promise.all(own_repo.map(async (el) => {
+
+            let d = {
+                name: el.name,
+                language: el.language,
+                issueCount: el.open_issues,
+                stars: el.stargazers_count,
+                description: el.description
+            }
+
+            return d
+        }))
+
+        let temp_repo = await P
+
+        setRepos(temp_repo)
+        
     }
 
     useEffect(() => {
@@ -27,6 +44,5 @@ const useRepo = () => {
 
     return repos
 }
-
 
 export { useRepo }

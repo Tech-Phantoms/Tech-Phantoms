@@ -11,10 +11,10 @@ import {
 const Holder = props => {
 
     let langColor = {
-        "javascript": 'yellow',
-        "typescript": 'cyan',
-        "python": 'blue',
-        "c++": "pink"
+        "JavaScript": 'yellow',
+        "TypeScript": 'cyan',
+        "Python": 'blue',
+        "C++": "pink"
     }
 
     let getLangColor = language => {
