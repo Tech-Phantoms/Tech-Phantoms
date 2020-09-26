@@ -30,7 +30,7 @@ Setting Up dummy API KEY
 
 1. Install dotenv `npm i dotenv`
 2. Create .env file in root directory `/` 
-3. Paste the following code inside .env file.
+3. Paste the following code inside `.env.local` file.
 
 ```js
 
