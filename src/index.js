@@ -6,6 +6,7 @@ import { ThemeProvider, theme, CSSReset } from "@chakra-ui/core";
 // Importing Footers from footer component
 import FooterContent from "./components/footer";
 
+
 //footer component
 const Footer = () => (
   <footer className="footer">
