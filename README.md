@@ -1,5 +1,13 @@
 # Tech Phantoms Community Website
 
+
+<p align="center">
+<img width=10% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
+<p align="center">
+This repository serves as official repository for the Community Website (V2) hosted at http://techphantoms.netlify.app
+</p>
+</p>
+
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
@@ -9,13 +17,7 @@
 ![Stars GitHub](https://img.shields.io/github/stars/Ninja-Developers/Tech_Phantoms_website)
 ![Language](https://img.shields.io/github/languages/top/Ninja-Developers/Tech_Phantoms_website)
 ![Size](https://img.shields.io/github/repo-size/Ninja-Developers/Tech_Phantoms_website)
-
-<p align="center">
-<img width=10% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
-<p align="center">
-This repository serves as official repository for the Community Website (V2) hosted at http://techphantoms.netlify.app
-</p>
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b0bce43d-6d04-47b4-8b66-39c31e029a02/deploy-status)](https://app.netlify.com/sites/techphantoms/deploys)
 
 <br/>
 
