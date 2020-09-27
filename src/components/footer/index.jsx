@@ -12,7 +12,7 @@ import 'remixicon/fonts/remixicon.css'
 import Logo from '../../assets/logo.svg'
 
 const iconStyle = {
-    fontSize: 32
+    fontSize: 36
 };
 
 const Footer = props => {
@@ -35,7 +35,7 @@ const Footer = props => {
                 </Box>
 
                 <Box style={{alignContent:'center'}}>
-<center>{"</>"} with<br/> ❤️<br/>by Tech Phantoms</center>
+<center>{"</>"} with<br/>❤<br/>by Tech Phantoms</center>
                 </Box>
 
 
@@ -46,11 +46,11 @@ const Footer = props => {
                     {/* Flex  default flex-direction:row */}
                     <Flex >
                         {/* Setting flexgrow level 1, assigning equal space to every icon */}
-                        <Flex flexGrow={1}  />
+                        <Flex flexGrow={{ sm: 0.75, xs: 0.75, md: 1, lg: 1 }}  />
 
                                     {/* 3 Column Grid for 3 different social media */}
                                     {/* Note: Adding a social media handle, requires incrementing column={previous_value+1} */}
-                                    <SimpleGrid columns={3} spacing={4}  >
+                                    <SimpleGrid columns={{ sm: 1, xs: 1, md: 3, lg: 3 }} spacing={{ sm: 1, xs: 1, md: 4, lg: 4 }}>
                                         
                                         {/* GitHub Link */}
                                         <Box>
