@@ -2,28 +2,20 @@ import React from "react";
 import { LandingTop } from "../components/sections";
 import LandingMiddle from "../components/sections/landing_middle";
 import LandingBottom from "../components/sections/landing_bottom.js";
-import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/themes/globalStyles";
-import { lightTheme, darkTheme } from "../components/themes/Themes";
-import  {useDarkMode} from "../components/themes/useDarkmode"
+import ThemeProvider from "../components/themes"
 import Toggle from "../components/themes/Toggler"
 
-const Index = (props) => {
-  const [theme, themeToggler] = useDarkMode();
-
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-  return (
-    <ThemeProvider theme={themeMode}>
-      <>
-        <GlobalStyles />
-        <Toggle theme={theme} toggleTheme={themeToggler} />
-        <LandingTop colorTheme={theme} />
-        <LandingMiddle colorTheme={theme} />
-        <LandingBottom colorTheme={theme} />
-      </>
-    </ThemeProvider>
-  );
-};
+const Index = (props) => (
+  <ThemeProvider>
+    <>
+      <GlobalStyles />
+      <Toggle />
+      <LandingTop/>
+      <LandingMiddle/>
+      <LandingBottom/>
+    </>
+  </ThemeProvider>
+);
 
 export default Index;
