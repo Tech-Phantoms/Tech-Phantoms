@@ -23,7 +23,7 @@ const LandingBottom = (props) => {
           {" "}
           We{" "}
           <span role="img" aria-label="Heart">
-            💓
+          ❤️
           </span>{" "}
           Open Source{" "}
         </Text>

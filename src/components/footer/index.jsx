@@ -8,10 +8,13 @@ import {
 } from '@chakra-ui/core'
 
 // importing static assets 
-import github from '../../assets/github.svg'
-import linkedin from '../../assets/linkedin.svg'
-import medium from '../../assets/medium.svg'
+import 'remixicon/fonts/remixicon.css'
 import Logo from '../../assets/logo.svg'
+
+const iconStyle = {
+    fontSize: 32
+};
+
 const Footer = props => {
 
     return <>
@@ -32,7 +35,7 @@ const Footer = props => {
                 </Box>
 
                 <Box style={{alignContent:'center'}}>
-<center>{"</>"} with<br/> 💓 <br/>by Tech Phantoms</center>
+<center>{"</>"} with<br/> ❤️<br/>by Tech Phantoms</center>
                 </Box>
 
 
@@ -52,19 +55,19 @@ const Footer = props => {
                                         {/* GitHub Link */}
                                         <Box>
                                             <Link target="blank" href="https://github.com/Ninja-Developers">
-                                                <img src={github} alt="" width="25px" />
-                                            </Link>
+                                            <i class="ri-github-fill" style={iconStyle}></i>
+                                           </Link>
                                         </Box>
                                         {/* Instagram Link */}
                                         <Box>
                                             <Link target="blank" href="https://instagram.com/tech_phantoms">
-                                                <img src={linkedin} alt="" width="25px" />
+                                            <i class="ri-instagram-line" style={iconStyle}></i>
                                             </Link>
                                         </Box>
                                         {/* Medium Link */}
                                         <Box>
                                             <Link target="blank" href="https://medium.com/techphantoms">
-                                                <img src={medium} alt="" width="25px" />
+                                            <i class="ri-medium-line" style={iconStyle}></i>
                                             </Link>
                                         </Box>
 

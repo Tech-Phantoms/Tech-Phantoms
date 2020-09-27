@@ -3,7 +3,7 @@ import { events } from '../../data/airtable'
 import Holder from './holder'
 import {
     Box,
-    SimpleGrid,
+    Grid,
     Text,
     Divider
 } from '@chakra-ui/core'
@@ -32,7 +32,7 @@ const Events = props => {
                             </Text>
                         </Box>
 
-                        <SimpleGrid columns={[3, 1, 4]} >
+                        <Grid templateColumns="repeat(4, 1fr)" gap={18} >
                             {ev.map(evs => {
                                 if (evs.fields.eventImg) {
                                     return <Box>
@@ -59,7 +59,7 @@ const Events = props => {
 
                                 }
                             })}
-                        </SimpleGrid>
+                        </Grid>
 
                         <Box py={6}>
                             <Divider />
