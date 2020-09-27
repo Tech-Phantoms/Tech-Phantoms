@@ -1,4 +1,6 @@
 import React from "react";
+import { useTheme } from "../themes"
+
 //assests
 import logo from "../../assets/logo.svg";
 import LightMode_techphantoms from "../../assets/LightMode_techphantoms.svg";
@@ -9,6 +11,8 @@ import DarkMode_MLSA_Badge from "../../assets/DarkMode_MLSA_Badge.svg";
 import { Box, Text, SimpleGrid, Image } from "@chakra-ui/core";
 
 const LandingTop = (props) => {
+  const { theme } = useTheme();
+
   return (
     <div>
       <Box
@@ -34,7 +38,7 @@ const LandingTop = (props) => {
             <center>
               <Image
                 src={
-                  props.colorTheme === "light"
+                  theme === "light"
                     ? LightMode_techphantoms
                     : DarkMode_techphantoms
                 }
@@ -43,14 +47,14 @@ const LandingTop = (props) => {
               />
             </center>
             <center>
-              <Text fontSize={["10px", "sm"]} p={[2, 4, 10]} color={props.colorTheme === "dark" ? "#D8A752" : "orange"}>
+              <Text fontSize={["10px", "sm"]} p={[2, 4, 10]} color={theme === "dark" ? "#D8A752" : "orange"}>
                 A Technical Community <br /> By
               </Text>
             </center>
             <center>
               <img
                 src={
-                  props.colorTheme === "light"
+                  theme === "light"
                     ? LightMode_MLSA_Badge
                     : DarkMode_MLSA_Badge
                 }
