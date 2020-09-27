@@ -19,9 +19,11 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
+    "remixicon": "^2.5.0",
     "styled-components": "^5.2.0",
     "styled-theming": "^2.2.0",
-    "tinytime": "^0.2.6"
+    "tinytime": "^0.2.6",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

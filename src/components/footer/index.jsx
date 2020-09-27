@@ -8,10 +8,13 @@ import {
 } from '@chakra-ui/core'
 
 // importing static assets 
-import github from '../../assets/github.svg'
-import linkedin from '../../assets/linkedin.svg'
-import medium from '../../assets/medium.svg'
+import 'remixicon/fonts/remixicon.css'
 import Logo from '../../assets/logo.svg'
+
+const iconStyle = {
+    fontSize: 36
+};
+
 const Footer = props => {
 
     return <>
@@ -32,7 +35,7 @@ const Footer = props => {
                 </Box>
 
                 <Box style={{alignContent:'center'}}>
-<center>{"</>"} with<br/> 💓 <br/>by Tech Phantoms</center>
+<center>{"</>"} with<br/>❤<br/>by Tech Phantoms</center>
                 </Box>
 
 
@@ -43,28 +46,28 @@ const Footer = props => {
                     {/* Flex  default flex-direction:row */}
                     <Flex >
                         {/* Setting flexgrow level 1, assigning equal space to every icon */}
-                        <Flex flexGrow={1}  />
+                        <Flex flexGrow={{ sm: 0.75, xs: 0.75, md: 1, lg: 1 }}  />
 
                                     {/* 3 Column Grid for 3 different social media */}
                                     {/* Note: Adding a social media handle, requires incrementing column={previous_value+1} */}
-                                    <SimpleGrid columns={3} spacing={4}  >
+                                    <SimpleGrid columns={{ sm: 1, xs: 1, md: 3, lg: 3 }} spacing={{ sm: 1, xs: 1, md: 4, lg: 4 }}>
                                         
                                         {/* GitHub Link */}
                                         <Box>
                                             <Link target="blank" href="https://github.com/Ninja-Developers">
-                                                <img src={github} alt="" width="25px" />
-                                            </Link>
+                                            <i class="ri-github-fill" style={iconStyle}></i>
+                                           </Link>
                                         </Box>
                                         {/* Instagram Link */}
                                         <Box>
                                             <Link target="blank" href="https://instagram.com/tech_phantoms">
-                                                <img src={linkedin} alt="" width="25px" />
+                                            <i class="ri-instagram-line" style={iconStyle}></i>
                                             </Link>
                                         </Box>
                                         {/* Medium Link */}
                                         <Box>
                                             <Link target="blank" href="https://medium.com/techphantoms">
-                                                <img src={medium} alt="" width="25px" />
+                                            <i class="ri-medium-line" style={iconStyle}></i>
                                             </Link>
                                         </Box>
 
