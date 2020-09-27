@@ -53,7 +53,7 @@ origin  https://github.com/<YOUR_USERNAME>/Tech_Phantoms_website.git (push)
 Now, lets add a reference to the original [community-website](https://github.com/Ninja-Developers/Tech_Phantoms_website) repository using
 
 ```sh
-$ git remote add upstream https://github.com/Ninja-Developers/Tech_Phantoms_website
+$ git remote add upstream https://github.com/Ninja-Developers/Tech_Phantoms_website.git
 ```
 
 > This adds a new remote named ***upstream***.
