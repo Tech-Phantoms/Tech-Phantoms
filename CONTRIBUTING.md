@@ -75,7 +75,7 @@ upstream  https://github.com/Ninja-Developers/Tech_Phantoms_website.git (push)
 Before making any changes and/or in an appropriate interval, run the following commands *carefully* to update your local repository.
 
 ```sh
-# Fetch all remote repositories and delete any deleted remote branches
+# Fetch all remote branches and/or tags from the remote repository and delete any deleted remote branches
 $ git fetch --all --prune
 
 # Switch to `development` branch
