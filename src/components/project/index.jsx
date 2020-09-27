@@ -25,6 +25,7 @@ const Projects = props => {
                                 issues={el.issueCount}
                                 stars={el.stars}
                                 description={el.description}
+                                issueUrl={el.issueUrl}
                             />
                         </Box>
                     </>

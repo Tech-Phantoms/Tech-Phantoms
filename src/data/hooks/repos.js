@@ -25,7 +25,8 @@ const useRepo = () => {
                 language: el.language,
                 issueCount: el.open_issues,
                 stars: el.stargazers_count,
-                description: el.description
+                description: el.description,
+                issueUrl: el.html_url + '/issues'
             }
 
             return d

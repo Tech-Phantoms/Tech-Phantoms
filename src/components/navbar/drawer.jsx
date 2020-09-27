@@ -27,6 +27,7 @@ const MenuDrawer = (props) => {
     { name: "Home", path: "/" },
     { name: "Team", path: "/team" },
     { name: "Event", path: "/events" },
+    {name: "Project", path: "/projects"}
   ];
 
   return (
