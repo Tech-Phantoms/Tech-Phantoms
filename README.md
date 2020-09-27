@@ -56,6 +56,7 @@ The project is created using create-react-app and based on React.js framework.
 
 We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
 
+Development branch is hosted at : https://devtechphantoms.netlify.app/ 
 
 ## 💻 API KEY Installation (DUMMY)
 In order to facilitate development / testing phases, we have generated the following dummy API keys to be used in your environment variables
