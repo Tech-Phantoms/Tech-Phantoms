@@ -7,6 +7,9 @@ import LightMode_techphantoms from "../../assets/LightMode_techphantoms.svg";
 import DarkMode_techphantoms from "../../assets/DarkMode_techphantoms.svg";
 import LightMode_MLSA_Badge from "../../assets/LightMode_MLSA_Badge.svg";
 import DarkMode_MLSA_Badge from "../../assets/DarkMode_MLSA_Badge.svg";
+import IG from "../../assets/socialprofiles/instagram.svg"
+import GitHub from "../../assets/socialprofiles/github.svg"
+import Linkedin from "../../assets/socialprofiles/linkedin.svg"
 //css
 import { Box, Text, SimpleGrid, Image } from "@chakra-ui/core";
 
@@ -30,7 +33,12 @@ const LandingTop = (props) => {
                 width={{ lg: "40%", md: "60%", sm: "50%", xs: "55%" }}
                 alt="lightlogo"
                 py={5}
-              />
+              /><br/>
+             <SimpleGrid display={{"xs":"none","sm":"none","md":"grid","lg":"grid"}}  width="50%" columns={3} spacing={1} padding={4}>
+                <a href="https://github.com/ninja-developers"><Image width="50%"  src={GitHub} /></a>
+                <a href="https://instagram.com/tech_phantoms"><Image  width="50%" src={IG} /></a>
+                <a href="https://linkedin.com/company/techphantoms"><Image  width="50%" src={Linkedin} /></a>
+              </SimpleGrid>
             </center>
           </Box>
 
@@ -61,8 +69,15 @@ const LandingTop = (props) => {
                 width={{ lg: "20%", md: "10%", sm: "10%", xs: "10%" }}
                 alt="LightMode_MLSA_Badge"
               />
+               <SimpleGrid  display={{"xs":"grid","sm":"grid","md":"none","lg":"none"}}  width="80%" columns={3} spacing={1} padding={4}>
+                <a href="https://github.com/ninja-developers"><Image width="50%"  src={GitHub} /></a>
+                <a href="https://instagram.com/tech_phantoms"><Image  width="50%" src={IG} /></a>
+                <a href="https://linkedin.com/company/techphantoms"><Image  width="50%" src={Linkedin} /></a>
+              </SimpleGrid>
             </center>
+            
           </Box>
+          
         </SimpleGrid>
       </Box>
     </div>
