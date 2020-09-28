@@ -4,13 +4,16 @@ import LandingMiddle from "../components/sections/landing_middle";
 import LandingBottom from "../components/sections/landing_bottom.js";
 import { GlobalStyles } from "../components/themes/globalStyles";
 import ThemeProvider from "../components/themes"
-import Toggle from "../components/themes/Toggler"
+// toggle only for V3 website
+// import Toggle from "../components/themes/Toggler"
 
 const Index = (props) => (
   <ThemeProvider>
     <>
       <GlobalStyles />
-      <Toggle />
+{/* Toggle to be released in V3 Site */}
+      {/* <Toggle/> */}
+      
       <LandingTop/>
       <LandingMiddle/>
       <LandingBottom/>
