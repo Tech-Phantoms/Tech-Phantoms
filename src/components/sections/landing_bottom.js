@@ -28,6 +28,12 @@ const LandingBottom = (props) => {
           Open Source{" "}
         </Text>
         <Box textAlign="justify" maxWidth={{ lg: "70%", md: "60%" }}>
+
+        Tech Phantoms was developed with a mission to foster learning of open source technologies 
+        and be an exclusive technical community that young developers seek to pave their way towards Open Source.
+        To this end we provide mentoring,virtual collaboration space and and resources for young creative minds to 
+        nurture their skills and try their hands on some new skills as well under the guidance and supervision of our 
+        tech experts.
           We commit to becoming a place where people, passionate about
           technology, collaborate and aim at enhancing their knowledge about the
           latest developer technologies and use them. creatively and ethically.

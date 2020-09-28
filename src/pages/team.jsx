@@ -1,7 +1,9 @@
 import React from 'react';
-import { Text } from "@chakra-ui/core";
+
+
 import DisplayTeams from '../components/teamCard/index';
 import { team } from '../data/airtable'
+import Lifecycle from '../components/teamCard/teamLifecycle/index';
 
 
 
@@ -12,7 +14,8 @@ const Team = () => {
     console.log(data)
     return (
         <>
-            <center><Text fontSize="6xl" align="center"> Ones who made it possible ! </Text></center>
+            <Lifecycle/>
+       
             <DisplayTeams members={data} />
         </>
     )
