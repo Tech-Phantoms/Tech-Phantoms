@@ -85,7 +85,7 @@ Heavy reviews, sleepless nights and finally we formed the core team
 <Text fontSize="2xl" margin={10}>
 With right efforts ,anything is possible. Here we are,</Text>
 <Text fontSize="5xl" >Tech Phantoms</Text>
-(still growing and enrichig open source)
+(still growing and enriching open source)
 
 </center>
 </>
