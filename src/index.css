@@ -1,34 +1,42 @@
 html,
 body {
   height: 100%;
-  
 }
+
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Poppins'),
+    local('Poppins-Regular'),
+  local('Poppins'), url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins';
 }
 
 #root {
   display: flex;
   flex-direction: column;
   height: 100%;
-
 }
 
 .content {
   flex: 1 0 auto;
-
 }
 
 .footer {
   flex-shrink: 0;
   color: white;
-  
 }
-@media  (max-width: 767px){
-                        .reverseBottomSection{
-                          display:flex;
-                          flex-direction: column-reverse;
-                        }
+@media (max-width: 767px) {
+  .reverseBottomSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

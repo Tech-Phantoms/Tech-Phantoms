@@ -1,35 +1,27 @@
-import React from 'react'
-import {
-    Box,
-    Flex,
-    useDisclosure
-} from '@chakra-ui/core'
+import React from "react";
+import { Box, Flex, useDisclosure } from "@chakra-ui/core";
 
-import Drawer from './drawer'
+import Drawer from "./drawer";
 
-import menu from '../../assets/menu.svg'
+import menu from "../../assets/menu.svg";
 
+const Navbar = (props) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-const Navbar = props => {
+  return (
+    <Box w="100%" py={4} px={6}>
+      <Flex>
+        <Flex flexGrow={1}></Flex>
+        <Flex>
+          <Box style={{ cursor: "pointer" }}>
+            <img src={menu} width="20px" onClick={onOpen} alt="menu" />
+          </Box>
+        </Flex>
+      </Flex>
 
-    const { isOpen, onOpen, onClose } = useDisclosure();
+      <Drawer open={isOpen} close={onClose} />
+    </Box>
+  );
+};
 
-    return (
-        <Box w="100%" py={4} px={6}>
-            <Flex>
-                <Flex flexGrow={1}>
-
-                </Flex>
-                <Flex >
-                    <Box style={{ cursor: 'pointer' }}>
-                        <img src={menu} width="20px" onClick={onOpen} alt="menu" />
-                    </Box>
-                </Flex>
-            </Flex>
-
-            <Drawer open={isOpen} close={onClose} />
-        </Box>
-    )
-}
-
-export default Navbar
+export default Navbar;

@@ -6,7 +6,10 @@ import {
   Button,
   SimpleGrid,
   Collapse,
+  Text,
+  Badge
 } from '@chakra-ui/core'
+import tt from 'tinytime'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
 // Fallback image, when Img src=error / not found
 import fallbackEventImage from '../../assets/loader.gif'
@@ -33,60 +36,64 @@ const EventHolder = props => {
 
   return (
 
-    <Box minHeight="100%"boxShadow="4px 2px 21px 10px #E5E0E0" height={["20%", "50%"]} width={["90%", "40%", "30%"]} paddingTop="15px" maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
+    <Box
+      boxShadow="1px 4px 6px #E5E0E0"
+      paddingTop="15px"
+      maxW="sm"
+      borderWidth="1px"
+      rounded="lg"
+      overflow="hidden"
+      cursor="pointer"
+    >
       <center>
         {/* Fallback Image Added, when error in src */}
-        <Image fallbackSrc={fallbackEventImage} width={["80%", "80%", "100%"]} objectFit="contain" src={props.eventImg} alt="event" />
+        <Image
+          fallbackSrc={fallbackEventImage}
+          width={["40%", "40%", "40%"]}
+          objectFit="contain"
+          src={props.eventImg}
+          alt="event"
+          onClick={handleToggle}
+        />
       </center>
       <Box p="6">
+
+        {/*Event Title  */}
+        <Box
+          ml="1"
+          fontWeight="semibold"
+          lineHeight="tight"
+          isTruncated
+        >
+          <Text fontSize="xl" fontWeight="bold">{props.title}</Text>
+        </Box>
+        <Box
+          ml="1"
+          fontWeight="semibold"
+          lineHeight="tight"
+          isTruncated
+        >
+          {props.mlsa_event && <Badge
+            style={{ backgroundColor: '#203A61', color: "white" }}
+          >MLSA</Badge>}
+
+        </Box>
         {/* Date and Time  */}
         <Box
           color="gray.500"
           fontWeight="semibold"
-          letterSpacing="wide"
           fontSize="lg"
           textTransform="uppercase"
-          ml="2"
-          textAlign="center"
-
-
-        >
-          {props.date}
-        </Box>
-        {/*Event Title  */}
-        <center><Box
           mt="1"
-          fontWeight="semibold"
-          as="h1"
-          lineHeight="tight"
-          isTruncated
+          ml="1"
         >
-          {props.title}
-        </Box></center>
-
-
-
+          <Text fontSize="sm">{tt('{h}:{mm} {a}').render(new Date(props.date))}</Text>
+        </Box>
 
         <Collapse animateOpacity={true} isOpen={show}>
-          <Box
-            color="gray.500"
-            fontWeight="semibold"
-            letterSpacing="wide"
-            fontSize="lg"
-            textTransform="uppercase"
-            ml="2"
-            textAlign="center"
-            paddingBottom="2"
 
-          >
-            {props.eventTime}
-          </Box>
           {/* Grid for RSVP and Recording */}
           <SimpleGrid columns={{ sm: 1, md: 1, lg: 2 }} spacing={2} textAlign="justify">
-            {/* RSVP Badge */}
-            <Button cursor="pointer" rounded="full" fontSize={20} as="a" px="2" variantColor="teal" target="_blank" variant="outline" href={props.rsvp}>
-              RSVP
-                        </Button>
 
 
             {/* Recording If Available */}
@@ -117,10 +124,26 @@ const EventHolder = props => {
               </div>
             }
           </Box>
-        </Collapse><center>
-          <Button size="sm" onClick={handleToggle} mt="1rem">
-            {show ? "👨‍💻Hide" : "🙋‍♂️More Info"}
-          </Button></center>
+        </Collapse>
+
+        <Box
+          ml="1"
+          mt="3"
+          fontWeight="semibold"
+          lineHeight="tight"
+          isTruncated
+        >
+          <SimpleGrid columns={2} spacing={2}>
+            <Box>
+              <a target="blank" href={props.reg_link}>
+                <Button
+                  variant="outline"
+                >Check out</Button>
+              </a>
+            </Box>
+
+          </SimpleGrid>
+        </Box>
       </Box>
 
     </Box>
