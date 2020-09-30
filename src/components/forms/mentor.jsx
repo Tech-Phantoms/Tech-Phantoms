@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@chakra-ui/core";
+import { Box, Button, Text } from "@chakra-ui/core";
 
 const MentorForm = () => {
   return (
@@ -11,17 +11,19 @@ const MentorForm = () => {
       borderLeftColor="#FF6347"
     >
       <Box textAlign="center">
-        <span style={{ fontSize: 40 }}>Be a Mentor</span>
+        <Text fontSize="4xl">Be a Mentor</Text>
       </Box>
       <Box
         p={(8, 12, 16, 20)}
         textAlign="center"
         h="70"
-        fontSize={[20, 25, 27.5, 30]}
+       
       >
+        <Text fontSize="2xl" >
         We believe in learning by doing. Being a mentor at an open source
         community like Tech Phantoms will help the learners find valuable
         support from you
+        </Text>
       </Box>
       <Box textAlign="center">
         <Button
