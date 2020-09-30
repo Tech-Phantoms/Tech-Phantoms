@@ -3,7 +3,7 @@ import { Box, Button, Text } from "@chakra-ui/core";
 
 const MemberForm = () => {
   return (
-    <>
+    <Box d="flex" flexDirection="column">
     <Box
       w="100%"
       fontSize="2xl"
@@ -41,7 +41,7 @@ const MemberForm = () => {
           Join as Member
         </Button>
     </Box>
-    </>
+    </Box>
   );
 };
 
