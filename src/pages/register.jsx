@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex } from "@chakra-ui/core";
+import { Flex, Text } from "@chakra-ui/core";
 import MemberForm from "../components/forms/member";
 import MentorForm from "../components/forms/mentor";
 
@@ -7,11 +7,9 @@ const Register = () => {
   return (
     <div>
       <Flex direction="column" width="100%" mb={4}>
-        <center>
-          <span style={{ fontSize: 50 }}>Join Us</span>
-        </center>
+        <Text fontSize="5xl">Join Us</Text>
       </Flex>
-      <Flex direction="row">
+      <Flex direction={{"md":"row","lg":"row","xs":"column","sm":"column"}}>
         <MemberForm />
         <MentorForm />
       </Flex>
