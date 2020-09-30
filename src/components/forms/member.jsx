@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@chakra-ui/core";
+import { Box, Button, Text } from "@chakra-ui/core";
 
 const MemberForm = () => {
   return (
@@ -10,19 +10,20 @@ const MemberForm = () => {
       borderRightWidth="0.1rem"
       borderRightColor="#FF6347"
     >
-      <Box textAlign="center">
-        <span style={{ fontSize: 40 }}>Be a Member</span>
+      <Box textAlign="center" fontSize="4xl">
+        <Text fontSize="4xl" >Be a Member</Text>
       </Box>
       <Box
         p={(8, 12, 16, 20)}
         textAlign="center"
         h="70"
-        fontSize={[20, 25, 27.5, 30]}
       >
+        <Text fontSize="2xl" >
         Being an official member at Tech Phantoms will help you get insights of{" "}
         <strong>events</strong>, <strong>meetups</strong> and other{" "}
         <strong>future open source projects</strong> Tech Phantoms is planning
         to work on
+         </Text>
       </Box>
       <Box textAlign="center">
         <Button
