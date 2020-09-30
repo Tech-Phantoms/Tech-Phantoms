@@ -35,7 +35,7 @@ const Footer = props => {
                 </Box>
 
                 <Box style={{alignContent:'center'}}>
-<center>{"</>"} with<br/>❤<br/>by Tech Phantoms</center>
+<center style={{cursor:"default"}}>{"</>"} with<br/>❤<br/>by Tech Phantoms</center>
                 </Box>
 
 
@@ -80,6 +80,5 @@ const Footer = props => {
         </Box>
     </>
 }
-
 // default export.
 export default Footer
