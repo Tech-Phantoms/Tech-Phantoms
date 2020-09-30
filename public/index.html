@@ -53,5 +53,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+      var scroll= $(window).scrollTop(),
+      dh = $(document).height();
+      wh = $(window).height();
+      scrollpercent = (scroll / (dh-wh))*100;
+      $('#progressbar').css('height',scrollpercent + '%');
+    })
+          </script>
   </body>
 </html>
