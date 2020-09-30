@@ -7,7 +7,7 @@ const Register = () => {
   return (
     <div>
       <Flex direction="column" width="100%" mb={4}>
-        <Text fontSize="5xl">Join Us</Text>
+        <center><Text fontSize="5xl">Join Us</Text></center>
       </Flex>
       <Flex direction={{"md":"row","lg":"row","xs":"column","sm":"column"}}>
         <MemberForm />
