@@ -7,7 +7,7 @@ const MemberForm = () => {
     <Box
       w="100%"
       fontSize="2xl"
-      p={[2, 4, 8, 16]}
+      p="5%"
       borderRightWidth="0.1rem"
       borderRightColor={{"md":"#FF6347","lg":"#FF6347", "xs":"#ffffff","sm":"#ffffff"}}
     >
@@ -15,7 +15,7 @@ const MemberForm = () => {
         <Text fontSize="4xl" >Be a Member</Text>
       </Box>
       <Box
-        p={(8, 12, 16, 20)}
+        p="5%"
         textAlign="center"
         h="70"
       >
