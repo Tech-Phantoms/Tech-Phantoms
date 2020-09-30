@@ -3,13 +3,14 @@ import { Box, Button, Text } from "@chakra-ui/core";
 
 const MentorForm = () => {
   return (
-    <>
+    <Box d="flex" flexDirection="column">
     <Box
       w="100%"
       fontSize="2xl"
       p={16}
       borderLeftWidth="0.1rem"
       borderLeftColor="#FF6347"
+      
     >
       <Box textAlign="center">
         <Text fontSize="4xl">Be a Mentor</Text>
@@ -41,7 +42,7 @@ const MentorForm = () => {
           Be a Mentor
         </Button>
     </Box>
-    </>
+    </Box>
   );
 };
 
