@@ -14,7 +14,7 @@ const Projects = props => {
 
     return <>
         <Box my={22} mx={[28,6]}>
-            <SimpleGrid columns={[1, 1, 3]} spacing={4} >
+            <SimpleGrid columns={[1, 1, 2]} spacing={4} >
                 {repos.map(el => {
                     console.log(el.language)
                     return <>
