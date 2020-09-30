@@ -9,7 +9,7 @@ const MentorForm = () => {
       fontSize="2xl"
       p={16}
       borderLeftWidth="0.1rem"
-      borderLeftColor="#FF6347"
+      borderLeftColor={{"md":"#FF6347","lg":"#FF6347", "xs":"#ffffff","sm":"#ffffff"}}
       
     >
       <Box textAlign="center">
