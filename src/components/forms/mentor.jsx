@@ -7,7 +7,7 @@ const MentorForm = () => {
     <Box
       w="100%"
       fontSize="2xl"
-      p={16}
+      p="5%"
       borderLeftWidth="0.1rem"
       borderLeftColor={{"md":"#FF6347","lg":"#FF6347", "xs":"#ffffff","sm":"#ffffff"}}
       
@@ -16,7 +16,7 @@ const MentorForm = () => {
         <Text fontSize="4xl">Be a Mentor</Text>
       </Box>
       <Box
-        p={(8, 12, 16, 20)}
+        p="5%"
         textAlign="center"
         h="70"
        
