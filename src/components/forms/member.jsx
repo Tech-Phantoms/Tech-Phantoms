@@ -9,7 +9,7 @@ const MemberForm = () => {
       fontSize="2xl"
       p={[2, 4, 8, 16]}
       borderRightWidth="0.1rem"
-      borderRightColor="#FF6347"
+      borderRightColor={{"md":"#FF6347","lg":"#FF6347", "xs":"#ffffff","sm":"#ffffff"}}
     >
       <Box textAlign="center" fontSize="4xl">
         <Text fontSize="4xl" >Be a Member</Text>
