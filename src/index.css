@@ -13,6 +13,24 @@ body {
   local('Poppins'), url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--text);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
   margin: 0;
