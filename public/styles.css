@@ -1,0 +1,58 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+      width:100%;
+      height:100vh;
+
+      background-color: white;
+      color: white;
+}
+
+
+header {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+}
+
+
+
+#particles-js
+{
+background: white;
+position: relative;
+z-index: 2;
+}
+
+
+
+.header-inner{
+  position:absolute;
+  width:100%;
+  top:0;
+  z-index:44;
+  left:0;
+}
+canvas.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+	z-index:1;
+    width: 100%;
+    height: 100%;
+}
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+
+
+}
+.intro {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
