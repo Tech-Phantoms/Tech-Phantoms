@@ -3,6 +3,7 @@ import { Box, Button, Text } from "@chakra-ui/core";
 
 const MentorForm = () => {
   return (
+    <>
     <Box
       w="100%"
       fontSize="2xl"
@@ -25,7 +26,9 @@ const MentorForm = () => {
         support from you
         </Text>
       </Box>
-      <Box textAlign="center">
+      
+    </Box>
+    <Box textAlign="center">
         <Button
           alignContent="center"
           background="#FF6347"
@@ -37,8 +40,8 @@ const MentorForm = () => {
         >
           Be a Mentor
         </Button>
-      </Box>
     </Box>
+    </>
   );
 };
 
