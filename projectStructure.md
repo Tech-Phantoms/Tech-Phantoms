@@ -104,4 +104,20 @@ This folder contains the fonts used in the website
 
 - Varela
 
--------------------------------------------------------
+------------------------------------------------------
+
+## src/pages
+
+This folder contains all the pages used in the website (which use the components)
+
+- events.jsx
+
+- hacktoberfest.jsx
+
+- index.jsx
+
+- projects.jsx
+
+- register.jsx
+
+- team.jsx
