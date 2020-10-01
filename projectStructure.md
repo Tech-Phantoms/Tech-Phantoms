@@ -23,6 +23,8 @@ Below are the files which are directly located inside the public folder:
 
 - robots.txt
 
+-------------------------------------------------------
+
 ## Src Directory Structure
 
 This folder contains all the main source code for the React application.
@@ -46,3 +48,36 @@ Below are the files which are directly located inside the src folder:
 - index.css
 
 - index.js
+
+-------------------------------------------------------
+
+## src/assets
+
+This folder contains all the community brand assets in .svg format
+
+
+-------------------------------------------------------
+
+## src/components
+
+This folder contains all the components used within this website.
+
+These are the components:
+
+- EventHolder
+
+- Footer
+
+- Forms
+
+- Navbar
+
+- Project
+
+- Sections
+
+- TeamCard
+
+- Themes
+
+-------------------------------------------------------
