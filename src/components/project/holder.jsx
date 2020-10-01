@@ -24,7 +24,7 @@ const Holder = props => {
     return <>
 
         <Box
-            w="420px"
+            w="320px"
             px={4}
             py={2}
             m={3}

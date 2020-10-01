@@ -18,7 +18,7 @@ const Projects = props => {
                 {repos.map(el => {
                     console.log(el.language)
                     return <>
-                        <Box>
+                        <Box style={{width: '200px'}}>
                             <Holder
                                 repo_name={el.name}
                                 language={el.language}
