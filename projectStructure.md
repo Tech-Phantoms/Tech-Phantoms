@@ -93,3 +93,15 @@ Below are the subdirectories within the src folder :
 - src/data/hooks (contains the web hooks used within the website)
 
 -------------------------------------------------------
+
+## src/fonts
+
+This folder contains the fonts used in the website
+
+- Catamaran
+
+- Poppins
+
+- Varela
+
+-------------------------------------------------------
