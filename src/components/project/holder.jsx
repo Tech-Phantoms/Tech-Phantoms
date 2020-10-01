@@ -24,13 +24,14 @@ const Holder = props => {
     return <>
         <a target="blank" href={props.issueUrl}>
             <Box
-                w="420px"
-                px={4}
+                w="320px"
+                px={3}
                 py={2}
-                m={3}
+                my={3}
                 style={{
                     border: '1px black solid',
                     borderRadius: '3px',
+                    marginRight : '15px'    
                 }}
             >
                 <Box px={4} py={1} >
