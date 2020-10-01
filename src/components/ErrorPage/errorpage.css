@@ -1,0 +1,31 @@
+.flex {
+    height: 100vh;
+    display: flex;
+    background-color: #aff0e4;
+}
+.msg {
+    padding: 15% 0%;
+}
+p {
+    font-size: 100px;
+    /* padding: 0% 5%; */
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    color: #287f6c;
+}
+#small {
+    font-size: 20px;
+}
+#medium {
+    font-size: 50px;
+}
+img {
+    margin-top: 10%;
+    height: 80vh;
+    width: 50%;
+}
+#loop {
+    margin-top: 1%;
+    height: 80vh;
+    width: 100%;
+}
