@@ -26,7 +26,7 @@ const Holder = props => {
     return <>
         <Box px={4}>{month(date.getMonth())} {date.getUTCDate()}, {date.getUTCFullYear()}</Box>
         <Box
-            w="320px"
+            w="420px"
             px={4}
             py={2}
             m={3}
