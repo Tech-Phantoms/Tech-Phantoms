@@ -20,6 +20,7 @@ const Projects = props => {
                     return <>
                         <Box style={{width: '200px'}}>
                             <Holder
+                                created={el.created}
                                 repo_name={el.name}
                                 language={el.language}
                                 issues={el.issueCount}

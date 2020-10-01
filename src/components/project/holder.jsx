@@ -7,6 +7,7 @@ import {
     Icon,
     SimpleGrid
 } from '@chakra-ui/core'
+import { month } from './month.const'
 
 const Holder = props => {
 
@@ -20,9 +21,10 @@ const Holder = props => {
     let getLangColor = language => {
         return langColor[language]
     }
+    const date = new Date(props.created)
 
     return <>
-
+        <Box px={4}>{month(date.getMonth())} {date.getUTCDate()}, {date.getUTCFullYear()}</Box>
         <Box
             w="320px"
             px={4}
