@@ -1,4 +1,4 @@
-# Project Strucutre
+# Project Structure
 
 
 ## Public Directory Structure
