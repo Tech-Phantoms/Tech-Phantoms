@@ -21,6 +21,7 @@ const LandingTop = (props) => {
       <Box
         padding="10px"
         w="100%"
+
         mt={{ md: "150px", xs: "5px", sm: "100px", lg: "150px" }}
         mb={["100px", "200px"]}
         color="#ED654B"
