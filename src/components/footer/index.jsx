@@ -33,10 +33,13 @@ const Footer = (props) => {
           </Box>
           <Box
             display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
-            style={{ marginTop: "0", padding: "0.5rem" }}
+            style={{
+              marginTop: "0",
+              padding: "0.5rem",
+              alignContent: "center",
+            }}
             bg="tomato"
             color="white"
-            style={{ alignContent: "center" }}
           >
             <center style={{ cursor: "default", padding: "1rem" }}>
               {"</>"} with ❤ by Tech Phantoms
@@ -88,10 +91,9 @@ const Footer = (props) => {
 
       <Box
         display={{ xs: "block", sm: "block", md: "none", lg: "none" }}
-        style={{ marginTop: "0", padding: "0.5rem" }}
+        style={{ marginTop: "0", padding: "0.5rem", alignContent: "center" }}
         bg="white"
         color="tomato"
-        style={{ alignContent: "center" }}
       >
         <center style={{ cursor: "default", padding: "1rem" }}>
           {"</>"} with ❤ by Tech Phantoms
