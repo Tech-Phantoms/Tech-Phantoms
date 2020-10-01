@@ -21,22 +21,27 @@ const Footer = (props) => {
         color="white"
       >
         {/* Using SimpleGrid ( 2 Columns (Left Logo and Right Social Handles) ) */}
-        <SimpleGrid columns={3} spacing={1}>
+        <SimpleGrid
+          columns={{ xs: 2, sm: 2, md: 3, lg: 3 }}
+          spacing={{ sm: 0, xs: 0, md: 1, lg: 1 }}
+        >
           {/* Left Logo */}
           <Box>
             <Link target="blank" href="#">
               <img src={Logo} alt="" width="55px" />
             </Link>
           </Box>
-
-          <Box style={{ alignContent: "center" }}>
-            <center style={{ cursor: "default" }}>
-              {"</>"} with
-              <br />❤<br />
-              by Tech Phantoms
+          <Box
+            display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
+            style={{ marginTop: "0", padding: "0.5rem" }}
+            bg="tomato"
+            color="white"
+            style={{ alignContent: "center" }}
+          >
+            <center style={{ cursor: "default", padding: "1rem" }}>
+              {"</>"} with ❤ by Tech Phantoms
             </center>
           </Box>
-
           {/* Right Social Handles */}
           <Box style={{ alignContent: "end" }}>
             {/* Flex  default flex-direction:row */}
@@ -79,6 +84,18 @@ const Footer = (props) => {
             <Flex />
           </Box>
         </SimpleGrid>
+      </Box>
+
+      <Box
+        display={{ xs: "block", sm: "block", md: "none", lg: "none" }}
+        style={{ marginTop: "0", padding: "0.5rem" }}
+        bg="white"
+        color="tomato"
+        style={{ alignContent: "center" }}
+      >
+        <center style={{ cursor: "default", padding: "1rem" }}>
+          {"</>"} with ❤ by Tech Phantoms
+        </center>
       </Box>
     </>
   );
