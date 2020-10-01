@@ -22,17 +22,18 @@ const Holder = props => {
     }
 
     return <>
-        <a target="blank" href={props.issueUrl}>
-            <Box
-                w="420px"
-                px={4}
-                py={2}
-                m={3}
-                style={{
-                    border: '1px black solid',
-                    borderRadius: '3px',
-                }}
-            >
+
+        <Box
+            w="420px"
+            px={4}
+            py={2}
+            m={3}
+            style={{
+                border: '1px black solid',
+                borderRadius: '3px',
+            }}
+        >
+            <a target="blank" href={props.issueUrl}>
                 <Box px={4} py={1} >
                     <Text fontSize="xl" >{props.repo_name}</Text>
                 </Box>
@@ -57,9 +58,8 @@ const Holder = props => {
 
                     </SimpleGrid>
                 </Box>
-
-            </Box>
-        </a>
+            </a>
+        </Box>
     </>
 }
 
