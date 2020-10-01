@@ -41,10 +41,11 @@ body {
   }
 }
 
+/*CUSTOM SCROLLBAR ,LOL*/
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 10px;
 }
  
 /* Track */
@@ -58,9 +59,9 @@ body {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(255,0,0,0.8); 
+    background: #ed654b; 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255,0,0,0.4); 
+  background: #ed654b;
 }
