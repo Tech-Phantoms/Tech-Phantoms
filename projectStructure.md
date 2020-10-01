@@ -1,4 +1,29 @@
-# Src Directory Structure
+# Project Strucutre
+
+
+## Public Directory Structure
+
+This folder contains the stylesheets, images and fonts. Any files within this directory will not be processed by Webpack but copied directly to the build folder.
+
+Below are the subdirectories within the public folder:
+
+- src/fonts
+
+Below are the files which are directly located inside the public folder:
+
+- favicon.ico
+
+- index.html
+
+- logo192.png
+
+- logo512.png
+
+- manifest.json
+
+- robots.txt
+
+## Src Directory Structure
 
 This folder contains all the main source code for the React application.
 
