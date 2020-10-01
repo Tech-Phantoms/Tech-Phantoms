@@ -22,7 +22,6 @@ const Holder = props => {
     }
 
     return <>
-
         <Box
             w="420px"
             px={4}
@@ -31,6 +30,7 @@ const Holder = props => {
             style={{
                 border: '1px black solid',
                 borderRadius: '3px',
+                marginRight : '15px'  
             }}
         >
             <a target="blank" href={props.issueUrl}>
