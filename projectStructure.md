@@ -81,3 +81,15 @@ These are the components:
 - Themes
 
 -------------------------------------------------------
+
+## src/data
+
+This folder contains code implementation for communication with Airtable servers.
+
+Below are the subdirectories within the src folder :
+
+- src/data/airtable
+
+- src/data/hooks (contains the web hooks used within the website)
+
+-------------------------------------------------------
