@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
+import InfoSection from "../components/hacktoberfest/info_section";
 
-const Hacktoberfest = props => {
-
-    return <>
-        <h1>Hacktober fest</h1>
+const Hacktoberfest = (props) => {
+  return (
+    <>
+      <InfoSection />
     </>
-}
+  );
+};
 
-export default Hacktoberfest
+export default Hacktoberfest;
