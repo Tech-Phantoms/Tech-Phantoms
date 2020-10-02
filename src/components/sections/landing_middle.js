@@ -55,11 +55,11 @@ const LandingMiddle = (props) => {
           <Box textAlign="justify">
             Armed with a vision to "make people achieve more", Tech Phantoms is
             a community in co-operation with Microsoft Learn Student Ambassadors,
-            where we aim at developing a teaching-learning environment for
-            everyone who has that charisma for technology.
-            With a clear vision to come up as a community where young developers kick start
-             their journey towards Open Source.We strive towards building a learn by doing 
-             environment where the learners are their own teachers and peer mentoring is promoted.
+            where we have a teaching-learning environment for
+            everyone who has charisma for technology.
+            Our vision is to help young developers kick start
+            their journey towards Open Source. We strive towards building a learn by doing 
+            environment where the learners are their own teachers and peer mentoring is promoted.
              
 
           </Box>
