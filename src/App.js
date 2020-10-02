@@ -8,7 +8,7 @@ import Team from './pages/team'
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 import Projects from './pages/projects'
-
+import NotFound from './pages/notfound'
 
 // importing components 
 import Navbar from './components/navbar'
@@ -17,7 +17,7 @@ import Navbar from './components/navbar'
 function App() {
   return (
     <div>
-{/* Routing */}
+      {/* Routing */}
       <Navbar />
 
       <Switch>
@@ -30,8 +30,10 @@ function App() {
         <Route path="/events" exact component={Events} />
 
         <Route path="/projects" exact component={Projects} />
+
+        <Route component={NotFound} />
       </Switch>
-      
+
 
     </div>
   );
