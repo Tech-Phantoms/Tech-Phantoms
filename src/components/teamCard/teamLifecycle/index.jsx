@@ -31,7 +31,7 @@ return(
 
 <SimpleGrid columns={{"md":2,"lg":2,"xs":1,"sm":1,}}>
     <Box  w={adjustedWidth} marginTop={"5%"} alignContent="center" marginLeft={adjustedMarginLBox}>
-    Two undergrad students decided to uplift themselves by building real worlds technology skills. 
+    Two undergraduate students decided to uplift themselves by building real worlds technology skills. 
     And  took a step ahead of their usual college routines and started working on real things.
     </Box>
     <Box  w="50%" p={4} display={displayResponsive} ><Image display={displayResponsive} src={Teencode}/></Box>
@@ -41,7 +41,7 @@ return(
         </Box>
     <Box w={adjustedWidth} p={4} marginTop={"5%"} marginLeft={adjustedMarginRBox} >
     Souvik has a great technology mindset and knows most of the practical software development. 
-    Abir recognized that he has a good amount of people  in his network who can help them out by mentoring.
+    Abir recognized that he has a good amount of people in his network who can help them out by mentoring.
     </Box>
 
 
@@ -83,7 +83,7 @@ Heavy reviews, sleepless nights and finally we formed the core team
 
 </SimpleGrid>
 <Text fontSize="2xl" margin={10}>
-With right efforts ,anything is possible. Here we are,</Text>
+With right efforts, anything is possible. Here we are,</Text>
 <Text fontSize="5xl" >Tech Phantoms</Text>
 (still growing and enriching open source)
 

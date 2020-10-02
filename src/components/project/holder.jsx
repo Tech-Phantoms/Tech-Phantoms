@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from '../teamCard/style.module.css';
 import {
     Box,
     Text,
@@ -7,6 +7,7 @@ import {
     Icon,
     SimpleGrid
 } from '@chakra-ui/core'
+import { month } from './month.const'
 
 const Holder = props => {
 
@@ -20,26 +21,34 @@ const Holder = props => {
     let getLangColor = language => {
         return langColor[language]
     }
+    const date = new Date(props.created)
 
     return <>
 
-        <Box
-            w="420px"
-            px={4}
-            py={2}
-            m={3}
-            style={{
-                border: '1px black solid',
-                borderRadius: '3px',
-            }}
-        >
-            <a target="blank" href={props.issueUrl}>
+        <Box px={4}>{month(date.getMonth())} {date.getUTCDate()}, {date.getUTCFullYear()}</Box>
+        <a target="blank" href={props.issueUrl}>
+            <Box
+                px={2}
+                py={2}
+                style={{
+                    border: '1px #E2E8F0 solid',
+                    borderRadius: '6px',
+                    marginRight : 'auto',
+                    marginLeft: 'auto',
+                    paddingLeft: '20px',
+                    paddingRight: '20px',
+                    marginTop: '10px',
+                    boxShadow: '0px 0px 3px 3px #E2E8F0',
+                }}
+                className={styles.container}
+            >
+
                 <Box px={4} py={1} >
-                    <Text fontSize="xl" >{props.repo_name}</Text>
+                    <Text fontSize="xl" textAlign='center' className={styles.name} >{props.repo_name}</Text>
                 </Box>
 
                 <Box px={4} >
-                    <Text color="grey" fontSize="xs" >{props.description}</Text>
+                    <Text color="grey" fontSize="xs" textAlign='center' >{props.description}</Text>
                 </Box>
 
                 <Box px={4} py={5}>
@@ -58,8 +67,9 @@ const Holder = props => {
 
                     </SimpleGrid>
                 </Box>
-            </a>
-        </Box>
+             </Box>
+           </a>
+       
     </>
 }
 
