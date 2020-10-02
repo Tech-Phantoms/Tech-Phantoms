@@ -33,7 +33,7 @@ const EventHolder = props => {
   const [show, setShow] = React.useState(false);
 
   const handleToggle = () => setShow(!show);
-
+  let recording='false';
   return (
 
     <Box
@@ -97,12 +97,7 @@ const EventHolder = props => {
 
 
             {/* Recording If Available */}
-            {
-              props.event_recording_link &&
-              <Button cursor="pointer" rounded="full" fontSize={15} as="a" px="2" variantColor="red" target="_blank" variant="outline" href={props.event_recording_link}>
-                Recording
-                            </Button>
-            }
+           
           </SimpleGrid>
 
 
@@ -135,12 +130,19 @@ const EventHolder = props => {
         >
           <SimpleGrid columns={2} spacing={2}>
             <Box>
+            
               <a target="blank" href={props.reg_link}>
                 <Button
-                  variant="outline"
+                  variant="outline" disabled={props.event_recording_link && true}
                 >Check out</Button>
               </a>
             </Box>
+            {
+              props.event_recording_link &&
+              <Button cursor="pointer" as="a" px="2" variantColor="red" target="_blank" variant="outline" href={props.event_recording_link}>
+                Recording
+                            </Button>
+            }
 
           </SimpleGrid>
         </Box>
