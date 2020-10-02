@@ -9,7 +9,7 @@ const Navbar = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box w="100%" py={4} px={6}>
+    <Box w="100%" py={5} px={6}>
       <Flex>
         <Flex flexGrow={1}></Flex>
         <Flex>
