@@ -39,10 +39,10 @@ const LandingBottom = (props) => {
           textAlign="justify"
           // maxWidth={{ lg: "70%", md: "80%" }}
         >
-          Tech Phantoms was developed with a mission to foster learning of open
+          Tech Phantoms was developed with a mission to faster learning of open
           source technologies and be an exclusive technical community that young
           developers seek to pave their way towards Open Source. To this end we
-          provide mentoring,virtual collaboration space and and resources for
+          provide mentoring, virtual collaboration space and and resources for
           young creative minds to nurture their skills and try their hands on
           some new skills as well under the guidance and supervision of our tech
           experts. It is a place where people passionate about
