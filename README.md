@@ -37,14 +37,23 @@ We are powered by one of the <a href="https://studentambassadors.microsoft.com/e
 
 </p>
 
+```js
+Notice: Please read the Contributing Guidelines and Readme before sending the PR.
+```
+```js
+🎉 We are following best open source practices for Hacktoberfest 2020🎉. 
+```
     
 ## 🔆 Tech Stack
 The project is created using create-react-app and based on React.js framework.
 - HTML, CSS
 - Chakra UI
 - Airtable
-- React.js
+- ReactJS
 
+## Codebase Structure
+We made this section for beginners, to feel comfortable while contributing to this project.
+If you are facing problem in understanding codebase, here is [Project Structure Documentation](https://github.com/Ninja-Developers/Tech_Phantoms_website/blob/development/projectStructure.md) 
 
 ## 🚀 Steps to setup development environment
 1.  Clone the repo

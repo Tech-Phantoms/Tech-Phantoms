@@ -23,6 +23,7 @@ const Holder = props => {
 
     return <>
 
+
         <Box
             w="420px"
             px={4}
@@ -34,6 +35,7 @@ const Holder = props => {
             }}
         >
             <a target="blank" href={props.issueUrl}>
+
                 <Box px={4} py={1} >
                     <Text fontSize="xl" >{props.repo_name}</Text>
                 </Box>
