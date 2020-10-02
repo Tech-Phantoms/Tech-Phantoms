@@ -54,8 +54,8 @@ body {
 	position: fixed;
 	top:0px;
 	right: 0px;
-	width:12px;
+	width:13px;
 	height: 100%;
-	background: linear-gradient(to top,#ff5c33,#999966);
-	border-radius: 13px;
+	background: linear-gradient(to bottom,#e8644c,#f9c568 var(--scroll), transparent 0);
+	border-radius: 10px;
 }
