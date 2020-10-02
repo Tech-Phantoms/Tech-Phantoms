@@ -18,10 +18,12 @@ const Projects = props => {
                 {repos.map(el => {
                     console.log(el.language)
                     return <>
+
                         <Box  style={{
                             margin:'auto'
                         }}>
                             <Holder
+                                created={el.created}
                                 repo_name={el.name}
                                 language={el.language}
                                 issues={el.issueCount}
