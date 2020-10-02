@@ -45,10 +45,10 @@ const LandingBottom = (props) => {
           provide mentoring,virtual collaboration space and and resources for
           young creative minds to nurture their skills and try their hands on
           some new skills as well under the guidance and supervision of our tech
-          experts. We commit to becoming a place where people, passionate about
+          experts. It is a place where people passionate about
           technology, collaborate and aim at enhancing their knowledge about the
           latest developer technologies and use them creatively and ethically.
-          And this we aim at doing by series of workshops, events, programs and
+          We consistently conduct series of workshops, events, programs and
           services which will help the academics and research world.{" "}
         </Box>
       </Box>
