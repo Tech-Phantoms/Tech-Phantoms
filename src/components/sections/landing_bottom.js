@@ -18,38 +18,56 @@ const LandingBottom = (props) => {
       spacing={1}
       padding={10}
     >
-      <Box paddingRight="10px" justifyContent="space-around">
+      <Box
+        paddingRight="20px"
+        justifyContent="space-around"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         <Text fontSize="3xl" py={4}>
           {" "}
           We{" "}
           <span role="img" aria-label="Heart">
-          ❤️
+            ❤️
           </span>{" "}
           Open Source{" "}
         </Text>
-        <Box textAlign="justify" maxWidth={{ lg: "70%", md: "60%" }}>
-
-        Tech Phantoms was developed with a mission to foster learning of open source technologies 
-        and be an exclusive technical community that young developers seek to pave their way towards Open Source.
-        To this end we provide mentoring,virtual collaboration space and and resources for young creative minds to 
-        nurture their skills and try their hands on some new skills as well under the guidance and supervision of our 
-        tech experts.
-          We commit to becoming a place where people, passionate about
+        <Box
+          textAlign="justify"
+          // maxWidth={{ lg: "70%", md: "80%" }}
+        >
+          Tech Phantoms was developed with a mission to foster learning of open
+          source technologies and be an exclusive technical community that young
+          developers seek to pave their way towards Open Source. To this end we
+          provide mentoring,virtual collaboration space and and resources for
+          young creative minds to nurture their skills and try their hands on
+          some new skills as well under the guidance and supervision of our tech
+          experts. We commit to becoming a place where people, passionate about
           technology, collaborate and aim at enhancing their knowledge about the
           latest developer technologies and use them creatively and ethically.
           And this we aim at doing by series of workshops, events, programs and
           services which will help the academics and research world.{" "}
         </Box>
       </Box>
-      <Box minWidth="40%">
-        <cemter>
+      <Box
+        minWidth="40%"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <center>
           <Image
             src={bottomIcon}
-            width={{ lg: "100%", md: "100%", sm: "50%", xs: "100%" }}
+            width={{ lg: "80%", md: "100%", sm: "90%", xs: "90%" }}
             py={4}
             alt="aboutIcon"
           />{" "}
-        </cemter>
+        </center>
       </Box>
     </SimpleGrid>
   );
