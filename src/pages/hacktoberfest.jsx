@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
+import Error404 from "../components/errors/error404";
 
-const Hacktoberfest = props => {
-
-    return <>
-        <h1>Hacktober fest</h1>
+const Hacktoberfest = (props) => {
+  return (
+    <>
+      <Error404 />
     </>
-}
+  );
+};
 
-export default Hacktoberfest
+export default Hacktoberfest;
