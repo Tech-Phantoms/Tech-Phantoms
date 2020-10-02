@@ -33,7 +33,7 @@ const EventHolder = props => {
   const [show, setShow] = React.useState(false);
 
   const handleToggle = () => setShow(!show);
-  let recording='false';
+ 
   return (
 
     <Box
