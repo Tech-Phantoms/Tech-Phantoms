@@ -2,6 +2,11 @@ html,
 body {
   height: 100%;
 }
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+            html{
+              scrollbar-width: none;
+            }
+          }
 
 @font-face{
   font-family: 'Poppins';
@@ -39,4 +44,18 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+::-webkit-scrollbar
+{
+	width: 0px;
+}
+#progressbar
+{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	width:13px;
+	height: 100%;
+	background: linear-gradient(to bottom,#e8644c,#fec758 var(--scroll), transparent 0);
+	border-radius: 10px;
 }
