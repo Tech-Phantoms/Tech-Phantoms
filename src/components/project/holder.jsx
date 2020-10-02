@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from '../teamCard/style.module.css';
 import {
     Box,
     Text,
@@ -24,22 +24,26 @@ const Holder = props => {
     return <>
         <a target="blank" href={props.issueUrl}>
             <Box
-                w="320px"
-                px={3}
+                px={2}
                 py={2}
-                my={3}
                 style={{
-                    border: '1px black solid',
-                    borderRadius: '3px',
-                    marginRight : '15px'    
+                    border: '1px #E2E8F0 solid',
+                    borderRadius: '6px',
+                    marginRight : 'auto',
+                    marginLeft: 'auto',
+                    paddingLeft: '20px',
+                    paddingRight: '20px',
+                    marginTop: '10px',
+                    boxShadow: '0px 0px 3px 3px #E2E8F0',
                 }}
+                className={styles.container}
             >
                 <Box px={4} py={1} >
-                    <Text fontSize="xl" >{props.repo_name}</Text>
+                    <Text fontSize="xl" textAlign='center' className={styles.name} >{props.repo_name}</Text>
                 </Box>
 
                 <Box px={4} >
-                    <Text color="grey" fontSize="xs" >{props.description}</Text>
+                    <Text color="grey" fontSize="xs" textAlign='center' >{props.description}</Text>
                 </Box>
 
                 <Box px={4} py={5}>
