@@ -60,7 +60,7 @@ return(
     </Box>
 
     <Box w={adjustedWidth} marginTop={"7%"}  alignContent="center" marginLeft={adjustedMarginLBox} >
-    Abir contact one of his mentor of GSSOC 2020, Vinit Shahdeo and discussed about the plans 
+    Abir contacted one of his mentors of GSSOC 2020, Vinit Shahdeo and discussed about the plans 
     for the community and here we go.
       <br/><br/><b>Ninja Developers was rebranded to Tech Phantoms</b>
     </Box>
