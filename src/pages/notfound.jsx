@@ -8,7 +8,6 @@ const NotFound = (props) => (
     <>
       <GlobalStyles />     
       <PageNotFound />
-      
     </>
   </ThemeProvider>
 );
