@@ -14,11 +14,13 @@ const Projects = props => {
 
     return <>
         <Box my={22} mx={[28,6]}>
-            <SimpleGrid columns={[1, 1, 2]} spacing={4} >
+            <SimpleGrid columns={[1, 1, 2]} spacing={"20px"} >
                 {repos.map(el => {
                     console.log(el.language)
                     return <>
-                        <Box>
+                        <Box  style={{
+                            margin:'auto'
+                        }}>
                             <Holder
                                 repo_name={el.name}
                                 language={el.language}
