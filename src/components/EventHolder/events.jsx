@@ -43,6 +43,7 @@ const Events = props => {
                                             description={evs.fields.desription}
                                             date={evs.fields.time}
                                             reg_link={evs.fields.reg_link}
+                                            event_recording_link={evs.fields.event_recording_link}
                                         />
                                     </Box>
 
@@ -54,6 +55,7 @@ const Events = props => {
                                             description={evs.fields.desription}
                                             date={evs.fields.date}
                                             reg_link={evs.fields.reg_link}
+                                            event_recording_link={evs.fields.event_recording_link}
                                         />
                                     </Box>
 
