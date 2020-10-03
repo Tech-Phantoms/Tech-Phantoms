@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import {
   AppBar,
@@ -10,8 +10,6 @@ import {
 import {
   Menu
 } from '@material-ui/icons'
-
-import { useDisclosure } from '@chakra-ui/core'
 
 import Drawer from "./drawer";
 
@@ -28,19 +26,26 @@ const useStyle = makeStyles(theme => ({
 const Navbar = (props) => {
 
   const classes = useStyle()
-  let { isOpen, onClose, onOpen } = useDisclosure()
+
+  const [open, setOpen] = useState(false)
+
+  const toggleDrawer = () => {
+    setOpen(!open)
+  }
 
   return (
     <div className={classes.root}>
       <AppBar position="sticky" color="transparent" elevation="0">
         <Toolbar>
           <div className={classes.title} />
-          <IconButton onClick={onOpen}>
+          <IconButton onClick={() => {
+            toggleDrawer()
+            }}>
             <Menu fontSize="large" />
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Drawer open={isOpen} close={onClose} />
+      <Drawer open={open} onClose={toggleDrawer} />
     </div>
   );
 };
