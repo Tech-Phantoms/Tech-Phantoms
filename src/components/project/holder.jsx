@@ -1,76 +1,71 @@
 import React from 'react'
-import styles from '../teamCard/style.module.css';
 import {
-    Box,
-    Text,
-    Badge,
-    Icon,
-    SimpleGrid
-} from '@chakra-ui/core'
-import { month } from './month.const'
+    Grid,
+    Paper,
+    Typography,
+    makeStyles,
+    Badge
+} from '@material-ui/core'
+
+import {
+    Star,
+    Info
+} from '@material-ui/icons'
+
+import Languagebadge from './badge'
+
+const useStyle = makeStyles(theme => ({
+    root: {
+        width: theme.spacing(60)
+    },
+    paper: {
+        padding: theme.spacing(2, 2)
+    },
+    divider: {
+        marginTop: theme.spacing(4)
+    }
+}))
 
 const Holder = props => {
 
-    let langColor = {
-        "JavaScript": 'yellow',
-        "TypeScript": 'cyan',
-        "Python": 'blue',
-        "C++": "pink"
-    }
+    const classes = useStyle()
 
-    let getLangColor = language => {
-        return langColor[language]
-    }
-    const date = new Date(props.created)
-
-    return <>
-
-        <Box px={4}>{month(date.getMonth())} {date.getUTCDate()}, {date.getUTCFullYear()}</Box>
-        <a target="blank" href={props.issueUrl}>
-            <Box
-                px={2}
-                py={2}
-                style={{
-                    border: '1px #E2E8F0 solid',
-                    borderRadius: '6px',
-                    marginRight : 'auto',
-                    marginLeft: 'auto',
-                    paddingLeft: '20px',
-                    paddingRight: '20px',
-                    marginTop: '10px',
-                    boxShadow: '0px 0px 3px 3px #E2E8F0',
-                }}
-                className={styles.container}
-            >
-
-                <Box px={4} py={1} >
-                    <Text fontSize="xl" textAlign='center' className={styles.name} >{props.repo_name}</Text>
-                </Box>
-
-                <Box px={4} >
-                    <Text color="grey" fontSize="xs" textAlign='center' >{props.description}</Text>
-                </Box>
-
-                <Box px={4} py={5}>
-                    <SimpleGrid alignItems="left" columns={3} spacing={2}>
-                        <Box>
-                            <Badge variantColor={getLangColor(props.language)} >{props.language}</Badge>
-                        </Box>
-
-                        <Box>
-                            <Text><Icon color="red.400" name="warning" /> <span style={{ fontSize: '12px', padding: '1px' }} >{props.issues}</span></Text>
-                        </Box>
-
-                        <Box>
-                            <Text><Icon color="green.400" name="star" /> <span style={{ fontSize: '12px', padding: '1px' }} >{props.stars}</span></Text>
-                        </Box>
-
-                    </SimpleGrid>
-                </Box>
-             </Box>
-           </a>
-       
-    </>
+    return (
+        <div className={classes.root}>
+            <a target="blank" href={props.issueUrl}>
+                <Paper variant="outlined" className={classes.paper}>
+                    <Grid container spacing={0}>
+                        <Grid item xs={12}>
+                            <Typography variant="h5">
+                                {props.repo_name}
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Typography variant="caption">
+                                {props.description}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <div className={classes.divider} />
+                    <Grid container spacing={4}>
+                        <Grid item xs={3}>
+                            <Languagebadge language={props.language} />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Badge badgeContent={props.issues}>
+                                <Info color="primary" fontSize="small" />
+                            </Badge>
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Badge badgeContent={props.stars}>
+                                <Star color="secondary" fontSize="small" />
+                            </Badge>
+                        </Grid>
+                    </Grid>
+                </Paper>
+            </a>
+        </div>
+    )
 }
 
 
