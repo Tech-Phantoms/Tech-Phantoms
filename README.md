@@ -4,7 +4,8 @@
 <p align="center">
 <img width=10% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
 <p align="center">
-This repository serves as official repository for the Community Website (V2) hosted at http://techphantoms.netlify.app
+This repository serves as official repository for the Community Website (V2) hosted at http://techphantoms.netlify.app <br/>
+🎉We are now on Instagram : https://instagram.com/tech_phantoms  🎉
 </p>
 </p>
 
@@ -36,14 +37,23 @@ We are powered by one of the <a href="https://studentambassadors.microsoft.com/e
 
 </p>
 
+```js
+Notice: Please read the Contributing Guidelines and Readme before sending the PR.
+```
+```js
+🎉 We are following best open source practices for Hacktoberfest 2020🎉. 
+```
     
 ## 🔆 Tech Stack
 The project is created using create-react-app and based on React.js framework.
 - HTML, CSS
 - Chakra UI
 - Airtable
-- React.js
+- ReactJS
 
+## Codebase Structure
+We made this section for beginners, to feel comfortable while contributing to this project.
+If you are facing problem in understanding codebase, here is [Project Structure Documentation](https://github.com/Ninja-Developers/Tech_Phantoms_website/blob/development/projectStructure.md) 
 
 ## 🚀 Steps to setup development environment
 1.  Clone the repo
@@ -68,9 +78,9 @@ Setting Up dummy API KEY
 
 ```js
 
-REACT_APP_AIRTABLE_API_KEY = keyl7IrslG0riVZjW
-REACT_APP_TEAM_BASE = appeFoa7ggqSOwivF
-REACT_APP_EVENT_BASE = appJcgoSlkORkn7N2
+REACT_APP_AIRTABLE_API_KEY=keyl7IrslG0riVZjW
+REACT_APP_TEAM_BASE=appeFoa7ggqSOwivF
+REACT_APP_EVENT_BASE=appC2QPeeuXQPAxgr
 
 ```
 

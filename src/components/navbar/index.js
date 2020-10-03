@@ -1,26 +1,47 @@
 import React from "react";
-import { Box, Flex, useDisclosure } from "@chakra-ui/core";
+
+import {
+  AppBar,
+  Toolbar,
+  makeStyles,
+  IconButton
+} from '@material-ui/core'
+
+import {
+  Menu
+} from '@material-ui/icons'
+
+import { useDisclosure } from '@chakra-ui/core'
 
 import Drawer from "./drawer";
 
-import menu from "../../assets/menu.svg";
+
+const useStyle = makeStyles(theme => ({
+  root: {
+    flexGrow: 1
+  },
+  title: {
+    flexGrow: 1
+  }
+}))
 
 const Navbar = (props) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const classes = useStyle()
+  let { isOpen, onClose, onOpen } = useDisclosure()
 
   return (
-    <Box w="100%" py={4} px={6}>
-      <Flex>
-        <Flex flexGrow={1}></Flex>
-        <Flex>
-          <Box style={{ cursor: "pointer" }}>
-            <img src={menu} width="20px" onClick={onOpen} alt="menu" />
-          </Box>
-        </Flex>
-      </Flex>
-
+    <div className={classes.root}>
+      <AppBar position="sticky" color="transparent" elevation="0">
+        <Toolbar>
+          <div className={classes.title} />
+          <IconButton onClick={onOpen}>
+            <Menu fontSize="large" />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
       <Drawer open={isOpen} close={onClose} />
-    </Box>
+    </div>
   );
 };
 

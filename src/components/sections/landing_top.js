@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../themes"
+import { useTheme } from "../themes";
 
 //assests
 import logo from "../../assets/logo.svg";
@@ -7,6 +7,9 @@ import LightMode_techphantoms from "../../assets/LightMode_techphantoms.svg";
 import DarkMode_techphantoms from "../../assets/DarkMode_techphantoms.svg";
 import LightMode_MLSA_Badge from "../../assets/LightMode_MLSA_Badge.svg";
 import DarkMode_MLSA_Badge from "../../assets/DarkMode_MLSA_Badge.svg";
+import IG from "../../assets/socialprofiles/instagram.svg";
+import GitHub from "../../assets/socialprofiles/github.svg";
+import Linkedin from "../../assets/socialprofiles/linkedin.svg";
 //css
 import { Box, Text, SimpleGrid, Image } from "@chakra-ui/core";
 
@@ -18,7 +21,7 @@ const LandingTop = (props) => {
       <Box
         padding="10px"
         w="100%"
-        mt={{ md: "150px", xs: "5px", sm: "100px", lg: "200px" }}
+        mt={{ md: "5%", xs: "5px", sm: "100px", lg: "5%" }}
         mb={["100px", "200px"]}
         color="#ED654B"
       >
@@ -31,10 +34,34 @@ const LandingTop = (props) => {
                 alt="lightlogo"
                 py={5}
               />
+              <br />
+              <SimpleGrid
+                display={{ xs: "none", sm: "none", md: "grid", lg: "grid" }}
+                width="50%"
+                columns={3}
+                spacing={1}
+                padding={4}
+              >
+                <a href="https://github.com/ninja-developers">
+                  <Image width="50%" src={GitHub} />
+                </a>
+                <a href="https://instagram.com/tech_phantoms">
+                  <Image width="50%" src={IG} />
+                </a>
+                <a href="https://linkedin.com/company/techphantoms">
+                  <Image width="50%" src={Linkedin} />
+                </a>
+              </SimpleGrid>
             </center>
           </Box>
 
-          <Box>
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <center>
               <Image
                 src={
@@ -47,20 +74,39 @@ const LandingTop = (props) => {
               />
             </center>
             <center>
-              <Text fontSize={["10px", "sm"]} p={[2, 4, 10]} color={theme === "dark" ? "#D8A752" : "orange"}>
+              <Text
+                fontSize={["10px", "sm"]}
+                p={[2, 4, 10]}
+                color={theme === "dark" ? "#D8A752" : "orange"}
+              >
                 A Technical Community <br /> By
               </Text>
             </center>
             <center>
               <img
                 src={
-                  theme === "light"
-                    ? LightMode_MLSA_Badge
-                    : DarkMode_MLSA_Badge
+                  theme === "light" ? LightMode_MLSA_Badge : DarkMode_MLSA_Badge
                 }
                 width={{ lg: "20%", md: "10%", sm: "10%", xs: "10%" }}
                 alt="LightMode_MLSA_Badge"
               />
+              <SimpleGrid
+                display={{ xs: "grid", sm: "grid", md: "none", lg: "none" }}
+                width="80%"
+                columns={3}
+                spacing={1}
+                padding={4}
+              >
+                <a href="https://github.com/ninja-developers">
+                  <Image width="50%" src={GitHub} />
+                </a>
+                <a href="https://instagram.com/tech_phantoms">
+                  <Image width="50%" src={IG} />
+                </a>
+                <a href="https://linkedin.com/company/techphantoms">
+                  <Image width="50%" src={Linkedin} />
+                </a>
+              </SimpleGrid>
             </center>
           </Box>
         </SimpleGrid>

@@ -19,8 +19,9 @@ const useRepo = () => {
         let own_repo = _.filter(data, o=>!o.fork)
 
         let P = Promise.all(own_repo.map(async (el) => {
-
+            
             let d = {
+                created: el.created_at,
                 name: el.name,
                 language: el.language,
                 issueCount: el.open_issues,
