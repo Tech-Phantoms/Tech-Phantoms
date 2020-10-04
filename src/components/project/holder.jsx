@@ -45,7 +45,7 @@ const Holder = props => {
                     </Grid>
                     <div className={classes.divider} />
                     <Grid container spacing={4}>
-                        <Grid item xs={3}>
+                        <Grid item xs={6}>
                             <Languagebadge language={props.language} />
                         </Grid>
                         <Grid item xs={3}>
