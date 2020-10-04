@@ -3,39 +3,42 @@ import { useRepo } from '../../data/hooks'
 import Holder from './holder'
 
 import {
-    Box,
-    SimpleGrid
-} from '@chakra-ui/core'
+    Container,
+    Grid,
+    makeStyles
+} from '@material-ui/core'
+
+const useStyle = makeStyles(theme => ({
+    projList: {
+        marginTop: theme.spacing(12)
+    }
+}))
 
 const Projects = props => {
+    const classes = useStyle()
 
     const repos = useRepo()
     console.log(repos)
 
     return <>
-        <Box my={22} mx={[28,6]}>
-            <SimpleGrid columns={[1, 1, 2]} spacing={"20px"} >
-                {repos.map(el => {
-                    console.log(el.language)
-                    return <>
-
-                        <Box  style={{
-                            margin:'auto'
-                        }}>
-                            <Holder
-                                created={el.created}
-                                repo_name={el.name}
-                                language={el.language}
-                                issues={el.issueCount}
-                                stars={el.stars}
-                                description={el.description}
-                                issueUrl={el.issueUrl}
-                            />
-                        </Box>
-                    </>
-                })}
-            </SimpleGrid>
-        </Box>
+        <div className={classes.projList} />
+        <Container>
+            <Grid container spacing={6}>
+                {
+                    repos.map(el => <Grid item xs={12} sm={6} lg={4} >
+                        <Holder
+                            created={el.created}
+                            repo_name={el.name}
+                            language={el.language}
+                            issues={el.issueCount}
+                            stars={el.stars}
+                            description={el.description}
+                            issueUrl={el.issueUrl}
+                        />
+                    </Grid>)
+                }
+            </Grid>
+        </Container>
     </>
 }
 

@@ -15,9 +15,6 @@ import {
 import Languagebadge from './badge'
 
 const useStyle = makeStyles(theme => ({
-    root: {
-        width: theme.spacing(60)
-    },
     paper: {
         padding: theme.spacing(2, 2)
     },
@@ -31,7 +28,7 @@ const Holder = props => {
     const classes = useStyle()
 
     return (
-        <div className={classes.root}>
+        <div>
             <a target="blank" href={props.issueUrl}>
                 <Paper variant="outlined" className={classes.paper}>
                     <Grid container spacing={0}>
