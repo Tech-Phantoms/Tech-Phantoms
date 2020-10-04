@@ -1,81 +1,94 @@
-// Side Navigation
 import React from "react";
-// Chakra UI
+
 import {
   Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerBody,
-  Link,
-} from "@chakra-ui/core";
+  List,
+  makeStyles,
+  ListItem,
+  ListItemText,
+  ListItemIcon
+} from '@material-ui/core'
+
+import {
+  Home,
+  People,
+  Event,
+  Description
+} from '@material-ui/icons'
 
 import Logo from "../../assets/sidenavbar/top_logo.svg";
+
 import { useHistory } from "react-router-dom";
 
-// Side Navigation Drawer
-const MenuDrawer = (props) => {
-  //Implementing useHistor()
-  const history = useHistory();
 
-  //pushing routes to the history,  in order to save the state
+
+const useStyle = makeStyles(theme => ({
+  list: {
+    width: 260,
+    padding: '10px',
+  },
+  fullList: {
+    width: 'auto',
+  }
+}))
+
+const MenuDrawer = props => {
+
+  const classes = useStyle()
+
+  const history = useHistory();
   const router = (path) => {
     history.push(path);
   };
 
-  //routes we have  Content of Drawer
   const paths = [
     { name: "Home", path: "/" },
     { name: "Team", path: "/team" },
     { name: "Event", path: "/events" },
-    {name: "Project", path: "/projects"}
+    { name: "Project", path: "/projects" }
   ];
 
-  return (
-    <Drawer isOpen={props.open} placement="right" onClose={props.close}>
-      {/* Overlaying the background  */}
-      <DrawerOverlay>
-        <DrawerContent
-          background="black"
-          paddingTop={10}
-          color="white"
-          width={200}
-          letterSpacing={5}
-          lineHeight={3}
-          textDecoration="none"
-          fontFamily="Segoe UI"
-        >
-          <DrawerBody>
-            <center>
-              <Link
-                onClick={() => {
-                  router(paths[0].path);
-                }}
-              >
-                <img src={Logo} width="160px" alt="" />
-              </Link>
-              <br />
-            </center>
-            {/* Using map function to create Links and all */}
+  let iconGen = (path) => {
+    switch (path) {
 
-            <center>
-              {paths.map((route) => (
-                <>
-                  <Link
-                    onClick={() => {
-                      router(route.path);
-                      props.close();
-                    }}
-                  >
-                    {route.name}
-                  </Link>{" "}
-                  <br />
-                </>
-              ))}
-            </center>
-          </DrawerBody>
-        </DrawerContent>
-      </DrawerOverlay>
-    </Drawer>
+      case '/team':
+        return <People />
+
+      case '/events':
+        return <Event />
+
+      case '/projects':
+        return <Description />
+
+      default:
+        return <Home />
+    }
+  }
+
+  const list = () => (
+    <div className={classes.list}>
+      <div style={{ padding: '12px 22px' }}>
+        <img src={Logo} alt="" />
+      </div>
+      <List>
+        {paths.map(el => <ListItem button onClick={() => {
+          router(el.path)
+          props.onClose()
+        }}
+        >
+          <ListItemIcon>{iconGen(el.path)}</ListItemIcon>
+          <ListItemText primary={el.name} />
+        </ListItem>)}
+      </List>
+    </div>
+  )
+
+  return (
+    <div >
+      <Drawer open={props.open} onClose={props.onClose} anchor="right">
+        {list()}
+      </Drawer>
+    </div>
   );
 };
 
