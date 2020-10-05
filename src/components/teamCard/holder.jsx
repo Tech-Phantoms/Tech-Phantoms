@@ -18,8 +18,7 @@ const Holder = (props) => {
   const {
     name,
     imageUrl,
-    gender,
-    id
+    gender
   } = props;
   return (
 
