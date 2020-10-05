@@ -133,7 +133,7 @@ const EventHolder = props => {
             
               <a target="blank" href={props.reg_link}>
                 <Button
-                  variant="outline" disabled={props.event_recording_link && true}
+                  variant="outline"  visibility={props.event_recording_link && true}
                 >Check out</Button>
               </a>
             </Box>

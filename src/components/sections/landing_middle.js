@@ -6,13 +6,16 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
+  root:{
+marginBottom:'15vh',
+  },
     paperleft:{
         'text-align':"center",
          padding:'20px',
          background:"purple",
          color:'white',
-         height:'350px'
-    },
+         height:'350px',
+      },
     papermiddle:{
         'text-align':"center",
          padding:'20px',
@@ -26,16 +29,19 @@ const useStyles = makeStyles({
          color:'white',
          height:'350px'
     }
+   
+    
+  
   });
 
 const LandingMiddle = (props) =>{
               
                 const classes = useStyles();
                 return (
-                    <Container>
+                    <Container className={classes.root}>
                     <Grid  container spacing={6} padding={6}>
                          <Grid   item xs={12} sm={12} md={4} lg={4} >
-                            <Paper className={classes.paperleft} background="purple"  variant="outlined">  
+                            <Paper  Wrap className={classes.paperleft} background="purple"  variant="outlined">  
                             
                                
                                     <Typography variant='h5' line-spacing={5}>
@@ -59,7 +65,7 @@ const LandingMiddle = (props) =>{
 
                          <Grid item xs={12} sm={12} md={4} lg={4} >
                                   
-                                    <Paper className={classes.papermiddle} variant="outlined">  
+                                    <Paper Wrap className={classes.papermiddle} variant="outlined">  
                                     <Typography variant='h5' line-spacing={5}>
                                     We <span role='img' style={{color:"red"}} aria-label="heart"> ❤ </span> Open Source
                                     </Typography>

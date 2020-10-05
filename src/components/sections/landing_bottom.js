@@ -1,75 +1,54 @@
-import React from "react";
-import { Text, Image, Box, SimpleGrid } from "@chakra-ui/core";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import Technologies from './technologies'
 
-//importing assets
-import bottomIcon from "../../assets/landing_page/pair_programming.svg";
 
-const LandingBottom = (props) => {
-  return (
-    <SimpleGrid
-      d="flex"
-      flexDirection={{
-        xs: "column-reverse",
-        sm: "column-reverse",
-        md: "row",
-        lg: "row",
-      }}
-      columns={{ lg: 2, md: 2, xs: 1, sm: 1 }}
-      spacing={1}
-      padding={10}
-    >
-      <Box
-        paddingRight="20px"
-        justifyContent="space-around"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <Text fontSize="3xl" py={4}>
-          {" "}
-          We{" "}
-          <span role="img" aria-label="Heart">
-            ❤️
-          </span>{" "}
-          Open Source{" "}
-        </Text>
-        <Box
-          textAlign="justify"
-          // maxWidth={{ lg: "70%", md: "80%" }}
-        >
-          Tech Phantoms was developed with a mission to foster learning of open
-          source technologies and be an exclusive technical community that young
-          developers seek to pave their way towards Open Source. To this end we
-          provide mentoring,virtual collaboration space and and resources for
-          young creative minds to nurture their skills and try their hands on
-          some new skills as well under the guidance and supervision of our tech
-          experts. It is a place where people passionate about
-          technology, collaborate and aim at enhancing their knowledge about the
-          latest developer technologies and use them creatively and ethically.
-          We consistently conduct series of workshops, events, programs and
-          services which will help the academics and research world.{" "}
-        </Box>
-      </Box>
-      <Box
-        minWidth="40%"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <center>
-          <Image
-            src={bottomIcon}
-            width={{ lg: "80%", md: "100%", sm: "90%", xs: "90%" }}
-            py={4}
-            alt="aboutIcon"
-          />{" "}
-        </center>
-      </Box>
-    </SimpleGrid>
-  );
-};
+const LandingBottom = (props) =>{
+              return(<>
+                  <center><Typography variant="h3" padding={5}>What you will learn with us? <br/><br/></Typography></center>
+                    <Container>
+                        
+                  <Grid  container spacing={3} >
+                       
+                        <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                        <Box textAlign="center">  Real world software development <br/> (Code Collaboration)     </Box>  
+                                  </Grid>
+                                  <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                  <Box textAlign="center">         Version Control Systems <br/>and Project Boards</Box> 
+                                  </Grid>
+                                  <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                  <Box textAlign="center">                        Production Level Code <br/> (Test Cases, Documentation, Software Design) </Box> 
+                                  </Grid>
+                                    <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                    <Box textAlign="center">        Turning software Ideas into code.</Box> 
+                                    </Grid>
+                                    <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                    <Box textAlign="center">         Deployment to Cloud Services<br/> (Azure, AWS)</Box> 
+                                    </Grid>
+                                    <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                    <Box textAlign="center">         Static Deployment <br/> (Netlify, Vercel, GitHub Pages)</Box> 
+                                    </Grid>
+                                    <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                    <Box textAlign="center">         Public Speaking skills.</Box> 
+                                    </Grid>
+                                    <Grid spacing={5}  item xs={12} sm={12} md={6} lg={6} >
+                                    <Box textAlign="center">        Enriching your network quality and <br/>interacting with potential students and mentors.</Box> 
+                                    </Grid>
+                                
+                                
+                        </Grid>
+                        <Technologies/>
+                        </Container>
+                        </>
+
+              
+            
+              
+              )
+         
+}
+
 export default LandingBottom;
