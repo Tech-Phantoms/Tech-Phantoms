@@ -123,7 +123,17 @@ const EventHolder = props => {
               Check Out
           </Button>
           </a>
-
+           {	
+              props.event_recording_link &&	
+              <a target="blank" href={props.event_recording_link}>              
+                  <Button variant="outline" >	
+                    Recording	
+                  </Button>	
+              </a>
+            }
+          
+          
+          
           <IconButton
             className={clsx(classes.expand, {
               [classes.expandOpen]: expanded,
