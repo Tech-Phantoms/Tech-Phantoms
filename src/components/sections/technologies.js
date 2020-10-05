@@ -30,7 +30,7 @@ const Technologies = (props) =>{
                       Upto now we have worked in following technologies. <br/><br/> Still Learning and Inspiring :)<br/><br/><br/><br/></Typography>
                   </center>
                     <Container>
-                    <Carousel autoPlay={true} interval={3000}>
+                    <Carousel indicators={false} autoPlay={true} interval={2500}>
                         {
                             items.map( (item, i) => <Item key={i} item={item} /> )
                         }

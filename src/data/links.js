@@ -5,5 +5,6 @@ const links={
     medium:'https://medium.com/techphantoms',
     v2_web:'https://techphantoms.netlify.app',
     v1_web:'https://techphantoms.onrender.com',
+    githubOpenAPI:'https://api.github.com/orgs/Tech-Phantoms/repos'
 }
 export default links;

@@ -34,6 +34,7 @@ const Projects = props => {
                             stars={el.stars}
                             description={el.description}
                             issueUrl={el.issueUrl}
+                            key={el.id}
                         />
                     </Grid>)
                 }
