@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Box, Typography, Link, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-
+import links from '../../data/links'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMedium,
@@ -56,21 +56,21 @@ const Footer = () => {
           justifyContent="flex-end"
         >
           <Link
-            href="https://github.com/Ninja-Developers"
+            href={links.github}
             color="inherit"
             style={{ margin: "0 6px" }}
           >
             <FontAwesomeIcon icon={faGithub} style={{ fontSize: "32px" }} />
           </Link>
           <Link
-            href="https://medium.com/techphantoms"
+            href={links.instagram}
             color="inherit"
             style={{ margin: "0 6px" }}
           >
             <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "32px" }} />
           </Link>
           <Link
-            href="https://medium.com/techphantoms"
+            href={links.medium}
             style={{
               margin: "0 6px",
               color: "#fff",
@@ -88,7 +88,7 @@ const Footer = () => {
             component="center"
             style={{ color: "tomato", padding: "1rem" }}
           >
-            &lt;/&gt; with ❤ by Tech Phantoms{" "}
+            &lt;/&gt; with ❤ by <Link href={links.v2_web}>Tech Phantoms</Link>{" "}
           </Typography>
         </Box>
       )}

@@ -25,8 +25,8 @@ const Technologies = (props) =>{
     const classes=useStyles();
               return(<>
                   <center>
-                      <Typography className={classes.marginTop} variant="h3" padding={5}>Our Domains</Typography>
-                      <Typography variant="p">We belive in learning by doing.<br/>
+                      <Typography className={classes.marginTop} variant="h3" padding={5}>They make us Phenomenal</Typography>
+                    <br/>  <Typography variant="p">We belive in learning by doing.<br/>
                       Upto now we have worked in following technologies. <br/><br/> Still Learning and Inspiring :)<br/><br/><br/><br/></Typography>
                   </center>
                     <Container>
@@ -58,9 +58,10 @@ function Item(props)
                 <img src={props.item.image} alt="imagetitle"/> 
             </Grid>
             <Grid item xs={12} sm={12} lg={6} md={6} spacing={4} style={{padding:'10px'}} >
-                <Typography variant="h3">{props.item.technology}</Typography> 
+                <Typography variant="h3">{props.item.technology}</Typography> <br/>
+                <Typography variant="p">{props.item.description}</Typography> 
             </Grid>
-
+           
            
            </Grid>
         </Paper>
