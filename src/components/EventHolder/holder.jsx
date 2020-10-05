@@ -107,13 +107,14 @@ const EventHolder = props => {
           <div className={classes.topSpace}>
             {((props.mlsa_event) ? <Chip className={classes.chip} size="small" label="MLSA" /> : null)}
           </div>
-
+          <Typography>
+            {tt('{h}:{mm} {a}').render(new Date(props.date))} (IST)
+          </Typography>
+          
         </CardContent>
 
         <CardActions disableSpacing>
-          <Typography>
-            {tt('{h}:{mm} {a}').render(new Date(props.date))}
-          </Typography>
+          
 
           <a target="blank" href={props.reg_link}>
             <Button
