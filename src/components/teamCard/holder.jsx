@@ -18,11 +18,8 @@ const Holder = (props) => {
   const {
     name,
     imageUrl,
-    githubUrl,
-    linkedinUrl,
     gender,
-    instagramUrl,
-    mediumUrl
+    id
   } = props;
   return (
 
@@ -32,7 +29,6 @@ const Holder = (props) => {
           className={styles.image}
           image={gender === "male" ? Male : Female}
           src={imageUrl}
-          
         />
         <CardContent>
           <Typography className={styles.name}>

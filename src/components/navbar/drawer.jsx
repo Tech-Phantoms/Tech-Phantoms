@@ -71,7 +71,7 @@ const MenuDrawer = props => {
         <img src={Logo} alt="" />
       </div>
       <List>
-        {paths.map(el => <ListItem button onClick={() => {
+        {paths.map((el,index) => <ListItem key={index} button onClick={() => {
           router(el.path)
           props.onClose()
         }}
