@@ -121,6 +121,7 @@ const EventHolder = props => {
             <Button
               className={classes.button}
               variant="outlined"
+              disabled={props.event_recording_link && true}
             >
               Check Out
           </Button>
