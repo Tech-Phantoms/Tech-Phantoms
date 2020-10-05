@@ -96,6 +96,7 @@ const EventHolder = props => {
 
   return (
 
+
     <div>
       <Card variant="outlined">
         <CardMedia className={classes.media} image={props.eventImg} />
@@ -132,6 +133,7 @@ const EventHolder = props => {
                   <Button variant="outline" style={{'background-color':'red', 'color':'white'}} >	
                     Recording	
                   </Button>	
+
               </a>
             }
           
