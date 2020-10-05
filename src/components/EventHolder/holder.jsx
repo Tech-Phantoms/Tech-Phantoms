@@ -1,21 +1,61 @@
 // Code for Event Card
 import React from 'react'
-import {
-  Box,
-  Image,
-  Button,
-  SimpleGrid,
-  Collapse,
-  Text,
-  Badge
-} from '@chakra-ui/core'
 import tt from 'tinytime'
 import MLSABadge from '../../assets/LightMode_MLSA_Badge.svg'
-// Fallback image, when Img src=error / not found
-import fallbackEventImage from '../../assets/loader.gif'
+
+import clsx from 'clsx'
+
+import {
+  Typography,
+  Card,
+  CardMedia,
+  makeStyles,
+  CardContent,
+  CardActions,
+  IconButton,
+  Collapse,
+  Button,
+  Chip
+} from '@material-ui/core'
+
+import {
+  indigo
+} from '@material-ui/core/colors'
+
+import {
+  ExpandMore
+} from '@material-ui/icons'
+
+const useStyle = makeStyles(theme => ({
+  media: {
+    height: 0,
+    paddingTop: '56.25%'
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+  button: {
+    margin: theme.spacing(0, 2)
+  },
+  chip: {
+    backgroundColor: indigo[800],
+    color: 'white'
+  },
+  topSpace: {
+    marginTop: theme.spacing(2)
+  }
+}))
 
 
 const EventHolder = props => {
+  const classes = useStyle()
   /*
 
   eventNo: Event Serial Number (required)
@@ -30,128 +70,104 @@ const EventHolder = props => {
   mlsa_event: MLSA Event(Options (yes or no))          
   rsvp            
   */
-  const [show, setShow] = React.useState(false);
 
-  const handleToggle = () => setShow(!show);
- 
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
+  let mlsaLabel = () => {
+    if (props.mlsa_event) {
+      return (
+        <div className={classes.topSpace}>
+          <center>
+            <Typography>
+              Event by
+            </Typography>
+            <img src={MLSABadge} alt="mlsa badge" />
+          </center>
+        </div>
+      )
+    } else {
+      return null
+    }
+  }
+
   return (
 
-    <Box
-      boxShadow="1px 4px 6px #E5E0E0"
-      paddingTop="15px"
-      maxW="sm"
-      borderWidth="1px"
-      rounded="lg"
-      overflow="hidden"
-      cursor="pointer"
-    >
-      <center>
-        {/* Fallback Image Added, when error in src */}
-        <Image
-          fallbackSrc={fallbackEventImage}
-          width={["40%", "40%", "40%"]}
-          objectFit="contain"
-          src={props.eventImg}
-          alt="event"
-          onClick={handleToggle}
-        />
-      </center>
-      <Box p="6">
 
-        {/*Event Title  */}
-        <Box
-          ml="1"
-          fontWeight="semibold"
-          lineHeight="tight"
-          isTruncated
-        >
-          <Text fontSize="xl" fontWeight="bold">{props.title}</Text>
-        </Box>
-        <Box
-          ml="1"
-          fontWeight="semibold"
-          lineHeight="tight"
-          isTruncated
-        >
-          {props.mlsa_event && <Badge
-            style={{ backgroundColor: '#203A61', color: "white" }}
-          >MLSA</Badge>}
+    <div>
+      <Card variant="outlined">
+        <CardMedia className={classes.media} image={props.eventImg} />
+        <CardContent>
+          <Typography variant="h5">
+            {props.title}
+          </Typography>
 
-        </Box>
-        {/* Date and Time  */}
-        <Box
-          color="gray.500"
-          fontWeight="semibold"
-          fontSize="lg"
-          textTransform="uppercase"
-          mt="1"
-          ml="1"
-        >
-          <Text fontSize="sm">{tt('{h}:{mm} {a}').render(new Date(props.date))}</Text>
-        </Box>
+          <div className={classes.topSpace}>
+            {((props.mlsa_event) ? <Chip className={classes.chip} size="small" label="MLSA" /> : null)}
+             <Typography>
+            {tt('{h}:{mm} {a}').render(new Date(props.date))} (IST)
+          </Typography>
+          </div>
+         
+          
+        </CardContent>
 
-        <Collapse animateOpacity={true} isOpen={show}>
+        <CardActions disableSpacing>
+          
 
-          {/* Grid for RSVP and Recording */}
-          <SimpleGrid columns={{ sm: 1, md: 1, lg: 2 }} spacing={2} textAlign="justify">
+          <a target="blank" href={props.reg_link}>
+            <Button
+              className={classes.button}
+              variant="outlined"
+              disabled={props.event_recording_link && true}
+            >
+              Check Out
+          </Button>
+          </a>
+           {	
+              props.event_recording_link &&	
+              <a target="blank" href={props.event_recording_link}>              
+                  <Button variant="outline" style={{'background-color':'red', 'color':'white'}} >	
+                    Recording	
+                  </Button>	
 
-
-            {/* Recording If Available */}
-           
-          </SimpleGrid>
-
-
-
-
-          {/* Event Description */}
-          <Box py={3}>
-            <b>Description</b><br />
-            {props.description}
-          </Box>
-          <Box paddingTop={4}>
-
-            {/* Show MLSA Badge when mlsa_event==true */}
-            {
-              props.mlsa_event &&
-              <div>
-                <center><h2>Event By:</h2>
-                  <Image rounded={12} width="50%" alt="" src={MLSABadge} py={2} /></center>
-              </div>
-            }
-          </Box>
-        </Collapse>
-
-        <Box
-          ml="1"
-          mt="3"
-          fontWeight="semibold"
-          lineHeight="tight"
-          isTruncated
-        >
-          <SimpleGrid columns={2} spacing={2}>
-            <Box>
-            
-              <a target="blank" href={props.reg_link}>
-                <Button
-                  variant="outline"  visibility={props.event_recording_link && true}
-                >Check out</Button>
               </a>
-            </Box>
-            {
-              props.event_recording_link &&
-              <Button cursor="pointer" as="a" px="2" variantColor="red" target="_blank" variant="outline" href={props.event_recording_link}>
-                Recording
-                            </Button>
             }
+          
+          
+          
+          <IconButton
+            className={clsx(classes.expand, {
+              [classes.expandOpen]: expanded,
+            })}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMore />
+          </IconButton>
 
-          </SimpleGrid>
-        </Box>
-      </Box>
-
-    </Box>
-
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography variant="h6">
+              Description
+            </Typography>
+            <Typography>
+              {props.description}
+            </Typography>
+            {mlsaLabel()}
+          </CardContent>
+        </Collapse>
+      </Card>
+    </div>
   )
 
 }
+
+
 
 export default EventHolder
