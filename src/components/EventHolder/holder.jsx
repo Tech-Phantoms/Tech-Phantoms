@@ -106,10 +106,11 @@ const EventHolder = props => {
 
           <div className={classes.topSpace}>
             {((props.mlsa_event) ? <Chip className={classes.chip} size="small" label="MLSA" /> : null)}
-          </div>
-          <Typography>
+             <Typography>
             {tt('{h}:{mm} {a}').render(new Date(props.date))} (IST)
           </Typography>
+          </div>
+         
           
         </CardContent>
 
@@ -127,7 +128,7 @@ const EventHolder = props => {
            {	
               props.event_recording_link &&	
               <a target="blank" href={props.event_recording_link}>              
-                  <Button variant="outline" >	
+                  <Button variant="outline" style={{'background-color':'red', 'color':'white'}} >	
                     Recording	
                   </Button>	
               </a>
