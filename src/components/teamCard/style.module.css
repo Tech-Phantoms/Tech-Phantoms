@@ -1,0 +1,44 @@
+.container {
+  border-width: 2px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.5rem;
+  padding: 10px;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 1px 1px 2px 2px #eee;
+}
+.container:hover .name{
+  color: tomato;
+  cursor: pointer;
+}
+.flexContainer {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.name {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  transition:0.3s ease-out ;
+}
+.linkFlex {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.image {
+  height: 150px;
+  width: 100px;
+  background-size: contain;
+  border-radius: 0px 0px 20px 20px
+}
+
+.CardActions {
+  display: flex;
+  justify-content: space-between
+}

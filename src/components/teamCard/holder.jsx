@@ -1,6 +1,6 @@
 import React from "react";
 import IconButton from '@material-ui/core/IconButton';
-import useStyle from "./CardHolder-style.jsx"
+import styles from './style.module.css';
 import Female from "../../assets/team/_person.svg";
 import Male from "../../assets/team/person.svg";
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -14,7 +14,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 
 const Holder = (props) => {
-  const classes = useStyle();
 
   const {
     name,
@@ -27,20 +26,21 @@ const Holder = (props) => {
   } = props;
   return (
 
-    <Card className={classes.container}>
-      <CardActionArea className={classes.flexContainer} >
+    <Card className={styles.container}>
+      <CardActionArea className={styles.flexContainer} >
         <CardMedia
-          className={classes.MuiCardMediaRoot}
+          className={styles.image}
           image={gender === "male" ? Male : Female}
           src={imageUrl}
+          
         />
         <CardContent>
-          <Typography className={classes.name}>
+          <Typography className={styles.name}>
             {name}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions className={classes.CardActions} >
+      <CardActions className={styles.CardActions} >
         <IconButton>
           <GitHubIcon fontSize="large" />
         </IconButton>
