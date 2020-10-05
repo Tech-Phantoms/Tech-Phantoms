@@ -8,7 +8,6 @@ import clsx from 'clsx'
 import {
   Typography,
   Card,
-  CardHeader,
   CardMedia,
   makeStyles,
   CardContent,
@@ -71,9 +70,6 @@ const EventHolder = props => {
   mlsa_event: MLSA Event(Options (yes or no))          
   rsvp            
   */
-  const [show, setShow] = React.useState(false);
-
-  const handleToggle = () => setShow(!show);
 
   const [expanded, setExpanded] = React.useState(false);
 
