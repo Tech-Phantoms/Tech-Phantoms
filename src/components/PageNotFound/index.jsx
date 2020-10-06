@@ -18,6 +18,7 @@ const NotFoundPage = () => (
         <Typography variant="subtitle1" align="center">
         Looks like you have travelled way too far...
         </Typography>
+            <br/>
         <Link to="/">
             <Button style={btnstyle}>
                 Go back to home
