@@ -1,11 +1,9 @@
-# Tech Phantoms Community Website
-
-
 <p align="center">
 <img width=10% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
+<h1 align="center">Tech Phantoms Community Website</h1>
 <p align="center">
-This repository serves as official repository for the Community Website (V2) hosted at http://techphantoms.netlify.app <br/>
-🎉We are now on Instagram : https://instagram.com/tech_phantoms  🎉
+This repository serves as official repository for the Community Website (V2) hosted at [techphantoms.netlify.app](http://techphantoms.netlify.app) <br/>
+🎉 <b>We are now on Instagram : [instagram.com/tech_phantoms](https://www.instagram.com/tech_phantoms/)</b>  🎉
 </p>
 </p>
 
@@ -37,11 +35,11 @@ We are powered by one of the <a href="https://studentambassadors.microsoft.com/e
 
 </p>
 
-```js
-Notice: Please read the Contributing Guidelines and Readme before sending the PR.
+```text
+Notice: Please read the contributing guidelines and README before sending the PR.
 ```
-```js
-🎉 We are following best open source practices for Hacktoberfest 2020🎉. 
+```text
+🎉  We are following best open source practices for Hacktoberfest 2020. 🎉
 ```
     
 ## 🔆 Tech Stack
@@ -66,7 +64,7 @@ If you are facing problem in understanding codebase, here is [Project Structure 
 
 We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
 
-Development branch is hosted at : https://devtechphantoms.netlify.app/ 
+Development branch is hosted at : [devtechphantoms.netlify.app](https://devtechphantoms.netlify.app/)
 
 ## 💻 API KEY Installation (DUMMY)
 In order to facilitate development / testing phases, we have generated the following dummy API keys to be used in your environment variables
