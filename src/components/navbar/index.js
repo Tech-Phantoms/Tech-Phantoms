@@ -3,7 +3,7 @@ import { Box, Flex, useDisclosure } from "@chakra-ui/core";
 
 import Drawer from "./drawer";
 
-import menu from "../../assets/menu.svg";
+import menu from "../../assets/dark_menu.svg";
 
 const Navbar = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
