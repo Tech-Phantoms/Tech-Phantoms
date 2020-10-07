@@ -4,8 +4,10 @@
 <p align="center">
 This repository serves as official repository for the Community Website (V2) hosted at [techphantoms.netlify.app](http://techphantoms.netlify.app) <br/>
 🎉 <b>We are now on Instagram : 
-  
+  <p align="center">
+    
   [instagram.com/tech_phantoms](https://www.instagram.com/tech_phantoms/)</b>  🎉
+  </p>
 </p>
 </p>
 
