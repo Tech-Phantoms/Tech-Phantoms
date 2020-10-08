@@ -3,7 +3,7 @@ import { Box, Flex, useDisclosure } from "@chakra-ui/core";
 
 import Drawer from "./drawer";
 
-import menu from "../../assets/dark_menu.svg";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const Navbar = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -14,7 +14,7 @@ const Navbar = (props) => {
         <Flex flexGrow={1}></Flex>
         <Flex>
           <Box style={{ cursor: "pointer" }}>
-            <img src={menu} width="20px" onClick={onOpen} alt="menu" />
+            <MenuIcon style={{ color: "white" }}></MenuIcon>
           </Box>
         </Flex>
       </Flex>
