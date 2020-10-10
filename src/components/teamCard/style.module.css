@@ -1,33 +1,44 @@
 .container {
-  border-width: 2px;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 0.5rem;
-  padding: 10px;
-  align-self: center;
-  justify-self: center;
-  box-shadow: 1px 1px 2px 2px #eee;
+	box-shadow: -2px 1px 4px rgba(0, 0, 0, 0.2), -3px 2px 12px rgba(0, 0, 0, 0.1);
+	width: 280px;
+	height: 240px;
+	background-color: #081529;
+	border-radius: 16px;
+	border-top-left-radius: 75px;
+	border-right: 5px solid #3e1a9c;
+	font-family: 'Poppins', sans-serif;
+	color: #efefef;
+  margin-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	align-self: center;
+	justify-self: center;
 }
-.container:hover .name{
-  color: tomato;
-  cursor: pointer;
-}
-.flexContainer {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.container:hover .name {
+	color: tomato;
+	cursor: pointer;
 }
 .name {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 10px;
-  width: 100%;
-  transition:0.3s ease-out ;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 10px;
+	width: 100%;
+	transition: 0.3s ease-out;
 }
 .linkFlex {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.photo{ 
+    width: 150px;
+	height: 218.86px;
+	object-fit: cover;
 }
