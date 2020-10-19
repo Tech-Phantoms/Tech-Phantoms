@@ -6,7 +6,7 @@ import "./index.css";
 import Index from './pages/home/index'
 import Team from './pages/team/index'
 import Hacktoberfest from './pages/hacktoberfest'
-import Events from './pages/events'
+import Events from './pages/event'
 import Projects from './pages/Project'
 import Register from './pages/register'
 
