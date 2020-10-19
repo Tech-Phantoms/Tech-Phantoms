@@ -1,7 +1,7 @@
 import React from "react";
 import { SimpleGrid } from "@chakra-ui/core";
 
-import Holder from "./holder";
+import Holder from "../cardholder/holder";
 
 const DisplayTeams = (props) => {
 

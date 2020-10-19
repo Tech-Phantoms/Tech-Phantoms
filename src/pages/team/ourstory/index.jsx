@@ -11,7 +11,7 @@ import Brand from '../../../assets/lifecycle/brand.svg'
 import Vinit from '../../../assets/lifecycle/vinit.svg'
 import Kladi from '../../../assets/lifecycle/kladi.svg'
 
-const Lifecycle=()=>{
+const OurStory=()=>{
     //Box width for Text sections
     const adjustedWidth={"xs":"90%","sm":"70%","lg":"50%","md":"50%"};
     // LeftMargin for left side boxes
@@ -91,4 +91,4 @@ With right efforts, anything is possible. Here we are,</Text>
 </>
 )
 }
-export default Lifecycle
+export default OurStory

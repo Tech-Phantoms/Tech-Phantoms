@@ -2,12 +2,13 @@ import React from "react";
 import { Box, Paper } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 import styles from "./style.module.css";
-import Female from "../../assets/team/_person.svg";
-import Male from "../../assets/team/person.svg";
-import GitHub from "../../assets/team/github_.svg";
-import Linkedin from "../../assets/team/linkedin.svg";
-import Instagram from "../../assets/team/instagram.svg";
-import Medium from "../../assets/team/medium.svg";
+import Female from "../../../assets/team/_person.svg";
+import Male from "../../../assets/team/person.svg";
+import GitHub from "../../../assets/team/github_.svg";
+import Linkedin from "../../../assets/team/linkedin.svg";
+import Instagram from "../../../assets/team/instagram.svg";
+import Medium from "../../../assets/team/medium.svg";
+
 const Holder = (props) => {
   const {
     name,
