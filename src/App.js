@@ -3,8 +3,9 @@ import { Route, Switch } from 'react-router-dom'
 import Hidden from '@material-ui/core/Hidden';
 import "./index.css";
 // importing pages 
-import Index from './pages/home/index'
-import Team from './pages/team/index'
+import Index from './pages/home/'
+import Team from './pages/team/'
+
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 import Projects from './pages/Project'
