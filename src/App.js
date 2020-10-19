@@ -7,7 +7,7 @@ import Index from './pages/home/'
 import Team from './pages/team/'
 
 import Hacktoberfest from './pages/hacktoberfest'
-import Events from './pages/events'
+import Events from './pages/event'
 import Projects from './pages/Project'
 import Register from './pages/register'
 
