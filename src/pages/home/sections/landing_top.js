@@ -3,10 +3,11 @@ import React from "react";
 
 import { Typography, Grid, Box, Hidden } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
-import TechPhantoms from "../../assets/landing_page/UI_Updated/techphantoms.svg";
-import Logo from "../../assets/logo.svg";
-import Navbar from "../navbar/navbar";
-import LightMode_MLSA_Badge from "../../assets/LightMode_MLSA_Badge.svg";
+import TechPhantoms from "../../../assets/landing_page/UI_Updated/techphantoms.svg";
+import Logo from "../../../assets/logo.svg";
+import Navbar from "../../../components/navbar/navbar";
+import LightMode_MLSA_Badge from "../../../assets/LightMode_MLSA_Badge.svg";
+
 const useStyles = makeStyles({
   leftcontainer: {
     background: "tomato",

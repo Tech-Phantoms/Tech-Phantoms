@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
+import { LandingTop, LandingMiddle, LandingBottom } from "./sections";
 
-const Index = props => {
+const Index = (props) => (
 
-    return (
-        <div>
+    <>
+      <LandingTop />
+      <LandingMiddle />
+      <LandingBottom />
+    </>
 
-        </div>
-    )
-}
+);
 
-export default Index
+export default Index;
