@@ -1,11 +1,14 @@
 import React from 'react';
-
+import { Hidden } from "@material-ui/core/";
 import ProjectSection from './sections/projects'
 
-const Index = () => {
-
+const Index = (props) => {
+    const Navbar = props.navbar
     return (
         <div>
+               <Hidden smDown>
+                    <Navbar />
+                </Hidden>
             <h1 style={{
                 fontFamily: "-apple-system,BlinkMacSystemFont,Segoe UI ,Helvetica,Arial,sans-serif, Apple Color Emoji, Segoe UI Emoji , Segoe UI Symbol",
                 padding: "0.75rem",

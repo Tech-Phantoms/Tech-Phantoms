@@ -5,7 +5,6 @@ import { Typography, Grid, Box, Hidden } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import TechPhantoms from "../../../assets/landing_page/UI_Updated/techphantoms.svg";
 import Logo from "../../../assets/logo.svg";
-import Navbar from "../../../components/navbar/navbar";
 import LightMode_MLSA_Badge from "../../../assets/LightMode_MLSA_Badge.svg";
 
 const useStyles = makeStyles({
@@ -18,14 +17,15 @@ const useStyles = makeStyles({
   leftpane: {
     marginLeft: "20%",
     marginTop: "30%",
-    marginBottom: "80%",
+    marginBottom: "70%",
     paddingRight: "10%",
   },
   rocket: {
     marginBottom: "15px",
   },
   rightpane: {
-    marginTop: "10%",
+    marginTop: "6%",
+    paddingBottom:"5%"
   },
   brandname: {
     fontFamily: "Segoe UI",
@@ -33,16 +33,7 @@ const useStyles = makeStyles({
     color: "tomato",
     letterSpacing: "3px",
   },
-  navclass: {
-    alignItems: "right",
-    padding: "25px",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-end",
-  },
-  navchild: {
-    padding: "4px",
-  },
+
 });
 
 //assests
@@ -59,8 +50,10 @@ const useStyles = makeStyles({
 // import links from '../../data/links'
 
 const LandingTop = (props) => {
+ 
   // const { theme } = useTheme();
   const classes = useStyles();
+  const Navbar=props.navbar;
   return (
     <Grid container>
       <Grid
@@ -114,12 +107,11 @@ const LandingTop = (props) => {
         md={8}
         lg={8}
       >
-        <div className={classes.navclass}>
+
           <Hidden smDown>
-            <Navbar />
+            <Navbar/>
           </Hidden>
 
-        </div>
 
         <Grid container className={classes.rightpane}>
           <Grid container item xs={12} sm={12} md={12} lg={12}>
