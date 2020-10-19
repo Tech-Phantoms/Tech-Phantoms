@@ -1,71 +1,121 @@
-import React from "react";
-import { Text, Image, Box, SimpleGrid } from "@chakra-ui/core";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';  
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
-//importing assets
-import aboutIcon from "../../assets/landing_page/community.svg";
-import { useTheme } from "../themes";
+const useStyles = makeStyles({
+  root:{
+marginBottom:'15vh',
+  },
+    paperleft:{
+        'text-align':"center",
+         padding:'20px',
+         background:"purple",
+         color:'white',
+         height:'350px',
+      },
+    papermiddle:{
+        'text-align':"center",
+         padding:'20px',
+         background:"#FFBF00",
+         height:'350px'
+    },
+    paperright:{
+        'text-align':"center",
+         padding:'20px',
+         background:"#299E7E",
+         color:'white',
+         height:'350px'
+    }
+   
+    
+  
+  });
 
-const LandingMiddle = (props) => {
-  const { theme } = useTheme();
+const LandingMiddle = (props) =>{
+              
+                const classes = useStyles();
+                return (
+                    <Container className={classes.root}>
+                    <Grid  container spacing={6} padding={6}>
+                         <Grid   item xs={12} sm={12} md={4} lg={4} >
+                            <Paper  Wrap className={classes.paperleft} background="purple"  variant="outlined">  
+                            
+                               
+                                    <Typography variant='h5' line-spacing={5}>
+                                    <span role='img' aria-label="rocket" > 🚀 </span> Tech Phantoms
+                                    </Typography>
+                                    <br/>
+                                   
+                                   <Typography variant='p' textAlign="center" line-spacing={5}>
+                                    We are an open tech community, on a mission to create open source tools and help
+                                    young developers pave their way towards open source and learn real world software development. 
+                                    
+                                    <br />
+                                    </Typography>
+                                    
 
-  return (
-    <div>
-      <SimpleGrid
-        columns={{ lg: 2, md: 2, xs: 1, sm: 1 }}
-        spacing={1}
-        padding={10}
-        bg={theme === "light" ? "#1B1CIE" : "#191F37"}
-      >
-        <Box
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <center>
-            <Image
-              src={aboutIcon}
-              width={{ lg: "80%", md: "80%", sm: "90%", xs: "90%" }}
-              alt="aboutIcon"
-            />{" "}
-          </center>
-        </Box>
+                                   
+                              
+                                </Paper>
+                                
+                         </Grid>
 
-        <Box
-          paddingRight="20px"
-          justifyContent="space-around"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Text
-            fontSize="3xl"
-            py={2}
-            color={theme === "light" ? "tomato" : "#191F37"}
-          >
-            <b> V I S I O N</b>
-          </Text>
-          <Text fontSize="3xl" py={4}>
-            Real growth happens when all of us grow together. We rise by lifting
-            others.
-          </Text>
-          <Box textAlign="justify">
-            Armed with a vision to "make people achieve more", Tech Phantoms is
-            a community in co-operation with Microsoft Learn Student Ambassadors,
-            where we have a teaching-learning environment for
-            everyone who has charisma for technology.
-            Our vision is to help young developers kick start
-            their journey towards Open Source. We strive towards building a learn by doing 
-            environment where the learners are their own teachers and peer mentoring is promoted.
-             
+                         <Grid item xs={12} sm={12} md={4} lg={4} >
+                                  
+                                    <Paper Wrap className={classes.papermiddle} variant="outlined">  
+                                    <Typography variant='h5' line-spacing={5}>
+                                    We <span role='img' style={{color:"red"}} aria-label="heart"> ❤ </span> Open Source
+                                    </Typography>
+                                    <br/>
+                                  
+                                   
+                                   <Typography variant='p' textAlign="center" line-spacing={5}>
+                                    Open source helps students to get started with real world software development skills including
+                                    writing a production code, following best code practices, writing unit test cases, setting up CI/ CD and deploying to various
+                                    cloud providers and lot more.
 
-          </Box>
-        </Box>
-      </SimpleGrid>
-    </div>
-  );
-};
+                
+                                    </Typography>
+                                  
+
+                                   
+                                   
+                                
+                                    </Paper>
+                              
+                         </Grid>
+
+
+                         <Grid item xs={12} sm={12} md={4} lg={4} >
+                        
+                         <Paper className={classes.paperright} variant="outlined">  
+                                    <Typography variant='h5' line-spacing={5}>
+                                    <span role='img' aria-label="manHand"> 🙋‍♂️ </span> Socially Alive
+                                    </Typography>
+                                    <br/>
+                                  
+                                   
+                                   <Typography variant='p' textAlign="center" line-spacing={5}>
+                                   Making development interactive, we  conduct technical events, posts, and stories with hands on code. 
+                                   Along with this, we conduct Microsoft Learn Student Ambassadors to conduct events on our platform. We have dedicated mentors and fully functional core team.
+                
+                                    </Typography>
+                                  
+
+                                   
+                                   
+                                
+                                    </Paper>
+                         </Grid>
+
+
+                    </Grid>
+                    </Container>
+
+                );
+}
+
 export default LandingMiddle;

@@ -1,9 +1,9 @@
 import Axios from 'axios'
 import { useState, useEffect } from 'react'
 import _ from 'lodash'
+import links from '../links'
 
-
-const GITHUB_REPO_URL = "https://api.github.com/orgs/Ninja-Developers/repos"
+const GITHUB_REPO_URL = links.githubOpenAPI
 
 const useRepo = () => {
     const [repos, setRepos] = useState([])
@@ -27,7 +27,8 @@ const useRepo = () => {
                 issueCount: el.open_issues,
                 stars: el.stargazers_count,
                 description: el.description,
-                issueUrl: el.html_url + '/issues'
+                issueUrl: el.html_url + '/issues',
+                id:el.id,
             }
 
             return d

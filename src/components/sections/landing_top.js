@@ -12,7 +12,7 @@ import GitHub from "../../assets/socialprofiles/github.svg";
 import Linkedin from "../../assets/socialprofiles/linkedin.svg";
 //css
 import { Box, Text, SimpleGrid, Image } from "@chakra-ui/core";
-
+import links from '../../data/links'
 const LandingTop = (props) => {
   const { theme } = useTheme();
 
@@ -42,13 +42,13 @@ const LandingTop = (props) => {
                 spacing={1}
                 padding={4}
               >
-                <a href="https://github.com/ninja-developers">
+                <a href={links.github}>
                   <Image width="50%" src={GitHub} />
                 </a>
-                <a href="https://instagram.com/tech_phantoms">
+                <a href={links.instagram}>
                   <Image width="50%" src={IG} />
                 </a>
-                <a href="https://linkedin.com/company/techphantoms">
+                <a href={links.linkedin}>
                   <Image width="50%" src={Linkedin} />
                 </a>
               </SimpleGrid>

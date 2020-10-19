@@ -40,3 +40,28 @@ body {
     flex-direction: column-reverse;
   }
 }
+/* Custom Scrollbar */
+
+/* Works on firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: tomato white;
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5593F;
+}
+::-webkit-scrollbar-thumb:active {
+  background:#A6402D;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff6347;
+  border: 1px solid white;
+}

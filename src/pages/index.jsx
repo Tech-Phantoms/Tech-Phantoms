@@ -11,12 +11,12 @@ const Index = (props) => (
   <ThemeProvider>
     <>
       <GlobalStyles />
-{/* Toggle to be released in V3 Site */}
+      {/* Toggle to be released in V3 Site */}
       {/* <Toggle/> */}
-      
-      <LandingTop/>
-      <LandingMiddle/>
-      <LandingBottom/>
+
+      <LandingTop />
+      <LandingMiddle />
+      <LandingBottom />
     </>
   </ThemeProvider>
 );
