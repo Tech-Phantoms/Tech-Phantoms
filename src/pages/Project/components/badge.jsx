@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types'
 
 import {
     Chip
-} from '@material-ui/core'
+} from '@material-ui/core';
 
 import {
     brown,
@@ -10,7 +11,7 @@ import {
     cyan,
     pink,
     blue
-} from '@material-ui/core/colors'
+} from '@material-ui/core/colors';
 
 let getColor = language => {
     switch (language) {
@@ -37,6 +38,10 @@ const Badge = ({ language }) => {
         style={{ backgroundColor: color }}
         size="small"
     />
+}
+
+Badge.propTypes = {
+    language: PropTypes.string.isRequired
 }
 
 export default Badge
