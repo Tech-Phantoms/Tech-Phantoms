@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-
+import Hidden from '@material-ui/core/Hidden';
 import "./index.css";
 // importing pages 
-import Index from './pages/index'
-import Team from './pages/team'
+import Index from './pages/home/index'
+import Team from './pages/team/index'
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
 import Projects from './pages/Project'
@@ -18,8 +18,9 @@ function App() {
   return (
     <div>
 {/* Routing */}
+      <Hidden mdUp>
       <Navbar />
-
+      </Hidden>
       <Switch>
         <Route path="/" exact component={Index} />
 

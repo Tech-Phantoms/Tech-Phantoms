@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Technologies from './technologies'
+import Slideshow from './slideshow'
 
 
 const LandingBottom = (props) =>{
@@ -40,7 +40,7 @@ const LandingBottom = (props) =>{
                                 
                                 
                         </Grid>
-                        <Technologies/>
+                        <Slideshow/>
                         </Container>
                         </>
 
