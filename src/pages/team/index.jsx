@@ -11,7 +11,6 @@ import OurStory from './sections/ourstory/index';
 const Team = () => {
 
     const data = team.useTeam()
-    console.log(data)
     return (
         <>
             <OurStory/>
@@ -20,4 +19,6 @@ const Team = () => {
         </>
     )
 }
+
+
 export default Team;
