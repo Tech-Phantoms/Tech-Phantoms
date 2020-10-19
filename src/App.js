@@ -7,7 +7,7 @@ import Index from './pages/index'
 import Team from './pages/team'
 import Hacktoberfest from './pages/hacktoberfest'
 import Events from './pages/events'
-import Projects from './pages/projects'
+import Projects from './pages/Project'
 import Register from './pages/register'
 
 // importing components 

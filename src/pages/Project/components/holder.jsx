@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
     Grid,
     Paper,
@@ -24,8 +25,16 @@ const useStyle = makeStyles(theme => ({
 }))
 
 const Holder = props => {
-
     const classes = useStyle()
+
+    let {
+        issueUrl,
+        repo_name,
+        description,
+        language,
+        issues,
+        stars
+    } = props
 
     return (
         <div>
@@ -65,5 +74,13 @@ const Holder = props => {
     )
 }
 
+Holder.propTypes = {
+    issueUrl: PropTypes.string.isRequired,
+    repo_name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    language: PropTypes.string,
+    issues: PropTypes.number,
+    stars: PropTypes.number
+}
 
 export default Holder
