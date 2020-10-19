@@ -1,12 +1,15 @@
-import React from 'react'
-import { useRepo } from '../../data/hooks'
-import Holder from './holder'
+import React from 'react';
 
 import {
     Container,
     Grid,
     makeStyles
-} from '@material-ui/core'
+} from '@material-ui/core';
+
+import Holder from '../components/holder';
+
+
+import { useRepo } from '../../../data/hooks';
 
 const useStyle = makeStyles(theme => ({
     projList: {
@@ -14,11 +17,10 @@ const useStyle = makeStyles(theme => ({
     }
 }))
 
-const Projects = props => {
-    const classes = useStyle()
 
-    const repos = useRepo()
-    console.log(repos)
+const Projects = () => {
+    const classes = useStyle();
+    const repos = useRepo();
 
     return <>
         <div className={classes.projList} />

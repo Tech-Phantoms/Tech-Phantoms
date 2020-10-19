@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
     Grid,
     Paper,
@@ -24,37 +25,45 @@ const useStyle = makeStyles(theme => ({
 }))
 
 const Holder = props => {
-
     const classes = useStyle()
+
+    let {
+        issueUrl,
+        repo_name,
+        description,
+        language,
+        issues,
+        stars
+    } = props
 
     return (
         <div>
-            <a target="blank" href={props.issueUrl}>
+            <a target="blank" href={issueUrl}>
                 <Paper variant="outlined" className={classes.paper}>
                     <Grid container spacing={0}>
                         <Grid item xs={12}>
                             <Typography variant="h5">
-                                {props.repo_name}
+                                {repo_name}
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="caption">
-                                {props.description}
+                                {description}
                             </Typography>
                         </Grid>
                     </Grid>
                     <div className={classes.divider} />
                     <Grid container spacing={4}>
                         <Grid item xs={6}>
-                            <Languagebadge language={props.language} />
+                            <Languagebadge language={language} />
                         </Grid>
                         <Grid item xs={3}>
-                            <Badge badgeContent={props.issues}>
+                            <Badge badgeContent={issues}>
                                 <Info color="primary" fontSize="small" />
                             </Badge>
                         </Grid>
                         <Grid item xs={3}>
-                            <Badge badgeContent={props.stars}>
+                            <Badge badgeContent={stars}>
                                 <Star color="secondary" fontSize="small" />
                             </Badge>
                         </Grid>
@@ -65,5 +74,13 @@ const Holder = props => {
     )
 }
 
+Holder.propTypes = {
+    issueUrl: PropTypes.string.isRequired,
+    repo_name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    language: PropTypes.string,
+    issues: PropTypes.number,
+    stars: PropTypes.number
+}
 
 export default Holder
