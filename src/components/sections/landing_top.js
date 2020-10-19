@@ -1,117 +1,156 @@
 import React from "react";
-import { useTheme } from "../themes";
+// import { useTheme } from "../themes";
+
+import { Typography, Grid, Box, Hidden } from "@material-ui/core/";
+import { makeStyles } from "@material-ui/core/styles";
+import TechPhantoms from "../../assets/landing_page/UI_Updated/techphantoms.svg";
+import Logo from "../../assets/logo.svg";
+import Navbar from "../navbar/navbar";
+import LightMode_MLSA_Badge from "../../assets/LightMode_MLSA_Badge.svg";
+const useStyles = makeStyles({
+  leftcontainer: {
+    background: "tomato",
+  },
+  rightcontainer: {
+    background: "#F0EBEB",
+  },
+  leftpane: {
+    marginLeft: "20%",
+    marginTop: "30%",
+    marginBottom: "80%",
+    paddingRight: "10%",
+  },
+  rocket: {
+    marginBottom: "15px",
+  },
+  rightpane: {
+    marginTop: "10%",
+  },
+  brandname: {
+    fontFamily: "Segoe UI",
+    fontSize: "4vh",
+    color: "tomato",
+    letterSpacing: "3px",
+  },
+  navclass: {
+    alignItems: "right",
+    padding: "25px",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-end",
+  },
+  navchild: {
+    padding: "4px",
+  },
+});
 
 //assests
-import logo from "../../assets/logo.svg";
-import LightMode_techphantoms from "../../assets/LightMode_techphantoms.svg";
-import DarkMode_techphantoms from "../../assets/DarkMode_techphantoms.svg";
-import LightMode_MLSA_Badge from "../../assets/LightMode_MLSA_Badge.svg";
-import DarkMode_MLSA_Badge from "../../assets/DarkMode_MLSA_Badge.svg";
-import IG from "../../assets/socialprofiles/instagram.svg";
-import GitHub from "../../assets/socialprofiles/github.svg";
-import Linkedin from "../../assets/socialprofiles/linkedin.svg";
-//css
-import { Box, Text, SimpleGrid, Image } from "@chakra-ui/core";
-import links from '../../data/links'
+// import logo from "../../assets/logo.svg";
+// import LightMode_techphantoms from "../../assets/LightMode_techphantoms.svg";
+// import DarkMode_techphantoms from "../../assets/DarkMode_techphantoms.svg";
+
+// import DarkMode_MLSA_Badge from "../../assets/DarkMode_MLSA_Badge.svg";
+// import IG from "../../assets/socialprofiles/instagram.svg";
+// import GitHub from "../../assets/socialprofiles/github.svg";
+// import Linkedin from "../../assets/socialprofiles/linkedin.svg";
+// //css
+// import { Box, Text, SimpleGrid, Image } from "@chakra-ui/core";
+// import links from '../../data/links'
+
 const LandingTop = (props) => {
-  const { theme } = useTheme();
-
+  // const { theme } = useTheme();
+  const classes = useStyles();
   return (
-    <div>
-      <Box
-        padding="10px"
-        w="100%"
-        mt={{ md: "5%", xs: "5px", sm: "100px", lg: "5%" }}
-        mb={["100px", "200px"]}
-        color="#ED654B"
+    <Grid container>
+      <Grid
+        className={classes.leftcontainer}
+        item
+        xs={12}
+        sm={12}
+        md={4}
+        lg={4}
       >
-        <SimpleGrid columns={{ lg: 2, md: 2, xs: 1, sm: 1 }} spacing={1}>
-          <Box>
-            <center>
-              <Image
-                src={logo}
-                width={{ lg: "40%", md: "60%", sm: "50%", xs: "55%" }}
-                alt="lightlogo"
-                py={5}
-              />
-              <br />
-              <SimpleGrid
-                display={{ xs: "none", sm: "none", md: "grid", lg: "grid" }}
-                width="50%"
-                columns={3}
-                spacing={1}
-                padding={4}
+        <Box className={classes.leftpane}>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <Typography
+                color="white"
+                align="center"
+                variant="h2"
+                gutterBottom="true"
               >
-                <a href={links.github}>
-                  <Image width="50%" src={GitHub} />
-                </a>
-                <a href={links.instagram}>
-                  <Image width="50%" src={IG} />
-                </a>
-                <a href={links.linkedin}>
-                  <Image width="50%" src={Linkedin} />
-                </a>
-              </SimpleGrid>
-            </center>
-          </Box>
+                <div className={classes.rocket}>
+                  <span role="img" aria-label="rocket">
+                    🚀
+                  </span>
+                </div>
+                <span style={{ color: "white" }}>
+                  Build Things that Matter!
+                </span>
+                <br />
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <Typography gutterBottom={true} align="center" variant="h5">
+                <span style={{ color: "white" }}>
+                  {" "}
+                  Introducing
+                  <br /> An
+                  <br /> <b> Open Source Organization</b>
+                  <br />
+                </span>
+              </Typography>
+            </Grid>
+          </Grid>
+        </Box>
+      </Grid>
 
-          <Box
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <center>
-              <Image
-                src={
-                  theme === "light"
-                    ? LightMode_techphantoms
-                    : DarkMode_techphantoms
-                }
-                width={{ lg: "60%", md: "60", sm: "25", xs: "60%" }}
-                alt="LightMode_techphantoms"
-              />
-            </center>
-            <center>
-              <Text
-                fontSize={["10px", "sm"]}
-                p={[2, 4, 10]}
-                color={theme === "dark" ? "#D8A752" : "orange"}
-              >
-                A Technical Community <br /> By
-              </Text>
-            </center>
-            <center>
-              <img
-                src={
-                  theme === "light" ? LightMode_MLSA_Badge : DarkMode_MLSA_Badge
-                }
-                width={{ lg: "20%", md: "10%", sm: "10%", xs: "10%" }}
-                alt="LightMode_MLSA_Badge"
-              />
-              <SimpleGrid
-                display={{ xs: "grid", sm: "grid", md: "none", lg: "none" }}
-                width="80%"
-                columns={3}
-                spacing={1}
-                padding={4}
-              >
-                <a href="https://github.com/ninja-developers">
-                  <Image width="50%" src={GitHub} />
-                </a>
-                <a href="https://instagram.com/tech_phantoms">
-                  <Image width="50%" src={IG} />
-                </a>
-                <a href="https://linkedin.com/company/techphantoms">
-                  <Image width="50%" src={Linkedin} />
-                </a>
-              </SimpleGrid>
-            </center>
-          </Box>
-        </SimpleGrid>
-      </Box>
-    </div>
+      <Grid
+        className={classes.rightcontainer}
+        item
+        xs={12}
+        sm={12}
+        md={8}
+        lg={8}
+      >
+        <div className={classes.navclass}>
+          <Hidden smDown>
+            <Navbar />
+          </Hidden>
+
+        </div>
+
+        <Grid container className={classes.rightpane}>
+          <Grid container item xs={12} sm={12} md={12} lg={12}>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <center>
+                <img alt="techPhantoms" src={Logo} width="120rem" />
+              </center>
+            </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <center>
+                <img alt="techPhantoms" src={TechPhantoms} />
+              </center>
+            </Grid>
+          </Grid>
+          <Grid container item xs={12} sm={12} md={12} lg={12}>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <br />
+              <center>
+                {" "}
+                An Open Technical Community <br /> By
+                <br /> <br />
+              </center>
+            </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <center>
+                <img alt="TechPhantoms" src={LightMode_MLSA_Badge} />
+              </center>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 };
 export default LandingTop;
