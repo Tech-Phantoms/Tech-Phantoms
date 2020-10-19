@@ -1,12 +1,17 @@
-import React from 'react'
+import React from "react";
+import { LandingTop, LandingMiddle, LandingBottom } from "./sections";
 
-const Index = props => {
+const Home = (props) => {
 
-    return (
-        <div>
+const Navbar=props.navbar
 
-        </div>
-    )
-}
+return(
+    <>
+      <LandingTop navbar={Navbar}/> 
+      <LandingMiddle />
+      <LandingBottom />
+    </>)
 
-export default Index
+};
+
+export default Home;
