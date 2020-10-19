@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-import DisplayTeams from './coremembers/index';
+import DisplayTeams from './sections/coremembers/index';
 import { team } from '../../data/airtable'
-import OurStory from './ourstory/index';
+import OurStory from './sections/ourstory/index';
 
 
 
