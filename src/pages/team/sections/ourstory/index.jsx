@@ -3,15 +3,15 @@ import { SimpleGrid, Text, Box, Image } from "@chakra-ui/core";
 
 
 // importing assets.
-import Teencode from '../../../assets/lifecycle/teenCode.svg'
-import Teencode2 from '../../../assets/lifecycle/teenCode2.svg'
-import MLSA from '../../../assets/lifecycle/mlsa.svg'
-import Explain from '../../../assets/lifecycle/explain.svg'
-import Brand from '../../../assets/lifecycle/brand.svg'
-import Vinit from '../../../assets/lifecycle/vinit.svg'
-import Kladi from '../../../assets/lifecycle/kladi.svg'
+import Teencode from '../../../../assets/lifecycle/teenCode.svg'
+import Teencode2 from '../../../../assets/lifecycle/teenCode2.svg'
+import MLSA from '../../../../assets/lifecycle/mlsa.svg'
+import Explain from '../../../../assets/lifecycle/explain.svg'
+import Brand from '../../../../assets/lifecycle/brand.svg'
+import Vinit from '../../../../assets/lifecycle/vinit.svg'
+import Kladi from '../../../../assets/lifecycle/kladi.svg'
 
-const Lifecycle=()=>{
+const OurStory=()=>{
     //Box width for Text sections
     const adjustedWidth={"xs":"90%","sm":"70%","lg":"50%","md":"50%"};
     // LeftMargin for left side boxes
@@ -91,4 +91,4 @@ With right efforts, anything is possible. Here we are,</Text>
 </>
 )
 }
-export default Lifecycle
+export default OurStory

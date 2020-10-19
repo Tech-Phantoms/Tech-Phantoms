@@ -1,13 +1,23 @@
 import React from 'react';
 
 
-const Index = props => {
+import DisplayTeams from './sections/coremembers/index';
+import { team } from '../../data/airtable'
+import OurStory from './sections/ourstory/index';
 
+
+
+
+const Team = () => {
+
+    const data = team.useTeam()
+    console.log(data)
     return (
-        <div>
-
-        </div>
+        <>
+            <OurStory/>
+       
+            <DisplayTeams members={data} />
+        </>
     )
 }
-
-export default Index
+export default Team;
