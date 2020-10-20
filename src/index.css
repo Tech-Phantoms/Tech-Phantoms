@@ -1,22 +1,5 @@
-
-/* body {
-  height: 100%;
-} */
-
-/* @font-face{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Poppins'),
-    local('Poppins-Regular'),
-  local('Poppins'), url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-} */
-
-
 body {
  box-sizing: border-box;
-  /* font-family: 'Poppins'; */
 }
 
 #root {
