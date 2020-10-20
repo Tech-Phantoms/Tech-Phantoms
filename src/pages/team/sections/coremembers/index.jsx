@@ -11,8 +11,8 @@ const DisplayTeams = (props) => {
         
             {
                 props.members.map((member) => (
-                    <Grid spacing={5} >
-                    <Grid container item md={4} xs={12} lg={3} sm={12}>
+                    <Grid spacing={5}>
+                    <Grid container item md={3} xs={12} lg={3} sm={12}>
                     <Holder id={member.id}
                         name={member.get("name")}
                         imageUrl={member.get('avatar_url')}
