@@ -11,6 +11,7 @@ const DisplayTeams = (props) => {
         
             {
                 props.members.map((member) => (
+                    <Grid spacing={5} >
                     <Grid item md={4} xs={12} lg={3} sm={12}>
                     <Holder id={member.id}
                         name={member.get("name")}
@@ -21,7 +22,7 @@ const DisplayTeams = (props) => {
                         instagramUrl={member.get('instagram_profile')}
                         mediumUrl={member.get('medium_profile')}
                         position={member.get('position')}
-                        /></Grid>
+                        /></Grid></Grid>
                 ))
             }
         </Grid></center>
