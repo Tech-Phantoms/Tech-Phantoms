@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Typography } from "@material-ui/core";
+import { Grid, Box, Typography, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from 'prop-types';
 
@@ -8,33 +8,25 @@ import Linkedin from "../../../../assets/team/linkedin.svg";
 import Instagram from "../../../../assets/team/instagram.svg";
 import Medium from "../../../../assets/team/medium.svg";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
     container: {
         margin: '9px',
-        boxShadow: '7px 7px #F8B406',
+        boxShadow: '7px 7px black',
+        justifyContent: 'center',
+        background: 'transparent',
+        border: '2px solid black',
+        color: 'black'
     },
-    gridContainer: {
-        // display: 'flex',
-        // flexDirection: 'column',
-        // justifyContent: 'center',
-    },
-    memberImage: {
-        height: '100px',
-        width: '100px',
-    },
-    links: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-
-        wordSpacing: '3px',
-    },
+    large: {
+        width: theme.spacing(7),
+        height: theme.spacing(7),
+      },
     linkImage: {
         height: '50px',
         width: '50px',
         padding: '5px',
     }
-})
+}))
 
 
 
@@ -52,39 +44,66 @@ const Holder = (props) => {
         position
     } = props;
     const classes = useStyles();
+    var gridLinks = 4;
+
+    if (mediumUrl !== null && mediumUrl !== undefined) {
+        gridLinks = 3;
+        if (githubUrl === null && githubUrl === undefined) {
+            gridLinks = 2;
+        }
+    }
+
+
     return (
         <Box textAlign="center" className={classes.container} border={2}>
-            <Grid container>
-                <Box textAlign="center">
-                    <Grid item className={classes.image}>
-                        <center><img alt="coremember" src={imageUrl} className={classes.memberImage} /></center>
-                    </Grid>
-                    <Grid item className={classes.memberName}>
-                        <Typography variant="h5">{name}</Typography>
-                        <Typography variant="h6">{position}</Typography>
-                    </Grid>
-                    <Grid item className={classes.links}>
 
-                        {
-                            githubUrl &&
-                            <a href={githubUrl}><img alt="corememberLink" className={classes.linkImage} src={GitHub} /></a>
-                        }
-                        {
-                            linkedinUrl &&
-                            <a href={linkedinUrl}><img alt="corememberLink" className={classes.linkImage} src={Linkedin} /></a>
-                        }
-                        {
-                            mediumUrl &&
-                            <a href={mediumUrl}><img alt="corememberLink" className={classes.linkImage} src={Medium} /></a>
-                        }
-                        {
-                            instagramUrl &&
-                            <a href={instagramUrl}><img alt="corememberLink" className={classes.linkImage} src={Instagram} /></a>
-                        }
+            <Grid direction="row"
+                justify="center"
+                alignItems="center">
+                <Grid m item className={classes.image}>
+                    <center>
+                        <Avatar alt="avatars" src={imageUrl} className={classes.large} />
+
+                    </center>
+                </Grid>
+                <Grid item className={classes.memberName}>
+                    <Typography variant="h5">{name}</Typography>
+                    <Typography variant="h6">{position}</Typography>
+                </Grid>
+                <Grid item xs={12} md={12} sm={12} lg={12}>
+                    <Grid container alignItems="center">
+
+
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                githubUrl &&
+                                <a href={githubUrl}><img alt="corememberLink" className={classes.linkImage} src={GitHub} /></a>
+                            }
+                        </Grid>
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                linkedinUrl &&
+                                <a href={linkedinUrl}><img alt="corememberLink" className={classes.linkImage} src={Linkedin} /></a>
+                            }
+                        </Grid>
+
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                instagramUrl &&
+                                <a href={instagramUrl}><img alt="corememberLink" className={classes.linkImage} src={Instagram} /></a>
+                            }
+                        </Grid>
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                mediumUrl &&
+                                <a href={mediumUrl}><img alt="corememberLink" className={classes.linkImage} src={Medium} /></a>
+                            }
+                        </Grid>
                     </Grid>
-                </Box>
+                </Grid>
             </Grid>
-        </Box>
+
+        </Box >
     );
 };
 Holder.propTypes = {
