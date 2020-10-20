@@ -14,12 +14,13 @@ const DisplayTeams = (props) => {
                     <Grid item md={4} xs={12} lg={3} sm={12}>
                     <Holder id={member.id}
                         name={member.get("name")}
-                        imageUrl={member.imageUrl}
+                        imageUrl={member.get('avatar_url')}
                         githubUrl={member.get('github_profile')}
                         linkedinUrl={member.get('linkedin_profile')}
                         gender={member.get('gender')}
                         instagramUrl={member.get('instagram_profile')}
                         mediumUrl={member.get('medium_profile')}
+                        position={member.get('position')}
                         /></Grid>
                 ))
             }
