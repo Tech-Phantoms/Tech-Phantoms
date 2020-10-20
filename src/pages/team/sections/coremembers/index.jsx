@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Paper } from '@material-ui/core/';
+import { Grid, Paper } from '@material-ui/core/';
 import PropTypes from 'prop-types';
 import Holder from "../../components/holder/holder";
 
