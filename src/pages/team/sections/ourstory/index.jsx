@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Grid, Box, Hidden } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import Creators from './creators'
-import DisplayTeams from '../coremembers/index';
+import DisplayTeams from './coremembers/index';
 import { team } from '../../../../data/airtable';
 // importing assets.
 
