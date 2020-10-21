@@ -11,11 +11,12 @@ import github from '../../assets/btnIcons/github.svg'
 
 const GithubButton = props => {
 
-    let { link } = props;
+    let { link,text } = props;
 
     return <>
-        <a href={link}>
+        <a href={link} target="_blank"  rel="noopener noreferrer"  >
             <Button
+                size="large"
                 startIcon={<img src={github} width="20px" alt="github" />}
                 color="secondary"
                 variant="contained"

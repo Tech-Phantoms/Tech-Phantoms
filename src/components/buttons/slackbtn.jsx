@@ -14,10 +14,12 @@ const SlackButton = props => {
 
 
     return <>
-        <a href={link}>
+        <a href={link} target="_blank"  rel="noopener noreferrer" >
             <Button
                 startIcon={<img src={slack} width="20px" alt="slack" />}
-                variant="outlined"
+                variant="contained"
+                size="large"
+                disableElevation
             >
                 Slack
         </Button>
