@@ -33,7 +33,7 @@ const Social = () => {
             <Container>
                 <Paper variant="outlined" className={classes.paper}>
                     <Typography className={classes.title} variant="h5">
-                        We have a Slack Channel.
+                        Join our slack Channel.
                     </Typography>
 
                     <Grid container spacing={3}>
