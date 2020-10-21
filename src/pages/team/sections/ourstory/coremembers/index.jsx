@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from '@material-ui/core/';
 import PropTypes from 'prop-types';
-import Holder from "../../components/holder/holder";
+import Holder from "../../../components/holder/holder";
 
 const DisplayTeams = (props) => {
 

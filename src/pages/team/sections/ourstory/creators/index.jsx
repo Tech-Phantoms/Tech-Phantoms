@@ -2,8 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Box, Typography, ButtonBase } from '@material-ui/core/';
 
+import Abir from './creatorImages/abir.svg'
+import Souvik from './creatorImages/souvik.svg'
+import Vinit from './creatorImages/vinit.svg'
 
-import Placeholder from './placeholder.svg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,20 +30,20 @@ const useStyles = makeStyles((theme) => ({
 
 const creatorsData = [
     {
-        img: { Placeholder },
+        img: Abir,
         name: 'Abir Pal',
         subtagline: 'Community and Dev Lead',
         linkedin:'https://linkedin.com/in/imabp',
     },
     {
-        img: { Placeholder },
+        img: Souvik,
         name: 'Souvik De',
         subtagline: 'Community and Dev Lead',
         linkedin:'https://www.linkedin.com/in/souvik-de-a2b941169/',
     },
 
     {
-        img: { Placeholder },
+        img: Vinit,
         name: 'Vinit Shahdeo',
         subtagline: 'Core Mentor and SDE Postman',
         linkedin:'https://www.linkedin.com/in/vinitshahdeo/',
@@ -59,7 +61,7 @@ const Creators = (props) => {
                         <Grid container spacing={2}>
                             <Grid item>
                                 <ButtonBase className={classes.image}>
-                                    <img className={classes.img} alt="complex" src={Placeholder} />
+                                    <img className={classes.img} alt="complex" src={creator.img} />
                                 </ButtonBase>
                             </Grid>
                             <Grid item xs={12} sm container>
