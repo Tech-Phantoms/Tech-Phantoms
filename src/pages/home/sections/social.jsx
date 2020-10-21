@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../../assets/logo.svg'
+
 import {
     Paper,
     Container,
@@ -8,6 +8,10 @@ import {
     makeStyles,
     Button
 } from '@material-ui/core'
+
+// importing images
+import slack from '../../../assets/btnIcons/slack.svg';
+import github from '../../../assets/btnIcons/github.svg';
 
 const useStyle = makeStyles(theme => ({
     root: {
@@ -29,15 +33,23 @@ const Social = () => {
                         We have a Slack Channel.
                     </Typography>
 
-                    <Grid container spacing={2}>
+                    <Grid container spacing={3}>
                         <Grid item>
-                            <Button>
+                            <Button
+                                startIcon={<img src={github} width="20px" alt="github" />}
+                                color="secondary"
+                                variant="contained"
+                                disableElevation
+                            >
                                 Github
                             </Button>
                         </Grid>
 
                         <Grid item>
-                            <Button>
+                            <Button
+                                startIcon={<img src={slack} width="20px" alt="slack" />}
+                                variant="outlined"
+                            >
                                 Slack
                             </Button>
                         </Grid>
