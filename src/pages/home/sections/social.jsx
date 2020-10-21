@@ -19,6 +19,9 @@ const useStyle = makeStyles(theme => ({
     },
     paper: {
         padding: theme.spacing(2, 4)
+    },
+    title: {
+        marginBottom: theme.spacing(4)
     }
 }))
 
@@ -29,7 +32,7 @@ const Social = () => {
         <div className={classes.root}>
             <Container>
                 <Paper variant="outlined" className={classes.paper}>
-                    <Typography>
+                    <Typography className={classes.title} variant="h5">
                         We have a Slack Channel.
                     </Typography>
 
