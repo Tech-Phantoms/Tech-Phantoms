@@ -8,7 +8,6 @@ const Navbar=props.navbar
 return(
     <>
       <LandingTop navbar={Navbar}/> 
-      <Social />
       <LandingMiddle />
       <LandingBottom />
     </>)
