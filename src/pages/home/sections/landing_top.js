@@ -6,6 +6,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import TechPhantoms from "../../../assets/landing_page/UI_Updated/techphantoms.svg";
 import Logo from "../../../assets/logo.svg";
 import LightMode_MLSA_Badge from "../../../assets/LightMode_MLSA_Badge.svg";
+import GitButton from "../../../components/buttons/githubbtn";
+import SlackButton from "../../../components/buttons/slackbtn";
+import Links from "../../../data/links";
 
 const useStyles = makeStyles({
   leftcontainer: {
@@ -16,8 +19,8 @@ const useStyles = makeStyles({
   },
   leftpane: {
     // marginLeft: "20%",
-    marginTop: "30%",
-    marginBottom: "70%",
+    marginTop: "26%",
+    marginBottom: "60%",
     // paddingRight: "10%",
   },
   rocket: {
@@ -25,7 +28,7 @@ const useStyles = makeStyles({
   },
   rightpane: {
     marginTop: "6%",
-    paddingBottom:"5%"
+    paddingBottom: "5%",
   },
   brandname: {
     fontFamily: "Segoe UI",
@@ -33,7 +36,6 @@ const useStyles = makeStyles({
     color: "tomato",
     letterSpacing: "3px",
   },
-
 });
 
 //assests
@@ -50,10 +52,9 @@ const useStyles = makeStyles({
 // import links from '../../data/links'
 
 const LandingTop = (props) => {
- 
   // const { theme } = useTheme();
   const classes = useStyles();
-  const Navbar=props.navbar;
+  const Navbar = props.navbar;
   return (
     <Grid container>
       <Grid
@@ -90,11 +91,28 @@ const LandingTop = (props) => {
                   {" "}
                   Introducing
                   <br /> An
-                  <br /> <b> Open Source Organization</b>
+                  <br /> <b>
+                  <Typography gutterBottom={true} align="center" variant="h4">
+                     Open Source 
+                  </Typography>
+                  Organization</b>
                   <br />
                 </span>
+                <br />
               </Typography>
             </Grid>
+            <Hidden mdDown>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <Grid container>
+                  <Grid align="center" item xs={12} sm={12} md={6} lg={6}>
+                    <GitButton text="GitHub" link={Links.github} />
+                  </Grid>
+                  <Grid align="center" item xs={12} sm={12} md={6} lg={6}>
+                    <SlackButton />
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Hidden>
           </Grid>
         </Box>
       </Grid>
@@ -107,11 +125,9 @@ const LandingTop = (props) => {
         md={8}
         lg={8}
       >
-
-          <Hidden smDown>
-            <Navbar/>
-          </Hidden>
-
+        <Hidden smDown>
+          <Navbar />
+        </Hidden>
 
         <Grid container className={classes.rightpane}>
           <Grid container item xs={12} sm={12} md={12} lg={12}>
