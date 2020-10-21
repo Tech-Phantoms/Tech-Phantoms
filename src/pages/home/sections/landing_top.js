@@ -15,10 +15,10 @@ const useStyles = makeStyles({
     background: "#F0EBEB",
   },
   leftpane: {
-    marginLeft: "20%",
+    // marginLeft: "20%",
     marginTop: "30%",
     marginBottom: "70%",
-    paddingRight: "10%",
+    // paddingRight: "10%",
   },
   rocket: {
     marginBottom: "15px",
