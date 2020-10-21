@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Logo from '../../../assets/logo.svg'
 import {
     Paper,
     Container,
@@ -28,6 +28,21 @@ const Social = () => {
                     <Typography>
                         We have a Slack Channel.
                     </Typography>
+
+                    <Grid container spacing={2}>
+                        <Grid item>
+                            <Button>
+                                Github
+                            </Button>
+                        </Grid>
+
+                        <Grid item>
+                            <Button>
+                                Slack
+                            </Button>
+                        </Grid>
+
+                    </Grid>
                 </Paper>
             </Container>
         </div>
