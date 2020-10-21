@@ -1,37 +1,41 @@
 import React from "react";
-import Grid from '@material-ui/core/Grid';
+import { Grid } from '@material-ui/core/';
 import PropTypes from 'prop-types';
 import Holder from "../../components/holder/holder";
 
 const DisplayTeams = (props) => {
 
     return (
-        <center>
-        <Grid container >
-        
+
+        <Grid container>
+
             {
                 props.members.map((member) => (
-                    <Grid item md={4} xs={12} lg={3} sm={12}>
-                    <Holder id={member.id}
-                        name={member.get("name")}
-                        imageUrl={member.imageUrl}
-                        githubUrl={member.get('github_profile')}
-                        linkedinUrl={member.get('linkedin_profile')}
-                        gender={member.get('gender')}
-                        instagramUrl={member.get('instagram_profile')}
-                        mediumUrl={member.get('medium_profile')}
-                        /></Grid>
+                    <Grid item xs={12} sm={12} md={4} lg={4}>
+                        <Holder id={member.id}
+                            name={member.get("name")}
+                            imageUrl={member.get('avatar_url')}
+                            githubUrl={member.get('github_profile')}
+                            linkedinUrl={member.get('linkedin_profile')}
+                            gender={member.get('gender')}
+                            instagramUrl={member.get('instagram_profile')}
+                            mediumUrl={member.get('medium_profile')}
+                            position={member.get('position')}
+                        />
+                    </Grid>
                 ))
             }
-        </Grid></center>
+
+        </Grid>
+
 
     )
 
 
 }
 
-DisplayTeams.propTypes={
-        members:PropTypes.array
+DisplayTeams.propTypes = {
+    members: PropTypes.array
 }
 
 

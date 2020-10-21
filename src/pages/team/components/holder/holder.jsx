@@ -1,66 +1,117 @@
 import React from "react";
-import { Box, Paper } from "@material-ui/core";
-import IconButton from "@material-ui/core/IconButton";
-import styles from "./style.module.css";
-import Female from "../../../../assets/team/_person.svg";
-import Male from "../../../../assets/team/person.svg";
+import { Grid, Box, Typography, Avatar } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import PropTypes from 'prop-types';
+
 import GitHub from "../../../../assets/team/github_.svg";
 import Linkedin from "../../../../assets/team/linkedin.svg";
 import Instagram from "../../../../assets/team/instagram.svg";
 import Medium from "../../../../assets/team/medium.svg";
 
-const Holder = (props) => {
-  const {
-    name,
-    imageUrl,
-    githubUrl,
-    linkedinUrl,
-    instagramUrl,
-    mediumUrl,
-    gender,
-  } = props;
-  let imgSrc;
-  try {
-    imgSrc = require(`${imageUrl}`);
-  } catch {
-    imgSrc = `${gender === "male" ? Male : Female}`;
-  }
-  return (
-    <Box margin={{ md: "40px" }} className={styles.container}>
-      <Paper
-        variant="outlined"
-        style={{
-          borderRadius: "50%",
-          border: "none",
-        }}
-      >
-        <img src={imgSrc} alt={name} className={styles.photo} />
-      </Paper>
-      <div className={styles.name}>{name}</div>
-      <Box className={styles.linkFlex}>
-        {githubUrl && (
-          <IconButton target="_blank" href={githubUrl}>
-            <img src={GitHub} alt="GitHub" width="36px" />
-          </IconButton>
-        )}
-        {linkedinUrl && (
-          <IconButton target="_blank" href={linkedinUrl}>
-            <img src={Linkedin} alt="Linkedin" width="32px" />
-          </IconButton>
-        )}
-        {instagramUrl && (
-          <IconButton target="_blank" href={instagramUrl}>
-            <img src={Instagram} alt="Instagram" width="32px" />
-          </IconButton>
-        )}
-        {mediumUrl && (
-          <IconButton target="_blank" href={mediumUrl}>
-            <img src={Medium} alt="Instagram" width="32px" />
-          </IconButton>
-        )}
-      </Box>
-    </Box>
-  );
-};
+const useStyles = makeStyles((theme)=>({
+    container: {
+        margin: '9px',
+        boxShadow: '7px 7px black',
+        justifyContent: 'center',
+        background: 'transparent',
+        border: '2px solid black',
+        color: 'black'
+    },
+    large: {
+        width: theme.spacing(7),
+        height: theme.spacing(7),
+      },
+    linkImage: {
+        height: '50px',
+        width: '50px',
+        padding: '5px',
+    }
+}))
 
+
+
+
+
+
+const Holder = (props) => {
+    const {
+        name,
+        imageUrl,
+        githubUrl,
+        linkedinUrl,
+        instagramUrl,
+        mediumUrl,
+        position
+    } = props;
+    const classes = useStyles();
+    var gridLinks = 4;
+
+    if (mediumUrl !== null && mediumUrl !== undefined) {
+        gridLinks = 3;
+        if (githubUrl === null && githubUrl === undefined) {
+            gridLinks = 2;
+        }
+    }
+
+
+    return (
+        <Box textAlign="center" className={classes.container} border={2}>
+
+            <Grid direction="row"
+                justify="center"
+                alignItems="center">
+                <Grid m item className={classes.image}>
+                    <center>
+                        <Avatar alt="avatars" src={imageUrl} className={classes.large} />
+
+                    </center>
+                </Grid>
+                <Grid item className={classes.memberName}>
+                    <Typography variant="h5">{name}</Typography>
+                    <Typography variant="h6">{position}</Typography>
+                </Grid>
+                <Grid item xs={12} md={12} sm={12} lg={12}>
+                    <Grid container alignItems="center">
+
+
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                githubUrl &&
+                                <a href={githubUrl}><img alt="corememberLink" className={classes.linkImage} src={GitHub} /></a>
+                            }
+                        </Grid>
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                linkedinUrl &&
+                                <a href={linkedinUrl}><img alt="corememberLink" className={classes.linkImage} src={Linkedin} /></a>
+                            }
+                        </Grid>
+
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                instagramUrl &&
+                                <a href={instagramUrl}><img alt="corememberLink" className={classes.linkImage} src={Instagram} /></a>
+                            }
+                        </Grid>
+                        <Grid item xs={gridLinks} md={gridLinks} sm={gridLinks} lg={gridLinks}>
+                            {
+                                mediumUrl &&
+                                <a href={mediumUrl}><img alt="corememberLink" className={classes.linkImage} src={Medium} /></a>
+                            }
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </Box >
+    );
+};
+Holder.propTypes = {
+    names: PropTypes.string,
+    imageUrl: PropTypes.string,
+    githubUrl: PropTypes.string,
+    instagramUrl: PropTypes.string,
+    mediumUrl: PropTypes.string,
+    gender: PropTypes.string
+}
 export default Holder;

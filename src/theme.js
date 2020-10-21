@@ -10,6 +10,12 @@ const theme = createMuiTheme({
         h4: {
             fontFamily: 'Lora',
             fontWeight: 'bold'
+        },
+        h5: {
+            fontFamily: 'Lora',
+        },
+        h6: {
+            fontFamily: 'Montserrat',
         }
     }
 })
