@@ -26,14 +26,30 @@ const useStyles = makeStyles({
         { name: "Projects", path: "/projects" }
     ];
 
+    const guidelines={path:"/guidelines"}
+
     const classes=useStyles();
     return (
         <div className={classes.navclass}>
-            <Toolbar>
+            <Toolbar spacing={3}>
                 {
                 paths.map(el => <Button onClick={()=>{ router(el.path)}}>{el.name}</Button>)
                 }          
-                <Button variant="outlined" border="true" color="secondary">Join Us</Button>
+{/* Guideline page to be built */}
+                <Button border="true" 
+                disableGutters={false} 
+                color="secondary"
+                onClick={()=>{ router(guidelines.path)}}
+                >Guidelines</Button>
+
+{/* Upcoming Event Logic */}
+                <Button
+                 variant="contained" 
+                 border="true" 
+                 disableGutters={false} 
+                 color="info" 
+                 >Upcoming Event</Button>
+
             </Toolbar>
         </div>
     )
