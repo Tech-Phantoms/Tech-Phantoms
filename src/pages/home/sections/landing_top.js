@@ -103,7 +103,7 @@ const LandingTop = (props) => {
             </Grid>
             <Hidden mdDown>
               <Grid item xs={12} sm={12} md={12} lg={12}>
-                <Grid container>
+                <Grid spacing={0} container>
                   <Grid align="center" item xs={12} sm={12} md={6} lg={6}>
                     <GitButton text="GitHub" link={Links.github} />
                   </Grid>
