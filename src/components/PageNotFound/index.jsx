@@ -10,7 +10,7 @@ const btnstyle = {
 };
 
 const NotFoundPage = () => (
-    <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" height="calc(100vh - 310.7px)">
+    <Box display="flex" paddingTop={5} justifyContent="center" alignItems="center" flexDirection="column" height="calc(100vh - 310.7px)">
         <img src={emoticon} alt="...." width="100px"/>
         <Typography variant="h4" align="center">
             Oh no! Page Not Found.
@@ -22,8 +22,16 @@ const NotFoundPage = () => (
         <Link to="/">
             <Button style={btnstyle}>
                 Go back to home
-            </Button>
+            </Button><br/><br/>
         </Link>
+        <Typography variant="h5" align="center">
+         If you feel, thats a bug. 
+        </Typography>
+        <Typography variant="h6" align="center">
+         Contribute <a href="https://github.com/tech-phantoms">here</a><br/> or report at: <br/> 
+         <a href="mailto:opensource@techphantoms.tech">
+         opensource@techphantoms.tech </a>
+        </Typography>
     </Box>
 );
 export default NotFoundPage;
