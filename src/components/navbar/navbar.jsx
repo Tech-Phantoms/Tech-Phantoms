@@ -3,7 +3,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-
+import Paths from './paths'
 
 const useStyles = makeStyles({
     navclass: {
@@ -19,12 +19,6 @@ const useStyles = makeStyles({
     const router = (path) => {
         history.push(path);
     };
-    const paths = [
-        { name: "About Us", path: "/" },
-        { name: "Our Story", path: "/team" },
-        { name: "Events", path: "/events" },
-        { name: "Projects", path: "/projects" }
-    ];
 
     const guidelines={path:"/guidelines"}
 
@@ -33,7 +27,7 @@ const useStyles = makeStyles({
         <div className={classes.navclass}>
             <Toolbar spacing={3}>
                 {
-                paths.map(el => <Button onClick={()=>{ router(el.path)}}>{el.name}</Button>)
+                Paths.map(el => <Button onClick={()=>{ router(el.path)}}>{el.name}</Button>)
                 }          
 {/* Guideline page to be built */}
                 <Button border="true" 
