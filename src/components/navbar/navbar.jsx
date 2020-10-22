@@ -41,7 +41,7 @@ const useStyles = makeStyles({
                  variant="contained" 
                  border="true" 
                  disableGutters={false} 
-                 color="info" 
+                 color="primary" 
                  >Upcoming Event</Button>
 
             </Toolbar>
