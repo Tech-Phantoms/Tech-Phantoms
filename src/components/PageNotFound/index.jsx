@@ -27,7 +27,7 @@ const NotFoundPage = () => (
         <Typography variant="h5" align="center">
          If you feel, thats a bug. 
         </Typography>
-        <Typography variant="h6" align="center">
+        <Typography align="center">
          Contribute <a href="https://github.com/tech-phantoms">here</a><br/> or report at: <br/> 
          <a href="mailto:opensource@techphantoms.tech">
          opensource@techphantoms.tech </a>
