@@ -10,12 +10,26 @@ import Medium from "../../../../assets/team/medium.svg";
 
 const useStyles = makeStyles((theme)=>({
     container: {
-        margin: '9px',
-        boxShadow: '7px 7px black',
+        margin: '30px',
+        padding:'2px',
+        boxShadow: '5px 5px orange, 10px 10px tomato',
         justifyContent: 'center',
         background: 'transparent',
-        border: '2px solid black',
-        color: 'black'
+        border: '1px solid tomato',
+        borderRight :'1px solid orange',
+        borderBottom :'1px solid orange',
+        color: 'black',
+        transition:'0.5s',
+        '&:hover':{
+            color:'white',
+            cursor:'pointer',
+            background:'purple',
+            borderLeft: '1px solid purple',
+            borderTop:'1px solid purple',
+            padding:'15px',
+            margin:'15px',
+        }
+        // borderRadius:'20px',
     },
     large: {
         width: theme.spacing(7),
@@ -55,7 +69,7 @@ const Holder = (props) => {
 
 
     return (
-        <Box textAlign="center" className={classes.container} border={2}>
+        <Box textAlign="center" className={classes.container} >
 
             <Grid direction="row"
                 justify="center"
