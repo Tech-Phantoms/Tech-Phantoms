@@ -5,6 +5,7 @@ const links={
     medium:'https://medium.com/techphantoms',
     v2_web:'https://techphantoms.netlify.app',
     v1_web:'https://techphantoms.onrender.com',
-    githubOpenAPI:'https://api.github.com/orgs/Tech-Phantoms/repos'
+    githubOpenAPI:'https://api.github.com/orgs/Tech-Phantoms/repos',
+    slackInviteUpdated:'https://tech-phantoms.slack.com/join/shared_invite/zt-ic77wu9j-50JjytyBS3_IsRqon8Bc8g#/'
 }
 export default links;

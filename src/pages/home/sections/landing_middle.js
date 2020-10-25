@@ -106,7 +106,7 @@ const LandingMiddle = (props) =>{
                                    
                                    <Typography variant='p' textAlign="center" line-spacing={5}>
                                    Making development interactive, we  conduct technical events, posts, and stories with hands on code. 
-                                   Along with this, we conduct Microsoft Learn Student Ambassadors to conduct events on our platform. We have dedicated mentors and fully functional core team.
+                                   Along with this, we conduct Microsoft Learn Student Ambassadors events on our platform. We have dedicated mentors to guide you all.
                 
                                     </Typography>
                                   
