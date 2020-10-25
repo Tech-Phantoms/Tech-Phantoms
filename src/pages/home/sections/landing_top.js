@@ -6,8 +6,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import TechPhantoms from "../../../assets/landing_page/UI_Updated/techphantoms.svg";
 import Logo from "../../../assets/logo.svg";
 import LightMode_MLSA_Badge from "../../../assets/LightMode_MLSA_Badge.svg";
+import InstaButton from "../../../components/buttons/instagram";
 import GitButton from "../../../components/buttons/githubbtn";
 import SlackButton from "../../../components/buttons/slackbtn";
+
 import Links from "../../../data/links";
 
 const useStyles = makeStyles({
@@ -104,11 +106,14 @@ const LandingTop = (props) => {
             <Hidden mdDown>
               <Grid item xs={12} sm={12} md={12} lg={12}>
                 <Grid spacing={0} container>
-                  <Grid align="center" item xs={12} sm={12} md={6} lg={6}>
+                  <Grid align="center" item md={4} lg={4}>
                     <GitButton text="GitHub" link={Links.github} />
                   </Grid>
-                  <Grid align="center" item xs={12} sm={12} md={6} lg={6}>
-                    <SlackButton />
+                  <Grid align="center" item md={4} lg={4}>
+                    <SlackButton link={Links.slackInviteUpdated} />
+                  </Grid>
+                  <Grid align="center" item md={4} lg={4}>
+                    <InstaButton text="Instagram" link={Links.instagram}/>
                   </Grid>
                 </Grid>
               </Grid>
@@ -153,9 +158,24 @@ const LandingTop = (props) => {
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
               <center>
-                <img alt="TechPhantoms" src={LightMode_MLSA_Badge} />
+                <img alt="TechPhantoms" src={LightMode_MLSA_Badge} /><br/><br/>
               </center>
             </Grid>
+            <Hidden smUp>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <Grid spacing={1} container>
+                  <Grid align="center" item xs={6} sm={6}>
+                    <GitButton text="GitHub" link={Links.github} />
+                  </Grid>
+                  <Grid align="center" item xs={6} sm={6}>
+                    <SlackButton link={Links.slackInviteUpdated} /><br/><br/>
+                  </Grid>
+                  <Grid align="center" item xs={12} sm={12}>
+                    <InstaButton text="Instagram" link={Links.instagram}/>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Hidden>
           </Grid>
         </Grid>
       </Grid>
