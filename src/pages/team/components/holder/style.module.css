@@ -1,0 +1,52 @@
+.container {
+  box-shadow: -2px 1px 4px rgba(0, 0, 0, 0.2), -3px 2px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  background-color: white;
+  border-radius: 16px;
+  border-top-left-radius: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  align-self: center;
+  justify-self: center;
+}
+.container:hover .name {
+  color: tomato;
+  cursor: pointer;
+}
+.name {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  transition: 0.3s ease-out;
+}
+.linkFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}

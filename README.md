@@ -1,22 +1,28 @@
+
 # Tech Phantoms Community Website
 
 <p align="center">
-<img width=10% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/Ninja-Developers/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
+<img width=10% src="https://raw.githubusercontent.com/tech-phantoms/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/tech-phantoms/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
+<h1 align="center">Tech Phantoms Community Website</h1>
 <p align="center">
-This repository serves as official repository for the Community Website (V2) hosted at http://techphantoms.netlify.app <br/>
-🎉We are now on Instagram : https://instagram.com/tech_phantoms  🎉
+This repository serves as official repository for the Community Website (V2) hosted at [techphantoms.netlify.app](http://techphantoms.netlify.app) <br/>
+🎉 <b>We are now on Instagram : 
+  <p align="center">
+    
+  [instagram.com/tech_phantoms](https://www.instagram.com/tech_phantoms/)</b>  🎉
+  </p>
 </p>
 </p>
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
-![Last Commit](https://img.shields.io/github/last-commit/Ninja-Developers/Tech_Phantoms_website)
-![Release Date](https://img.shields.io/github/release-date/Ninja-Developers/Tech_Phantoms_website)
-![Issues](https://img.shields.io/github/issues/Ninja-Developers/Tech_Phantoms_website)
-![Stars GitHub](https://img.shields.io/github/stars/Ninja-Developers/Tech_Phantoms_website)
-![Language](https://img.shields.io/github/languages/top/Ninja-Developers/Tech_Phantoms_website)
-![Size](https://img.shields.io/github/repo-size/Ninja-Developers/Tech_Phantoms_website)
+![Last Commit](https://img.shields.io/github/last-commit/tech-phantoms/Tech_Phantoms_website)
+![Release Date](https://img.shields.io/github/release-date/tech-phantoms/Tech_Phantoms_website)
+![Issues](https://img.shields.io/github/issues/tech-phantoms/Tech_Phantoms_website)
+![Stars GitHub](https://img.shields.io/github/stars/tech-phantoms/Tech_Phantoms_website)
+![Language](https://img.shields.io/github/languages/top/tech-phantoms/Tech_Phantoms_website)
+![Size](https://img.shields.io/github/repo-size/tech-phantoms/Tech_Phantoms_website)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b0bce43d-6d04-47b4-8b66-39c31e029a02/deploy-status)](https://app.netlify.com/sites/techphantoms/deploys)
 
 <br/>
@@ -36,12 +42,13 @@ We are powered by one of the <a href="https://studentambassadors.microsoft.com/e
 
 </p>
 
-```js
-Notice: Please read the Contributing Guidelines and Readme before sending the PR.
+```text
+Notice: Please read the contributing guidelines and README before sending the PR.
 ```
 
 ```js
 🎉 We are following best open source practices for Hacktoberfest 2020🎉.
+
 ```
 
 ## 🔆 Tech Stack
@@ -56,7 +63,9 @@ The project is created using create-react-app and based on React.js framework.
 ## Codebase Structure
 
 We made this section for beginners, to feel comfortable while contributing to this project.
+
 If you are facing problem in understanding codebase, here is [Project Structure Documentation](https://github.com/Ninja-Developers/Tech_Phantoms_website/blob/development/projectStructure.md)
+
 
 ## 🚀 Steps to setup development environment
 
@@ -71,6 +80,7 @@ git clone github.com/your_username/Tech_Phantoms_website.git
 ## 💻 Development guidelines
 
 We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
+
 
 Development branch is hosted at : https://devtechphantoms.netlify.app/
 

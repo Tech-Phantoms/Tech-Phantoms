@@ -1,5 +1,6 @@
 import React from 'react'
 import { Events as Evnts} from '../components/EventHolder'
+import Devtag from '../components/underDevTag'
 import {
     Box,
 } from '@chakra-ui/core'
@@ -22,6 +23,7 @@ const Events = props => {
          />*/}
 
         <Box style={{ margin: '12px 10px' }}>
+            <Devtag/>
             <Evnts />
         </Box>
     </>

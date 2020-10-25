@@ -6,7 +6,8 @@ import {
   makeStyles,
   ListItem,
   ListItemText,
-  ListItemIcon
+  ListItemIcon,
+  Button
 } from '@material-ui/core'
 
 import {
@@ -19,7 +20,7 @@ import {
 import Logo from "../../assets/sidenavbar/top_logo.svg";
 
 import { useHistory } from "react-router-dom";
-
+import Paths from './paths'
 
 
 const useStyle = makeStyles(theme => ({
@@ -41,13 +42,8 @@ const MenuDrawer = props => {
     history.push(path);
   };
 
-  const paths = [
-    { name: "Home", path: "/" },
-    { name: "Team", path: "/team" },
-    { name: "Event", path: "/events" },
-    { name: "Project", path: "/projects" }
-  ];
 
+  const guidelines = { path: "/guidelines" }
   let iconGen = (path) => {
     switch (path) {
 
@@ -68,17 +64,40 @@ const MenuDrawer = props => {
   const list = () => (
     <div className={classes.list}>
       <div style={{ padding: '12px 22px' }}>
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="" width="90%" />
       </div>
       <List>
-        {paths.map(el => <ListItem button onClick={() => {
+        {Paths.map(el => <ListItem button onClick={() => {
           router(el.path)
           props.onClose()
         }}
         >
           <ListItemIcon>{iconGen(el.path)}</ListItemIcon>
           <ListItemText primary={el.name} />
+
+
         </ListItem>)}
+        <ListItem>
+          {/* Guideline page to be built */}
+          <Button
+            variant="contained"
+            disableGutters={false}
+            color="secondary"
+            onClick={() => { router(guidelines.path) }}
+
+          >Guidelines</Button>
+
+          {/* Upcoming Event Logic */}
+        </ListItem>
+        <ListItem>
+          <Button
+            variant="contained"
+            border="true"
+            disableGutters={false}
+            color="primary"
+
+          >Upcoming Event</Button>
+        </ListItem>
       </List>
     </div>
   )
