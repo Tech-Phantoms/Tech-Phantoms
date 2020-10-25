@@ -34,12 +34,14 @@ const creatorsData = [
         name: 'Abir Pal',
         subtagline: 'Community and Dev Lead',
         linkedin:'https://linkedin.com/in/imabp',
+        email:'mailto:abir@techphantoms.tech'
     },
     {
         img: Souvik,
         name: 'Souvik De',
         subtagline: 'Community and Dev Lead',
         linkedin:'https://www.linkedin.com/in/souvik-de-a2b941169/',
+        email:'mailto:souvik@techphantoms.tech'
     },
 
     {
@@ -47,6 +49,7 @@ const creatorsData = [
         name: 'Vinit Shahdeo',
         subtagline: 'Core Mentor and SDE Postman',
         linkedin:'https://www.linkedin.com/in/vinitshahdeo/',
+        email:'mailto:vinit@techphantoms.tech'
     }
 ]
 
@@ -75,6 +78,9 @@ const Creators = (props) => {
                                         </Typography>
                                         <Typography variant="body2" color="textSecondary">
                                             <a rel="noopener noreferrer"  target="_blank" href={creator.linkedin}>LinkedIn</a>
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary">
+                                            <a rel="noopener noreferrer"  target="_blank" href={creator.email}>{creator.email.replace('mailto:','')}</a>
                                         </Typography>
                                     </Grid>
                                 </Grid>
