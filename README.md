@@ -4,14 +4,14 @@
 <p align="center">
 <img width=10% src="https://raw.githubusercontent.com/tech-phantoms/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/logo.svg"> &nbsp; <img width=20% src="https://raw.githubusercontent.com/tech-phantoms/Tech_Phantoms_website/0982c252efad96e5633c9e59136811a9ab0316ca/src/assets/LightMode_techphantoms.svg">
 <h1 align="center">Tech Phantoms Community Website</h1>
-<p align="center">
-This repository serves as official repository for the Community Website (V2) hosted at [techphantoms.netlify.app](http://techphantoms.netlify.app) <br/>
-🎉 <b>We are now on Instagram : 
-  <p align="center">
-    
-  [instagram.com/tech_phantoms](https://www.instagram.com/tech_phantoms/)</b>  🎉
-  </p>
-</p>
+
+This repository serves as official repository for the Community Website hosted at [techphantoms.tech](http://techphantoms.tech) <br/>
+
+  
+We are now on  [Instagram @tech_phantoms](https://www.instagram.com/tech_phantoms/)
+
+  
+
 </p>
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
@@ -82,7 +82,6 @@ git clone github.com/your_username/Tech_Phantoms_website.git
 We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
 
 
-Development branch is hosted at : https://devtechphantoms.netlify.app/
 
 ## 💻 API KEY Installation (DUMMY)
 
