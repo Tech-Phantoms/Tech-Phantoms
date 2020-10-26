@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hidden } from "@material-ui/core/";
 import ProjectSection from './sections/projects'
-
+import ContributeSection from './sections/contribute'
 const Index = (props) => {
     const Navbar = props.navbar
     return (
@@ -32,6 +32,7 @@ const Index = (props) => {
                 Our Community is always open for new dedicated Contributor
             </p>
             <ProjectSection />
+            <ContributeSection />
         </div>
     )
 }

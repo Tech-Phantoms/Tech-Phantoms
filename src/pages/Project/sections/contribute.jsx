@@ -11,7 +11,8 @@ import {
 
 // importing images
 import Links from '../../../data/links'
-import Slackbtn from '../../../components/buttons/slackbtn'
+
+import GitHub from '../../../components/buttons/githubbtn'
 
 
 const useStyle = makeStyles(theme => ({
@@ -20,18 +21,18 @@ const useStyle = makeStyles(theme => ({
     },
     paper: {
         padding: theme.spacing(2, 4),
-        background:'linear-gradient(-120deg, #3eb991, #6ecadc, #e9a820, #e01563)',
+        background:'purple',
         color:'white'
     },
     title: {
         marginBottom: theme.spacing(4)
     },
     a:{
-        color:'white'
+        color:'white',
     }
 }))
 
-const Social = () => {
+const Contribute = () => {
     const classes = useStyle();
 
     return (
@@ -39,12 +40,12 @@ const Social = () => {
             <Container>
                 <Paper variant="outlined" className={classes.paper}>
                     <Typography className={classes.title} variant="h5">
-                        Join us on Slack!
+                        Contribute on our GitHub Org!
                     </Typography>
 
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={12} lg={12} sm={12}  >
-                            <Slackbtn link={Links.slackInviteUpdated} />
+                            <GitHub link={Links.github} text="GitHub"/>
                         </Grid>
 
                         <Grid item xs={12} md={12} lg={12} sm={12}  >
@@ -58,4 +59,4 @@ const Social = () => {
     );
 }
 
-export default Social
+export default Contribute
