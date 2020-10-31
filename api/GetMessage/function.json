@@ -8,7 +8,13 @@
       "methods": [
         "get"
       ],
-      "route": "message"
+      "routes": [
+        {
+          "route": "/*",
+          "serve": "/index.html",
+          "statusCode": 200
+        }
+      ]
     },
     {
       "type": "http",
