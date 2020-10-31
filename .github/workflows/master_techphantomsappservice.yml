@@ -2,7 +2,10 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy Node.js app to Azure Web App - techphantomsappservice
-
+env:
+  REACT_APP_AIRTABLE_API_KEY: ${{ secrets.REACT_APP_AIRTABLE_API_KEY }} 
+  REACT_APP_EVENT_BASE: ${{ secrets.REACT_APP_EVENT_BASE }}
+  REACT_APP_TEAM_BASE: ${{ secrets.REACT_APP_TEAM_BASE }}
 on:
   push:
     branches:
@@ -24,7 +27,6 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
