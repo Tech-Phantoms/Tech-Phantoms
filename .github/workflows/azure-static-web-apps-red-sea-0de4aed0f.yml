@@ -1,5 +1,8 @@
 name: Azure Static Web Apps CI/CD
-
+env:
+  REACT_APP_AIRTABLE_API_KEY: ${{ secrets.REACT_APP_AIRTABLE_API_KEY }} 
+  REACT_APP_EVENT_BASE: ${{ secrets.REACT_APP_EVENT_BASE }}
+  REACT_APP_TEAM_BASE: ${{ secrets.REACT_APP_TEAM_BASE }} 
 on:
   push:
     branches:
