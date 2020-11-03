@@ -47,7 +47,7 @@ Notice: Please read the contributing guidelines and README before sending the PR
 ```
 
 ```js
-🎉 We are following best open source practices for Hacktoberfest 2020🎉.
+🎉 We are following best open source practices.
 
 ```
 
