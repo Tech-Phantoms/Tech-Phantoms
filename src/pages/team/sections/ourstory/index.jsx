@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Grid, Box, Hidden } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import Creators from './creators'
-import DisplayTeams from '../coremembers/index';
+import DisplayTeams from './coremembers/index';
 import { team } from '../../../../data/airtable';
 // importing assets.
 
@@ -35,9 +35,6 @@ const useStyles = makeStyles({
     rightcontent: {
         padding: '25px',
     },
-    scrollable:{
-        overflowY:'scroll',
-    }
 })
 const OurStory = (props) => {
     const classes = useStyles();
@@ -51,13 +48,13 @@ const OurStory = (props) => {
                 item
                 xs={12}
                 sm={12}
-                md={4}
+                md={4}  
            
             >
 
                 <Box className={classes.leftpane}>
                     <Grid item sm={12} xs={12} md={12} lg={12}>
-                        <Typography variant="h2">
+                        <Typography variant="h2" gutterBottom={true}>
                             Creators
                     </Typography>
                     </Grid>

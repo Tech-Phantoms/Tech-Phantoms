@@ -6,6 +6,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import TechPhantoms from "../../../assets/landing_page/UI_Updated/techphantoms.svg";
 import Logo from "../../../assets/logo.svg";
 import LightMode_MLSA_Badge from "../../../assets/LightMode_MLSA_Badge.svg";
+import InstaButton from "../../../components/buttons/instagram";
+import GitButton from "../../../components/buttons/githubbtn";
+import SlackButton from "../../../components/buttons/slackbtn";
+
+import Links from "../../../data/links";
 
 const useStyles = makeStyles({
   leftcontainer: {
@@ -15,17 +20,17 @@ const useStyles = makeStyles({
     background: "#F0EBEB",
   },
   leftpane: {
-    marginLeft: "20%",
-    marginTop: "30%",
-    marginBottom: "70%",
-    paddingRight: "10%",
+    // marginLeft: "20%",
+    marginTop: "26%",
+    marginBottom: "60%",
+    // paddingRight: "10%",
   },
   rocket: {
     marginBottom: "15px",
   },
   rightpane: {
     marginTop: "6%",
-    paddingBottom:"5%"
+    paddingBottom: "5%",
   },
   brandname: {
     fontFamily: "Segoe UI",
@@ -33,7 +38,6 @@ const useStyles = makeStyles({
     color: "tomato",
     letterSpacing: "3px",
   },
-
 });
 
 //assests
@@ -50,10 +54,9 @@ const useStyles = makeStyles({
 // import links from '../../data/links'
 
 const LandingTop = (props) => {
- 
   // const { theme } = useTheme();
   const classes = useStyles();
-  const Navbar=props.navbar;
+  const Navbar = props.navbar;
   return (
     <Grid container>
       <Grid
@@ -90,11 +93,31 @@ const LandingTop = (props) => {
                   {" "}
                   Introducing
                   <br /> An
-                  <br /> <b> Open Source Organization</b>
+                  <br /> <b>
+                  <Typography gutterBottom={true} align="center" variant="h4">
+                     Open Source 
+                  </Typography>
+                  Organization</b>
                   <br />
                 </span>
+                <br />
               </Typography>
             </Grid>
+            <Hidden mdDown>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <Grid spacing={0} container>
+                  <Grid align="center" item md={4} lg={4}>
+                    <GitButton text="GitHub" link={Links.github} />
+                  </Grid>
+                  <Grid align="center" item md={4} lg={4}>
+                    <SlackButton link={Links.slackInviteUpdated} />
+                  </Grid>
+                  <Grid align="center" item md={4} lg={4}>
+                    <InstaButton text="Instagram" link={Links.instagram}/>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Hidden>
           </Grid>
         </Box>
       </Grid>
@@ -107,11 +130,9 @@ const LandingTop = (props) => {
         md={8}
         lg={8}
       >
-
-          <Hidden smDown>
-            <Navbar/>
-          </Hidden>
-
+        <Hidden smDown>
+          <Navbar />
+        </Hidden>
 
         <Grid container className={classes.rightpane}>
           <Grid container item xs={12} sm={12} md={12} lg={12}>
@@ -137,9 +158,24 @@ const LandingTop = (props) => {
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
               <center>
-                <img alt="TechPhantoms" src={LightMode_MLSA_Badge} />
+                <img alt="TechPhantoms" src={LightMode_MLSA_Badge} /><br/><br/>
               </center>
             </Grid>
+            <Hidden smUp>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <Grid spacing={1} container>
+                  <Grid align="center" item xs={6} sm={6}>
+                    <GitButton text="GitHub" link={Links.github} />
+                  </Grid>
+                  <Grid align="center" item xs={6} sm={6}>
+                    <SlackButton link={Links.slackInviteUpdated} /><br/><br/>
+                  </Grid>
+                  <Grid align="center" item xs={12} sm={12}>
+                    <InstaButton text="Instagram" link={Links.instagram}/>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Hidden>
           </Grid>
         </Grid>
       </Grid>

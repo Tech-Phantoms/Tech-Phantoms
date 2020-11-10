@@ -1,5 +1,5 @@
 import React from "react";
-import { LandingTop, LandingMiddle, LandingBottom, Social } from "./sections";
+import { LandingTop, LandingMiddle, LandingBottom, Social} from "./sections";
 
 const Home = (props) => {
 
@@ -10,6 +10,7 @@ return(
       <LandingTop navbar={Navbar}/> 
       <LandingMiddle />
       <LandingBottom />
+      <Social />
     </>)
 
 };
