@@ -11,6 +11,7 @@ import Events from "./pages/event";
 import Projects from "./pages/Project";
 import Register from "./pages/register";
 import Guidelines from "./pages/guidelines";
+import Apihack from "./pages/hacks/api_hacks"
 // importing components
 import Drawer from "./components/navbar";
 import NotFoundPage from "./components/PageNotFound";
@@ -32,7 +33,11 @@ function App() {
           exact
           render={() => <Hacktoberfest navbar={Navbar} />}
         />
-
+         <Route
+          path="/apihacks"
+          exact
+          render={() => <Apihack navbar={Navbar} />}
+        />
         <Route path="/events" exact render={() => <Events navbar={Navbar} />} />
 
         <Route
@@ -47,6 +52,7 @@ function App() {
           exact
           render={() => <Guidelines navbar={Navbar} />}
         />
+        
 
         <Route path="*" render={() => <NotFoundPage navbar={Navbar} />} />
       </Switch>
