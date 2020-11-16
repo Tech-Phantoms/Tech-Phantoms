@@ -9,7 +9,8 @@ const theme = createMuiTheme({
         }
     },
     typography: {
-        fontFamily: ['"Hind Madurai"', 'Lora', 'Montserrat'].join(','),
+        fontFamily: ['"Hind Madurai"', 'Lora', 'Montserrat','"Segoe UI"'].join(','),
+      
         h2: {
             fontFamily: 'Montserrat',
             fontWeight: 'bolder'
@@ -23,7 +24,10 @@ const theme = createMuiTheme({
         },
         h6: {
             fontFamily: 'Montserrat',
-        }
+        },
+        h1: {
+            fontFamily:'Segoe UI',
+        },
     }
 })
 
