@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "100",
     marginTop: "5px",
   },
+  quote: {
+    fontSize: "36px",
+  },
 }));
 
 const Theme = (props) => {
@@ -38,19 +41,21 @@ const Theme = (props) => {
     <Grid container className={classes.root}>
       <Grid item xs={12} sm={12} md={12} lg={12}>
         <Box className={classes.center}>
-         
-            <span className={classes.headings}>Theme</span>
-            <span className={classes.subheadings}>
-              <br />
-              Along with API First skills, we want to nurture creativity without
-              any limits.
-              <br /> So we are having an open theme.
-              <br />
-              <br />
-              <span className={classes.themeTopic}> Build things that matter, using API</span>
+          <span className={classes.headings}>Theme</span>
+          <span className={classes.subheadings}>
+            <br />
+            Along with API First skills, we want to nurture creativity without
+            any limits.
+            <br /> So we are having an open theme.
+            <br />
+            <br />
+            <span className={classes.themeTopic}>
+              <span className={classes.quote}> " </span>
+              Build things that matter, using API
+              <span className={classes.quote}> " </span>
             </span>
-            <br />{" "}
-       
+          </span>
+          <br />
         </Box>
       </Grid>
     </Grid>
