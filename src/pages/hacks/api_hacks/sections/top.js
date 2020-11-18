@@ -60,7 +60,7 @@ const Top = (props) => {
             <br /> impactful mini hackathon.
             <br />
             <br />
-            25th Nov 2020 <br /> 30th Nov 2020<br/><br/>  
+            25th Nov 2020 <br /> to <br/> 30th Nov 2020<br/><br/>  
            <RegisterBTN/>
           </span>
         </Box>
@@ -86,7 +86,7 @@ const Top = (props) => {
             Presented By:
             <br />
             <b>
-              Tech Phantoms and Innovators Hub
+            <span className={classes.headings}>  Tech Phantoms X Innovators' Hub </span>
               <br />
               <span style={{ color: "red" }}>Chandigarh</span> University
 
