@@ -39,7 +39,7 @@ const Mission = (props) => {
         <Box className={classes.center}><center>
           <span className={classes.headings}>Mission of API Hacks.</span>
           <span className={classes.subheadings}><br/>
-            To Leverage API First Skills among Students and Starters.
+            To Leverage API First Skills among<br/> Novice students <b>interested</b> in Computer Science.
               <br/><br/>
         </span></center>
         </Box>

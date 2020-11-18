@@ -14,6 +14,7 @@ import Participate from './sections/participate'
 import Speakers from './sections/speakers'
 import Community from './sections/community'
 import Developer from './sections/developer'
+import Prizes from './sections/prize'
 import BG from "./hack_assets/bg.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -56,6 +57,9 @@ const Apihacks = (props) => {
         </Grid>
         <Grid container>
          <Speakers/>
+        </Grid>
+        <Grid container>
+         <Prizes/>
         </Grid>
         <Grid container>
          <Community/>

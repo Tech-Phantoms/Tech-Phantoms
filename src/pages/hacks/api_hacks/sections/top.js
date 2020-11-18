@@ -56,7 +56,7 @@ const Top = (props) => {
             <br />
           </span>
           <span className={classes.subheadings}>
-            Leverage API First SKills with this
+            Leverage API First Skills with this
             <br /> impactful mini hackathon.
             <br />
             <br />
@@ -68,17 +68,18 @@ const Top = (props) => {
       <Grid className={classes.right} item xs={12} sm={12} md={8} lg={8}>
         <Box >
           <span className={classes.description}>
-            API first skills helps to build scalable software systems or
-            serverless architecture. This mini hackathon will be a step to make
+            API first skills help to build scalable software systems or
+            serverless architecture. This <b>Mini hackathon</b> will be a step to make
             students industry ready by helping them to build impactful products
-            using APIs
+            using APIs.
             <br />
             <br />
-            <b>
-              {" "}
-              Eligibile For 1st, 2nd and 3rd Year Undergraduate Students based
-              in India{" "}
-            </b>
+          
+         
+              Eligibility:<br/>
+              High School, 1st, 2nd and 3rd Year Undergraduate Students based
+              in <b>India</b>
+          
             <br />
             <br />
             <br />
@@ -88,6 +89,7 @@ const Top = (props) => {
               Tech Phantoms and Innovators Hub
               <br />
               <span style={{ color: "red" }}>Chandigarh</span> University
+
             </b>
           </span>
         </Box>

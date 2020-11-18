@@ -43,8 +43,8 @@ const Speakers = (props) => {
       <Grid item xs={12} sm={12} md={12} lg={12}>
         <Box className={classes.center}>
           <span className={classes.headings}> Phenomenal Speakers</span><br/>
-          Our special guests are always ready uplift the students with their
-            vast experience in various aspects.
+          Our guest speakers are always ready to uplift the students with their
+            vast experience and knowledge in various aspects.
           <span className={classes.subheadings}>
             <Grid container className={classes.speaker}>
               <br />

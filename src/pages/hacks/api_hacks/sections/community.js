@@ -46,11 +46,15 @@ const Community = (props) => {
             <span className={classes.headings}>Tech Phantoms</span>
             <span className={classes.subheadings}>
               <br />
-              We are an open source organization by Microsoft Learn Student Ambassadors. We are on a mission to leverage open source culture among students and starters and building super cool OSS tools.<br/><br/>
-              <span className={classes.headings}>Innovators Hub</span><br/>
-              We are the technical club of Chandigarh University, specializing in research and patents.We dont hesitate, we Innovate.
+              We are an open source organization by Microsoft
+               Learn Student Ambassadors. <br/>We are on a mission to 
+               leverage open source culture among students and starters 
+               and build super cool OSS tools.<br/><br/>
+              <span className={classes.headings}>Innovators' Hub</span><br/>
+              We are the technical club of Chandigarh University, specializing in research and patents.
+              <br/>We love to nurture Innovation and Creativity.
              <br/><br/><span className={classes.headings}>Contact</span><br/>
-             We are active and dont let your queries be with you. <br/> You can reach us at: <br/>
+             We are active and don't let your queries be with you. <br/> You can reach us at: <br/>
             <a className={classes.a} href="mailto:abir@techphantoms.tech">
              abir@techphantoms.tech
             </a>

@@ -1,7 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core/";
-import RegisterBTN from './components/btn/index'
+import Prize from './components/prize/index'
+import PrizeList from '../hack_assets/data/prizeList'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -20,10 +21,9 @@ const useStyles = makeStyles((theme) => ({
   },
   center: {
     padding: "5vw",
-    backgroundColor: "#4B48D9",
-    color: "white",
+    backgroundColor: "#FFC700",
+    color: "black",
     fontFamily: "Segoe UI",
-    textAlign:'right'
   },
 
   description: {
@@ -33,25 +33,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Participate = (props) => {
+const Prizes = (props) => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
       <Grid item xs={12} sm={12} md={12} lg={12}>
         <Box className={classes.center}>
          
-            <span className={classes.headings}>Participate</span>
+            <span className={classes.headings}>Benefits</span>
             <span className={classes.subheadings}>
               <br />
-              We will be focussing on quality content. <br/>
-              Henceforth accepting limited students for this mini-hack running from <br/> 
-              <b>
-              25th Nov to 30th Nov (IST)
-              </b>
-              <br/>Participate Now and start learning by building real world impactful projects!<br/><br/>
-          <RegisterBTN/>
-        
-              
+             Avail premium benefits and exclusive prizes worth anticipating.  
+              <br /> 
+              <br/>
+              {
+                    PrizeList.map((prize)=>{
+                                                return (<Prize name={prize.name} icon={prize.icon} desc={prize.desc} />)
+                    })
+
+              }
+            <span className={classes.headings}> And Many more ;) </span>
             </span>
             <br />{" "}
        
@@ -60,4 +61,4 @@ const Participate = (props) => {
     </Grid>
   );
 };
-export default Participate;
+export default Prizes;
