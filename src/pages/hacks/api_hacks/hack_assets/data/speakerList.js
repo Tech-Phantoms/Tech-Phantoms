@@ -5,6 +5,7 @@ import Ekansh from '../speakers/ekansh.svg';
 import Haimantika  from '../speakers/hem.svg';
 import Abir from '../speakers/abir.svg';
 import Rishit from '../speakers/rishit.svg'
+import Rishabh from '../speakers/rishabh.svg'
 const SpeakerList = [
   {
     name: "Sarah Williams",
@@ -41,9 +42,15 @@ const SpeakerList = [
     img: Haimantika,
   },
   {
+    name: "Rishabh Raj",
+    title: "Chandigarh Representative @ IEEE",
+    subtitle:'15+ Patents successfully filed',
+    img: Rishabh,
+  },
+  {
     name: "Abir Pal",
-    title: "Postman Certified Expert",
-    subtitle:'Microsoft Student Ambassador',
+    title: "Beta Microsoft Student Ambassador",
+    subtitle:'Lead @ Tech Phantoms, Postman Certified Expert',
     img: Abir,
   },
 ];

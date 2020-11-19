@@ -42,7 +42,8 @@ const useStyles = makeStyles({
                  border="true" 
                  disableGutters={false} 
                  color="primary" 
-                 >Upcoming Event</Button>
+                 href='/apihacks'
+                 >API Hacks</Button>
 
             </Toolbar>
         </div>
