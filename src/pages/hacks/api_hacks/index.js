@@ -13,6 +13,7 @@ import Theme from './sections/theme'
 import Participate from './sections/participate'
 import Speakers from './sections/speakers'
 import Community from './sections/community'
+import Sponsor from './sections/sponsor'
 import Developer from './sections/developer'
 import Prizes from './sections/prize'
 import BG from "./hack_assets/bg.jpg";
@@ -63,6 +64,9 @@ const Apihacks = (props) => {
         </Grid>
         <Grid container>
          <Community/>
+        </Grid>
+        <Grid container>
+         <Sponsor/>
         </Grid>
         <Grid container>
          <Developer/>
