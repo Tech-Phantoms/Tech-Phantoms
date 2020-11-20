@@ -1,4 +1,5 @@
 import React from "react";
+import MLSA from '../hack_assets/sponsors/mlsa.svg'
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core/";
 
@@ -26,15 +27,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5px",
   },
   center: {
-    padding: "1vw",
-    backgroundColor: "black",
-    color: "lightgreen",
+    padding: "5vw",
+    backgroundColor: "#30307C",
+    color: "white",
     fontFamily: "Segoe UI",
-    textAlign:'center',
+    textAlign:'left',
     fontWeight:'500'
   },
   a:{
-    color: "yellow", 
+    color: "yellow",
  
   }
 }));
@@ -45,11 +46,13 @@ const Developer = (props) => {
     <Grid container className={classes.root}>
       <Grid item xs={12} sm={12} md={12} lg={12}>
         <Box className={classes.center}>
-         
-        
+            <span className={classes.headings}>
+             Visionary Support<br/>
+            </span>
             <span className={classes.subheadings}>
-              <br />
-             {'</ > with Love by '}<a className={classes.a} href="https://linkedin.com/in/imabp">Abir Pal</a> 
+             We thank the following organizations from the whole team of  and <b>Tech Phantoms</b> and <b>Innovators' Hub </b>
+             in making our mission successful. <br/><br/><br/>
+            <img src={MLSA} alt="mlsa"/>
             </span>
             <br />{" "}
        
