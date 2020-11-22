@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import {
     Container,
     Grid,
@@ -8,9 +8,6 @@ import {
 
 import Holder from '../components/holder';
 
-
-import { useRepo } from '../../../data/hooks';
-
 const useStyle = makeStyles(theme => ({
     projList: {
         marginTop: theme.spacing(12)
@@ -18,9 +15,10 @@ const useStyle = makeStyles(theme => ({
 }))
 
 
-const Projects = () => {
+const Projects = (props) => {
     const classes = useStyle();
-    const repos = useRepo();
+
+    let { repos } = props
 
     return <>
         <div className={classes.projList} />
@@ -32,10 +30,10 @@ const Projects = () => {
                             created={el.created}
                             repo_name={el.name}
                             language={el.language}
-                            issues={el.issueCount}
+                            issues={el.issues_count}
                             stars={el.stars}
                             description={el.description}
-                            issueUrl={el.issueUrl}
+                            issueUrl={el.html_url}
                             key={el.id}
                         />
                     </Grid>)
@@ -43,6 +41,10 @@ const Projects = () => {
             </Grid>
         </Container>
     </>
+}
+
+Projects.propTypes = {
+    repos: PropTypes.object
 }
 
 export default Projects
