@@ -63,10 +63,10 @@ const Apihacks = (props) => {
          <Prizes/>
         </Grid>
         <Grid container>
-         <Community/>
+         <Sponsor/>
         </Grid>
         <Grid container>
-         <Sponsor/>
+         <Community/>
         </Grid>
         <Grid container>
          <Developer/>

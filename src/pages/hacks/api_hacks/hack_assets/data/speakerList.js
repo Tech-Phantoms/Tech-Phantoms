@@ -35,7 +35,7 @@ const SpeakerList = [
     subtitle: ' Mentor, Tensorflow Usergroup Mumbai',
     img: Rishit,
   },
-  {
+  {  
     name: "Haimantika Mitra",
     title: "Power Apps Evangelist",
     subtitle:'Microsoft Student Ambassador',

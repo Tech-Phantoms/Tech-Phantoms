@@ -6,9 +6,10 @@ const RegisterBtn = (props)=>{
     <Button 
     variant="contained"
     target='_blank' 
-    href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b_XYgpX-JuhEnEl61Ll0DY1UQ1dCUUZBVTRRN09GQUNSNlc0RzdIVzZTUi4u"
+    href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b_XYgpX-JuhEnEl61Ll0DY1UMVI0TkFIUkY2MklHMDBDOUFPNlpaTkpHTC4u"
+    //RegisForm href="https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b_XYgpX-JuhEnEl61Ll0DY1UQ1dCUUZBVTRRN09GQUNSNlc0RzdIVzZTUi4u"
     >
-    Participate 
+    Sign Up
     </Button>
        )
 }

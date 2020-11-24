@@ -1,5 +1,12 @@
 const PrizeList = [
-
+{
+    name: "Progate NodeJS Course Access",
+    desc: "Top-5 Teams will get NodeJS Course Access from Progate"
+},
+{
+    name: "Geeks For Geeks",
+    desc: "All Participants will receive Rs. 300 Coupon, 7 Finalist Teams  will receive Rs. 750 Coupon, Top 3 Winning Team Members will receive Prizes (1st: Rs. 1500 Coupon), (2nd: Rs. 1200 Coupon), (3rd: Rs. 1000 Coupon) "
+},
 {
     name: "Windows 10 Education Edition",
     desc: "Winning Team Lead will recieve Windows 10 Education Edition Retail Product Key."
@@ -8,6 +15,7 @@ const PrizeList = [
     name: "Nomination for Microsoft Student Ambassadors",
     desc: "Microsoft Student Ambassadors are a force for good, locally and globally. The Team lead with impactful idea will grab the golden opportunity of being nominated for the next cohort of Microsoft Student Ambassadors."
 },
+
 {
     name: "Special Edition TShirt",
     desc: "Top 5 Winning Teams will get special edition Tshirt from Chandigarh University."

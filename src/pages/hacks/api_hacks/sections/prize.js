@@ -52,7 +52,7 @@ const Prizes = (props) => {
                     })
 
               }
-            <span className={classes.headings}> And Many more ;) </span>
+       
             </span>
             <br />{" "}
        
