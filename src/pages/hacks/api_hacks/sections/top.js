@@ -47,21 +47,22 @@ const Top = (props) => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={12} sm={12} md={4} lg={4}>
-        <Box className={classes.left}>
+      <Grid className={classes.left} item xs={12} sm={12} md={4} lg={4}>
+        <Box>
           <span className={classes.headings}>
-            API
+            #apiHacks
             <br />
-            Hacks
-            <br />
+            
           </span>
           <span className={classes.subheadings}>
             Leverage API First Skills with this
             <br /> impactful mini hackathon.
-            <br />
-            <br />
-            25th Nov 2020 <br /> to <br/> 30th Nov 2020<br/><br/>  
-           <RegisterBTN/>
+            <br />25th Nov to 30th Nov 
+            <br />   <br />
+            <b>You are late :( Hack has started.<br/></b>
+          <br/>
+          You can still attend our exclusive expert sessions<br/> from Microsoft, Postman, etc<br/> by registering below<br/>
+      <br/>  <RegisterBTN/>
           </span>
         </Box>
       </Grid>

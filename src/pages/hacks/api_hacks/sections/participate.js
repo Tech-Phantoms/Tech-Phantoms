@@ -43,13 +43,12 @@ const Participate = (props) => {
             <span className={classes.headings}>Participate</span>
             <span className={classes.subheadings}>
               <br />
-              We will be focussing on quality content. <br/>
-              Henceforth accepting limited students for this mini-hack running from <br/> 
-              <b>
-              25th Nov to 30th Nov (IST)
-              </b>
-              <br/>Participate Now and start learning by building real world impactful projects!<br/><br/>
-          <RegisterBTN/>
+        
+     
+              <b>You are late :( Hack has started.<br/></b>
+          <br/>
+          You can still attend our exclusive expert sessions<br/> from Microsoft, Postman, etc<br/> by registering below<br/>
+          <br/><RegisterBTN/>
         
               
             </span>
