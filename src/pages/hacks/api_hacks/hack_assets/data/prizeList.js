@@ -18,7 +18,7 @@ const PrizeList = [
 
 {
     name: "Special Edition TShirt",
-    desc: "Top 5 Winning Teams will get special edition Tshirt from Chandigarh University."
+    desc: "Top 3 Winning Teams will get special edition Tshirt from Chandigarh University."
 },    
 {
     name: "Letter Of Appreciation from IEEE and Chandigarh University",
