@@ -17,7 +17,7 @@ import Sponsor from './sections/sponsor'
 import Developer from './sections/developer'
 import Prizes from './sections/prize'
 import BG from "./hack_assets/bg.jpg";
-
+import Judges from "./sections/judges"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -57,8 +57,12 @@ const Apihacks = (props) => {
          <Participate/>
         </Grid>
         <Grid container>
+         <Judges/>
+        </Grid>
+        <Grid container>
          <Speakers/>
         </Grid>
+       
         <Grid container>
          <Prizes/>
         </Grid>
