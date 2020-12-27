@@ -158,7 +158,10 @@ const LandingTop = (props) => {
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
               <center>
-                <img alt="TechPhantoms" src={LightMode_MLSA_Badge} /><br/><br/>
+                <a href="https://studentambassadors.microsoft.com/" 
+                rel="noopener noreferrer" target="_blank">
+                  <img alt="TechPhantoms" src={LightMode_MLSA_Badge} /><br/><br/>
+                </a>
               </center>
             </Grid>
             <Hidden smUp>
