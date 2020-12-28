@@ -1,23 +1,5 @@
-html,
 body {
-  height: 100%;
-}
-
-@font-face{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Poppins'),
-    local('Poppins-Regular'),
-  local('Poppins'), url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins';
+ box-sizing: border-box;
 }
 
 #root {
@@ -64,4 +46,7 @@ body {
 *::-webkit-scrollbar-thumb {
   background-color: #ff6347;
   border: 1px solid white;
+}
+a{
+  text-decoration: none;
 }
