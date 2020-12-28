@@ -93,9 +93,9 @@ Setting Up dummy API KEY
 3. Paste the following code inside .env file.
 
 ```js
-REACT_APP_AIRTABLE_API_KEY = keyl7IrslG0riVZjW;
-REACT_APP_TEAM_BASE = appeFoa7ggqSOwivF;
-REACT_APP_EVENT_BASE = appC2QPeeuXQPAxgr;
+REACT_APP_AIRTABLE_API_KEY=keyl7IrslG0riVZjW
+REACT_APP_TEAM_BASE=appeFoa7ggqSOwivF
+REACT_APP_EVENT_BASE=appC2QPeeuXQPAxgr
 ```
 
 ## 💻 System Requirements
