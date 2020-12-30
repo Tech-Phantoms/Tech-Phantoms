@@ -27,31 +27,31 @@ import {
 } from '@material-ui/icons'
 
 const useStyle = makeStyles(theme => ({
-    media: {
-        height: 0,
-        paddingTop: '56.25%'
-    },
-    expand: {
-        transform: 'rotate(0deg)',
-        marginLeft: 'auto',
-        transition: theme.transitions.create('transform', {
-            duration: theme.transitions.duration.shortest,
-        }),
-    },
-    expandOpen: {
-        transform: 'rotate(180deg)',
-    },
-    button: {
-        margin: theme.spacing(0, 2)
-    },
-    chip: {
-        backgroundColor: indigo[800],
-        color: 'white'
-    },
-    topSpace: {
-        marginTop: theme.spacing(2)
-    }
-}))
+  media: {
+    height: 0,
+    paddingTop: "56.25%",
+  },
+  expand: {
+    transform: "rotate(0deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: "rotate(180deg)",
+  },
+  button: {
+    margin: theme.spacing(0, 2),
+  },
+  chip: {
+    backgroundColor: indigo[800],
+    color: "white",
+  },
+  topSpace: {
+    marginTop: theme.spacing(2),
+  },
+}));
 
 const Holder = props => {
 
@@ -81,72 +81,54 @@ const Holder = props => {
     }
 
     return (
-        <div>
-            <Card variant="outlined">
-                <CardMedia className={classes.media} image={props.eventImg} />
-                <CardContent>
-                    <Typography variant="h5">
-                        {props.title}
-                    </Typography>
+      <>
+        <Card style={{height: "100%"}} variant="outlined">
+          <CardMedia className={classes.media} image={props.eventImg} />
+          <CardContent>
+            <Typography variant="h5">{props.title}</Typography>
 
-                    <div className={classes.topSpace}>
-                        {((props.mlsa_event) ? <Chip className={classes.chip} size="small" label="MLSA" /> : null)}
-                        <Typography>
-                            {tt('{h}:{mm} {a}').render(new Date(props.date))} (IST)
-                        </Typography>
-                    </div>
+            <div className={classes.topSpace}>
+              {props.mlsa_event ? <Chip className={classes.chip} size="small" label="MLSA" /> : null}
+              <Typography>{tt("{h}:{mm} {a}").render(new Date(props.time))} (IST)</Typography>
+              <Typography variant="subtitle1">{tt("{DD}/{MM}/{YYYY}  {dddd}").render(new Date(props.date))}</Typography>
+            </div>
+          </CardContent>
 
+          <CardActions disableSpacing>
+            <a target="blank" href={props.reg_link}>
+              <Button className={classes.button} variant="outlined" disabled={props.event_recording_link && true}>
+                Check Out
+              </Button>
+            </a>
+            {props.event_recording_link && (
+              <a target="blank" href={props.event_recording_link}>
+                <Button variant="outline" style={{ "background-color": "red", color: "white" }}>
+                  Recording
+                </Button>
+              </a>
+            )}
 
-                </CardContent>
-
-                <CardActions disableSpacing>
-
-
-                    <a target="blank" href={props.reg_link}>
-                        <Button
-                            className={classes.button}
-                            variant="outlined"
-                            disabled={props.event_recording_link && true}
-                        >
-                            Check Out
-                        </Button>
-                    </a>
-                    {
-                        props.event_recording_link &&
-                        <a target="blank" href={props.event_recording_link}>
-                            <Button variant="outline" style={{ 'background-color': 'red', 'color': 'white' }} >
-                                Recording
-                            </Button>
-
-                        </a>
-                    }
-
-                    <IconButton
-                        className={clsx(classes.expand, {
-                            [classes.expandOpen]: expanded,
-                        })}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
-                    >
-                        <ExpandMore />
-                    </IconButton>
-
-                </CardActions>
-                <Collapse in={expanded} timeout="auto" unmountOnExit>
-                    <CardContent>
-                        <Typography variant="h6">
-                            Description
-                        </Typography>
-                        <Typography>
-                            {props.description}
-                        </Typography>
-                        {mlsaLabel()}
-                    </CardContent>
-                </Collapse>
-            </Card>
-        </div>
-    )
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMore />
+            </IconButton>
+          </CardActions>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography variant="h6">Description</Typography>
+              <Typography>{props.description}</Typography>
+              {mlsaLabel()}
+            </CardContent>
+          </Collapse>
+        </Card>
+      </>
+    );
 }
 
 Holder.propTypes = {
@@ -156,7 +138,7 @@ Holder.propTypes = {
     reg_link: PropTypes.string,
     event_recording_link: PropTypes.string,
     description: PropTypes.string,
-    date: PropTypes.object
+    time: PropTypes.object
 }
 
 export default Holder;
