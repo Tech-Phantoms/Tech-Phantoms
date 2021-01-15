@@ -114,6 +114,13 @@ We want to facilitate a healthy and constructive community behavior by adopting 
 
 Please adhere towards our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## ❤️ Thanks to our awesome contributors.
+## ❤️ Thanks to our awesome contributors ✨✨.
+<table>
+  <tr>
+    <td>
+<a href="https://github.com/Tech-Phantoms/Tech_Phantoms_website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Tech-Phantoms/Tech_Phantoms_website" />
+</a>
+    </td></tr></table>
 
 ### 🌟 STAR AND FORK THE REPOSITORY FOR YOUR FUTURE REFERENCE.🌟
