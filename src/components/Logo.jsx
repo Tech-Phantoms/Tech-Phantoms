@@ -2,12 +2,14 @@ import React from "react";
 
 function Logo() {
   return (
+    <div style={{position:'fixed',zIndex:10}}>
     <svg
       height="9vh"
       viewBox="1000 0 500 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      
     >
       <path fill="#FAFAFA" d="M0 0h500v500H0z" />
       <path fill="url(#prefix__pattern0)" d="M57 23h400v454.167H57z" />
@@ -31,6 +33,7 @@ function Logo() {
         />
       </defs>
     </svg>
+    </div>
   );
 }
 

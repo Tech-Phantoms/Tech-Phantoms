@@ -1,10 +1,21 @@
 import React from "react";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
+import colors from "../../../colors";
 function Announcements() {
   return (
-    <Box borderWidth="1px" color="white" h="50vh" m={6}>
+    <Box
+      borderWidth="1px"
+      borderColor={colors.borderStroke}
+      bg={colors.secondaryDark}
+      h="50vh"
+      ml={6}
+      mt={6}
+      w="70%"
+    >
       <Flex>
-        <Text m={4}>Announcements</Text>
+        <Heading m={4} as="h4" size="md" color={colors.headings}>
+          Announcements
+        </Heading>
       </Flex>
     </Box>
   );
