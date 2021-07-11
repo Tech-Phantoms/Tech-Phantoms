@@ -1,7 +1,6 @@
 import React from "react";
 import { Flex, Box, Text } from "@chakra-ui/react";
 import Announcements from "./components/Announcements";
-import Logo from "../../components/Logo";
 import colors from "../../colors";
 import FeaturedProducts from "./components/FeaturedProducts";
 import ROUTES from "../../routes";
@@ -13,7 +12,7 @@ const LandingPage = () => {
         <Box flex="3" bg={colors.primaryDark} height="96vh">
           <Flex direction="column">
             <Box ml={6}>
-              <img src="/img/logo.svg" width="40px" />
+              <img src="/img/logo.svg" alt="Logo" width="40px" />
             </Box>
             <Announcements />
             <Box
@@ -24,12 +23,12 @@ const LandingPage = () => {
               <Flex direction="row" mb={5}>
                 <Box mr={4}>
                   <a href={ROUTES.socials.twitter}>
-                    <img src="/img/twitter.svg" />
+                    <img alt="twitter" src="/img/twitter.svg" />
                   </a>
                 </Box>
                 <Box>
                 <a href={ROUTES.socials.github}>
-                  <img src="/img/github.svg" />
+                  <img alt="github" src="/img/github.svg" />
                   </a>
                 </Box>
               </Flex>
