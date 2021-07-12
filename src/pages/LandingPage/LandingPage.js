@@ -6,6 +6,7 @@ import FeaturedProducts from "./components/FeaturedProducts/FeaturedProducts";
 import ROUTES from "../../routes";
 import SpecialBanner from "./components/SpecialBanner";
 import Hashtags from "./components/Hashtags";
+import LandingContent from "./components/LandingContent";
 
 const LandingPage = () => {
   return (
@@ -23,7 +24,7 @@ const LandingPage = () => {
               flexGrow={1}
             >
               <Flex direction="row" mb={5}>
-                <Box mr={4}>
+                <Box mr={4} h="fit-content">
                   <a href={ROUTES.socials.twitter}>
                     <img alt="twitter" src="/img/twitter.svg" />
                   </a>
@@ -39,8 +40,14 @@ const LandingPage = () => {
             </Box>
           </Flex>
         </Box>
-        <Box flex="6" bg={colors.primaryDark} height="96vh">
-          <Text>Box 2</Text>
+
+        <Box
+          flex="6"
+          bg={colors.primaryDark}
+          height="96vh"
+          justifyItems="center"
+        >
+          <LandingContent />
         </Box>
         <Box flex="3" bg={colors.primaryDark} height="96vh">
           <Flex direction="column">
