@@ -4,6 +4,7 @@ import Announcements from "./components/Announcements";
 import colors from "../../colors";
 import FeaturedProducts from "./components/FeaturedProducts";
 import ROUTES from "../../routes";
+import LandingContent from "./components/LandingContent";
 
 const LandingPage = () => {
   return (
@@ -21,14 +22,14 @@ const LandingPage = () => {
               flexGrow={1}
             >
               <Flex direction="row" mb={5}>
-                <Box mr={4}>
+                <Box mr={4} h="fit-content">
                   <a href={ROUTES.socials.twitter}>
                     <img alt="twitter" src="/img/twitter.svg" />
                   </a>
                 </Box>
                 <Box>
-                <a href={ROUTES.socials.github}>
-                  <img alt="github" src="/img/github.svg" />
+                  <a href={ROUTES.socials.github}>
+                    <img alt="github" src="/img/github.svg" />
                   </a>
                 </Box>
               </Flex>
@@ -37,8 +38,14 @@ const LandingPage = () => {
             </Box>
           </Flex>
         </Box>
-        <Box flex="6" bg={colors.primaryDark} height="96vh">
-          <Text>Box 2</Text>
+
+        <Box
+          flex="6"
+          bg={colors.primaryDark}
+          height="96vh"
+          justifyItems="center"
+        >
+          <LandingContent />
         </Box>
         <Box flex="3" bg={colors.primaryDark} height="96vh">
           <Flex direction="column">
