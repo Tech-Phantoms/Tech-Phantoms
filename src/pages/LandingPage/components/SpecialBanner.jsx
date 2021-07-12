@@ -1,9 +1,10 @@
-import { Box, Center, Text } from "@chakra-ui/react";
+import { Box, Center, Text, Link } from "@chakra-ui/react";
 import React from "react";
 
 function SpecialBanner() {
   return (
     <Center>
+    <Link href="https://apihacks.co" isExternal>
       <Box
         bgGradient="linear(93.96deg, #ff3D00 -19.25%,#FFE600 72.85%,#FC2FCF 144.15%)"
         h="fit-content"
@@ -16,6 +17,7 @@ function SpecialBanner() {
         </Text>
         <Text color="black">apihacks.co</Text>
       </Box>
+     </Link>
     </Center>
   );
 }
