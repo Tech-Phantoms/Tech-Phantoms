@@ -2,8 +2,10 @@ import React from "react";
 import { Flex, Box, Text } from "@chakra-ui/react";
 import Announcements from "./components/Announcements";
 import colors from "../../colors";
-import FeaturedProducts from "./components/FeaturedProducts";
+import FeaturedProducts from "./components/FeaturedProducts/FeaturedProducts";
 import ROUTES from "../../routes";
+import SpecialBanner from "./components/SpecialBanner";
+import Hashtags from "./components/Hashtags";
 
 const LandingPage = () => {
   return (
@@ -27,8 +29,8 @@ const LandingPage = () => {
                   </a>
                 </Box>
                 <Box>
-                <a href={ROUTES.socials.github}>
-                  <img alt="github" src="/img/github.svg" />
+                  <a href={ROUTES.socials.github}>
+                    <img alt="github" src="/img/github.svg" />
                   </a>
                 </Box>
               </Flex>
@@ -42,7 +44,15 @@ const LandingPage = () => {
         </Box>
         <Box flex="3" bg={colors.primaryDark} height="96vh">
           <Flex direction="column">
+            <SpecialBanner />
             <FeaturedProducts />
+            <Box
+              style={{ position: "fixed", bottom: 20, right: 0 }}
+              ml={6}
+              flexGrow={1}
+            >
+              <Hashtags />
+            </Box>
           </Flex>
         </Box>
       </Flex>
