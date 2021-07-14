@@ -4,6 +4,7 @@ import AnimatedWorker from "./AnimatedWorkers";
 import { FaDiscord } from "react-icons/fa";
 import OpenCollectiveLogo from "./OpenCollectiveLogo";
 import colors from "../../../colors";
+import ROUTES from "../../../routes";
 function LandingContent() {
   return (
     <Center flexDirection="column">
@@ -22,7 +23,7 @@ function LandingContent() {
           <br /> Learning By Doing.
         </Text>
       </Box>
-      <Link href="https://discord.apihacks.co" isExternal>
+      <Link href={ROUTES.socials.discord} isExternal>
         <Button
           borderWidth={1}
           borderColor="white"
@@ -38,7 +39,7 @@ function LandingContent() {
       <Text color="white" fontSize="lg" m={4}>
         Liked our work ? Support us at
       </Text>
-      <Link href="https://opencollective.com/techphantoms" isExternal>
+      <Link href={ROUTES.socials.opencollective} isExternal>
         <Button borderWidth={1} bg="white" w="fit-content" h="fit-content">
           <OpenCollectiveLogo />
         </Button>
