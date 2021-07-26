@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Text } from "@chakra-ui/react";
+import { Flex, Box, Text, Spacer } from "@chakra-ui/react";
 import Announcements from "./components/Announcements";
 import colors from "../../colors";
 import FeaturedProducts from "./components/FeaturedProducts/FeaturedProducts";
@@ -13,16 +13,16 @@ const LandingPage = () => {
     <Box bg={colors.primaryDark} pt="4vh">
       <Flex color="white">
         <Box flex="3" bg={colors.primaryDark} height="96vh">
-          <Flex direction="column">
+          <Flex h="100%" direction="column">
             <Box ml={6}>
-              <img src="/img/logo.svg" alt="Logo" width="40px" />
+              <img src="/img/logo.svg" alt="Logo" width={65} />
             </Box>
+            <Spacer />
             <Announcements />
-            <Box
-              style={{ position: "fixed", bottom: 20, left: 0 }}
-              ml={6}
-              flexGrow={1}
-            >
+            <Spacer />
+            <Spacer />
+            <Spacer />
+            <Box position="fixed" bottom="20px" left={0} ml={6} flexGrow={1}>
               <Flex direction="row" mb={5}>
                 <Box mr={4} h="fit-content">
                   <a href={ROUTES.socials.twitter}>
@@ -41,23 +41,18 @@ const LandingPage = () => {
           </Flex>
         </Box>
 
-        <Box
-          flex="6"
-          bg={colors.primaryDark}
-          height="96vh"
-          justifyItems="center"
-        >
+        <Box flex="6" bg={colors.primaryDark} height="96vh">
           <LandingContent />
         </Box>
         <Box flex="3" bg={colors.primaryDark} height="96vh">
-          <Flex direction="column">
+          <Flex h="100%" direction="column">
             <SpecialBanner />
+            <Spacer />
             <FeaturedProducts />
-            <Box
-              style={{ position: "fixed", bottom: 20, right: 0 }}
-              ml={6}
-              flexGrow={1}
-            >
+            <Spacer />
+            <Spacer />
+            <Spacer />
+            <Box position="fixed" bottom="20px" right={0} ml={6} flexGrow={1}>
               <Hashtags />
             </Box>
           </Flex>
