@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  CircularProgress,
+  Flex,
+  Heading,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import colors from "../../../colors";
 function Announcements() {
   const [ann, setAnn] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetchAnnouncements();
   }, []);
@@ -10,7 +19,10 @@ function Announcements() {
   const fetchAnnouncements = async () => {
     fetch("https://idv2l4.deta.dev", { method: "GET" })
       .then((res) => res.json())
-      .then((response) => setAnn(response))
+      .then((response) => {
+        setLoading(false);
+        setAnn(response);
+      })
       .catch((err) => console.log(err));
   };
 
@@ -31,15 +43,25 @@ function Announcements() {
           Announcements
         </Heading>
       </Flex>
-      {ann.map((val) => {
-        return (
-          <Box m={2} align="center">
-            <Link href={val.link} target="_blank">
-              <Text isTruncated>{val.title}</Text>
-            </Link>
-          </Box>
-        );
-      })}
+      {loading ? (
+        <Center>
+          <CircularProgress
+            isIndeterminate
+            color={colors.borderStroke}
+            thickness="4px"
+          />
+        </Center>
+      ) : (
+        ann.map((val) => {
+          return (
+            <Box m={4}>
+              <Link href={val.link} target="_blank">
+                <Text isTruncated>{val.title}</Text>
+              </Link>
+            </Box>
+          );
+        })
+      )}
     </Box>
   );
 }
