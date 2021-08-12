@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Center, Flex, Heading, VStack } from "@chakra-ui/react";
 import colors from "../../../../colors";
 import ProjectCard from "./components/ProjectCard";
+import { projects } from "./projects";
 function FeaturedProducts() {
   return (
     <Center>
@@ -21,13 +22,15 @@ function FeaturedProducts() {
           </Center>
           <Center p={2}>
             <VStack overflow="scroll" h="40vh" w="100%">
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+              {projects.map((val) => {
+                return (
+                  <ProjectCard
+                    name={val.name}
+                    logo={val.logo}
+                    projectLink={val.projectLink}
+                  />
+                );
+              })}
             </VStack>
           </Center>
         </Flex>
