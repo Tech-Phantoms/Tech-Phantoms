@@ -8,7 +8,7 @@ function Announcements() {
   }, []);
 
   const fetchAnnouncements = async () => {
-    fetch(process.env.REACT_APP_API_URL, { method: "GET" })
+    fetch("https://idv2l4.deta.dev", { method: "GET" })
       .then((res) => res.json())
       .then((response) => setAnn(response))
       .catch((err) => console.log(err));
