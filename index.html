@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @font-face {
+            font-family: "Popppins";
+            src: url("/poppins.otf") format('opentype');
+        }
+
+        html {
+            font-family: "Popppins";
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ ; (function () {   
+        function id(v) { return document.getElementById(v); }
+        function loadbar() {
+            var ovrl = id("overlay"),
+            
+                img = document.images,
+                c = 0;
+            tot = img.length;
+
+            function imgLoaded() {
+                c += 1;
+                var perc = ((1200 / tot * c) << 0) + "%";
+                if (c === tot) return doneLoading();
+            }
+            function doneLoading() {
+              
+                setTimeout(function () {
+                    ovrl.remove();
+                }, 1700);
+         
+            }
+            for (var i = 0; i < tot; i++) {
+                var tImg = new Image();
+                tImg.onload = imgLoaded;
+                tImg.onerror = imgLoaded;
+                tImg.src = img[i].src;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+    </script>
+</head>
+
+<body><div id="overlay"><br/>
+    <h2>we are loading...<br /></h2>
+    <span style="margin:auto;">SRE's are magicians, always be nice to them.</span>
+</div>
+    <div id="top">
+        <div class="heading">
+            Tech Phantoms
+        </div>
+        <div class="subheading-1">
+            <div class="center-align-box">
+             A space which focusses on tech-hiring, tech-awareness, open source, UX Design, and generating multiple income sources.
+            </div>
+
+            <div class="center-align-box">
+                <img src="/static/images/twitter.svg" />
+                <img src="/static/images/github.svg" />
+                <img src="/static/images/discord.svg" />
+                <img src="/static/images/open-source.svg" />
+            </div>
+        </div>
+        <div>
+            <div class="code-commits center-align-box">
+                code commits at
+            </div>
+            <a href="https://postman.com" target="_blank" rel="noopenner noreferrer"><img 
+            class="code-commits-img" 
+            src="/static/code_commits/pm.png" 
+            /></a>
+            <a href="https://travisci.com" target="_blank" rel="noopenner noreferrer"><img
+            class="code-commits-img" 
+            src="/static/code_commits/travisci.png" 
+            /></a>
+            <a href="https://mozilla.com" target="_blank" rel="noopenner noreferrer"><img 
+            class="code-commits-img" 
+            src="/static/code_commits/mz.png" 
+            /></a>
+            <a href="https://flutter.dev" target="_blank" rel="noopenner noreferrer"><img 
+            class="code-commits-img" 
+            src="/static/code_commits/f.png" 
+            /></a>
+            <a href="https://asyncapi.com" target="_blank" rel="noopenner noreferrer"><img 
+            class="code-commits-img" 
+            src="/static/code_commits/asa.png" 
+            /></a>
+            <a href="https://hackclub.com"  target="_blank" rel="noopenner noreferrer">
+            <img class="code-commits-img" width="120" src="/static/code_commits/hackclub.png" />
+                </a>
+        </div>
+        <div class="center-align-box" style="margin-top:40px;">
+            <br /> We break the loop of Job and Experience.. <br />Scroll Down to see how.
+</div>
+    </div>
+    <div id="middle">
+        <h2 style="text-align: left;">
+            Stuck in the loop of Job and Experience
+        </h2>
+        We help you to get yourself the a verified development experience and also build your personal brand.<br/><br/>
+        <br/>
+        <br/>
+        <div class="boxes">
+            <div class="box" id="hack_club_Box">
+                <img src="./static/images/hackc.png" width="120px"/>
+                <div>Its very important to build your personal brand and Tech Phantoms Hack Club focusses
+                    on building yours with an inclusive space to host and enjoy events, talk and discuss with our global community.
+                    <br/><br/>
+                    Tech Phantoms Hack Club is an inclusive space means we are open to all...  :)
+           <br/><br/> <h2>
+        <a href="" class="button button-invert">       
+            Join HackClub
+        </a>
+        </h2>
+            </div>
+            </div>
+            <div class="box" id="github_Box">
+                <img src="/static/images/github.svg" width="100"/><br/>
+                If you are looking to gain experience as an early career software engineering or even preparing for your 
+                first internship.<br/><br/>
+
+                We can onboard you on our open source/premium projects and give you exposure to learn stuff.  
+                and offer you a verified credential for your contributions.
+                <br/><br/><h3>
+                    <a
+                    class="button"
+                    href="https://github.com/imabp">
+                        Know More
+                    </a></h3>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <br/>
+            <div class="center-align-box">
+                <img  width="25" src="/static/images/twitter.svg" />
+                <img width="25"  src="/static/images/github_light.svg" />
+                <img width="25"  src="/static/images/discord.svg" />
+                <img width="25"  src="/static/images/open-source.svg" />
+            </div>
+
+
+        </div>
+        <div style="text-align: center;">Tech Phantoms is a registered open collective under Open Collective, USA<br/>@tech_phantoms </div>
+        <div>
+        <a href="https://github.com/Tech-Phantoms/legals/blob/main/privacy-policy.md">
+            Privacy Policy
+        </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    #overlay{
+    position:fixed;
+    color:white;
+    text-align: center;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,0.9);
+    width: 100%;
+    transition: 1s 0.4s;
+    }
+    #overlay>h2{
+    margin:0 auto; 
+
+    }
+    html, body {
+        font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+        height: 100%;
+        margin: 0;
+    }
+
+    .code-commits-img {
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content: space-evenly;
+    }
+
+    .center-align-box {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .subheading-1 {
+        color: #716767;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 80%
+    }
+
+    .heading {
+        font-size: 4rem;
+        text-align: center;
+
+    }
+    .button{
+        background-color: black;
+        text-decoration: none;
+        color:blanchedalmond;
+        padding:5px;
+        border-radius: 6px;
+
+    }
+    .button-invert{
+        color: black;
+        background-color:blanchedalmond;
+    }
+    #top {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(180deg, #FFFFFF 52.22%, #E7E7E7 100%);
+        height: 100%;
+        padding: 10rem;
+    }
+
+    .socials_box {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    #middle {
+        background: linear-gradient(253.78deg, #FF4141 20.79%, #FFE600 111.38%);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 120px;
+        padding-bottom: 150px;
+         height: 100%;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        width: 350px;
+        height: 350px;
+        left: 220px;
+        top: 148px;
+        padding:15px;
+        background: #FFFFFF;
+        box-shadow: 5px 4px 73px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+    }
+    #footer{
+        background-color: black;
+        color:blanchedalmond;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width:100%;
+    }
+    #footer>div>a{
+        color:blanchedalmond;
+        
+        text-decoration: none;
+    }
+</style>
