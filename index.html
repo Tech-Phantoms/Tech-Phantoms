@@ -11,6 +11,7 @@
         html {
             font-family: "Popppins";
         }
+
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -120,9 +121,10 @@
         <br/>
         <br/>
         <div class="boxes">
-            <div class="box" id="hack_club_Box">
+            <div class="box card-j" id="hack_club_Box"  style="text-align: center;">
                 <img src="./static/images/hackc.png" width="120px"/>
-                <div>Its very important to build your personal brand and Tech Phantoms Hack Club focusses
+                <br>
+                <div style="text-align: justify;">Its very important to build your personal brand and Tech Phantoms Hack Club focusses
                     on building yours with an inclusive space to host and enjoy events, talk and discuss with our global community.
                     <br/><br/>
                     Tech Phantoms Hack Club is an inclusive space means we are open to all...  :)
@@ -133,13 +135,17 @@
         </h2>
             </div>
             </div>
-            <div class="box" id="github_Box">
+            <div class="box card-j" id="github_Box"  style="text-align: center;">
                 <img src="/static/images/github.svg" width="100"/><br/>
+                <br>
+                <br>
+                <div style="text-align: justify;">
                 If you are looking to gain experience as an early career software engineering or even preparing for your 
                 first internship.<br/><br/>
 
                 We can onboard you on our open source/premium projects and give you exposure to learn stuff.  
                 and offer you a verified credential for your contributions.
+                </div>
                 <br/><br/><h3>
                     <a
                     class="button"
@@ -236,6 +242,16 @@
         color: black;
         background-color:blanchedalmond;
     }
+
+    .card-j:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+    .card-j:not(:hover) {
+            transition: 0.5s ;
+        }
+
     #top {
         align-items: center;
         display: flex;
