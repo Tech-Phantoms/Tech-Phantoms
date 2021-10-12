@@ -70,7 +70,7 @@
         </div>
         <div class="subheading-1">
             <div class="center-align-box">
-             A space which focusses on tech-hiring, tech-awareness, open source, UX Design, and generating multiple income sources.
+             <p id="main-info">A space which focusses on tech-hiring, tech-awareness, open source, UX Design, and generating multiple income sources.</p>
             </div>
 
             <div class="center-align-box">
@@ -109,23 +109,26 @@
                 </a>
         </div>
         <div class="center-align-box" style="margin-top:40px;">
-            <br /> We break the loop of Job and Experience.. <br />Scroll Down to see how.
+            <br /> <p>We break the loop of Job and Experience.. <br />Scroll Down to see how.</p>
 </div>
     </div>
     <div id="middle">
-        <h2 style="text-align: left;">
+        <h2 id="middle-title">
             Stuck in the loop of Job and Experience
         </h2>
-        We help you to get yourself the a verified development experience and also build your personal brand.<br/><br/>
+        <p>We help you to get yourself the a verified development experience and also build your personal brand.</p>
+        <br/>
+        <br/>
         <br/>
         <br/>
         <div class="boxes">
             <div class="box" id="hack_club_Box">
                 <img src="./static/images/hackc.png" width="120px"/>
-                <div>Its very important to build your personal brand and Tech Phantoms Hack Club focusses
-                    on building yours with an inclusive space to host and enjoy events, talk and discuss with our global community.
+                <div>
+                    <p>Its very important to build your personal brand and Tech Phantoms Hack Club focusses
+                        on building yours with an inclusive space to host and enjoy events, talk and discuss with our global community.</p>
                     <br/><br/>
-                    Tech Phantoms Hack Club is an inclusive space means we are open to all...  :)
+                    <p>Tech Phantoms Hack Club is an inclusive space means we are open to all...  :)</p>
            <br/><br/> <h2>
         <a href="https://hackclub.com/slack/" class="button button-invert">       
             Join HackClub
@@ -135,11 +138,12 @@
             </div>
             <div class="box" id="github_Box">
                 <img src="/static/images/github.svg" width="100"/><br/>
-                If you are looking to gain experience as an early career software engineering or even preparing for your 
-                first internship.<br/><br/>
-
-                We can onboard you on our open source/premium projects and give you exposure to learn stuff.  
-                and offer you a verified credential for your contributions.
+                <p>If you are looking to gain experience as an early career software engineering or even preparing for your 
+                    first internship.</p>
+                    <br/>
+                    <br/>
+                <p>We can onboard you on our open source/premium projects and give you exposure to learn stuff.  
+                    and offer you a verified credential for your contributions.</p>
                 <br/><br/><h3>
                     <a
                     class="button"
@@ -162,7 +166,7 @@
 
 
         </div>
-        <div style="text-align: center;">Tech Phantoms is a registered open collective under Open Collective, USA<br/>@tech_phantoms </div>
+        <div style="text-align: center;" id="footer-info">Tech Phantoms is a registered open collective under Open Collective, USA<br/>@tech_phantoms </div>
         <div>
         <a href="https://github.com/Tech-Phantoms/community/blob/main/privacy-policy.md">
             Privacy Policy
@@ -294,4 +298,66 @@
         
         text-decoration: none;
     }
+
+    @media (max-width: 1000px) {
+        #top {
+            height: auto;
+            padding: 5rem 0;
+        }
+
+        #main-info {
+            width: 80vw;
+            padding: 2rem 0;
+            line-height: 1.5;
+        }
+
+        .code-commits-img {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .boxes {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #middle {
+            height: auto;
+        }
+
+        #middle-title {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #middle p {
+            width: 75%;
+            text-align: center;
+        }
+
+        .box {
+            margin-top: 30px;
+            height: auto;
+            text-align: center;
+        }
+
+        .box p {
+            margin: 0 auto;
+        }
+
+        #footer {
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+
+        #footer-info {
+            width: 60%;
+            padding-bottom: 10px;
+        }
+
+    }
+
 </style>
