@@ -24,7 +24,7 @@ We are now on  [Instagram @tech_phantoms](https://www.instagram.com/tech_phantom
 ![Language](https://img.shields.io/github/languages/top/tech-phantoms/Tech_Phantoms_website)
 ![Size](https://img.shields.io/github/repo-size/tech-phantoms/Tech_Phantoms_website)
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/b0bce43d-6d04-47b4-8b66-39c31e029a02/deploy-status)](https://app.netlify.com/sites/techphantoms/deploys) -->
-[![Build Status](https://badges.netlify.com/api/site-name.svg?branch=master)](https://app.netlify.com/sites/site-name/deploys)
+[![Build Status](https://badges.netlify.com/api/techphantoms.tech.svg?branch=master)](https://app.netlify.com/sites/techphantoms.tech/deploys)
 
 <br/>
 
