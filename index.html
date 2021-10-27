@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="styles.css">
+
     <style>
         @font-face {
             font-family: "Popppins";
@@ -12,352 +14,241 @@
             font-family: "Popppins";
         }
     </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
     <meta property="og:title" content="Tech Phantoms" />
-    <meta property="og:description" content="Tech Phantoms is a registered open collective, which focusses on building a valid developer experience and break the loop of job and experience. We are an inclusive community and run our events at Hack Club Tech Phantoms" />
+    <meta property="og:description"
+        content="Tech Phantoms is a registered open collective, which focusses on building a valid developer experience and break the loop of job and experience. We are an inclusive community and run our events at Hack Club Tech Phantoms" />
     <meta property="og:image"
         content="https://cdn.discordapp.com/attachments/850707543117266954/893821007624826930/1080x360.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tech Phantoms" />
     <meta name="twitter:image"
         content="https://cdn.discordapp.com/attachments/850707543117266954/893821007624826930/1080x360.png" />
-    <meta name="twitter:description" content="Tech Phantoms is a registered open collective, which focusses on building a valid developer experience and break the loop of job and experience. We are an inclusive community and run our events at Hack Club Tech Phantoms" />
+    <meta name="twitter:description"
+        content="Tech Phantoms is a registered open collective, which focusses on building a valid developer experience and break the loop of job and experience. We are an inclusive community and run our events at Hack Club Tech Phantoms" />
     <title>Tech Phantoms</title>
-    <script>
- ; (function () {   
-        function id(v) { return document.getElementById(v); }
-        function loadbar() {
-            var ovrl = id("overlay"),
-            
-                img = document.images,
-                c = 0;
-            tot = img.length;
 
-            function imgLoaded() {
-                c += 1;
-                var perc = ((1200 / tot * c) << 0) + "%";
-                if (c === tot) return doneLoading();
-            }
-            function doneLoading() {
-              
-                setTimeout(function () {
-                    ovrl.remove();
-                }, 1700);
-         
-            }
-            for (var i = 0; i < tot; i++) {
-                var tImg = new Image();
-                tImg.onload = imgLoaded;
-                tImg.onerror = imgLoaded;
-                tImg.src = img[i].src;
-            }
-        }
-        document.addEventListener('DOMContentLoaded', loadbar, false);
-    }());
-    </script>
 </head>
 
-<body><div id="overlay"><br/>
-    <h2>we are loading...<br /></h2>
-    <span style="margin:auto;">SRE's are magicians, always be nice to them.</span>
-</div>
+<body>
+    <div id="overlay"><br />
+        <h2>we are loading...<br /></h2>
+        <span style="margin:auto;">SRE's are magicians, always be nice to them.</span>
+    </div>
     <div id="top">
         <div class="heading">
             Tech Phantoms
         </div>
         <div class="subheading-1">
             <div class="center-align-box">
-             <p id="main-info">A space which focusses on tech-hiring, tech-awareness, open source, UX Design, and generating multiple income sources.</p>
+                <p id="main-info">A space which focusses on tech-hiring, tech-awareness, open source, UX Design, and
+                    generating multiple income sources.</p>
             </div>
 
             <div class="center-align-box">
-                <a href="https://twitter.com/tech_phantoms"><img src="/static/images/twitter.svg" /></a>
-                <a href="https://github.com/tech-phantoms"><img src="/static/images/github.svg" /></a>
-                <a href="https://discord.apihacks.co"><img src="/static/images/discord.svg" /></a>
-                <a href="https://opencollective.com/techphantoms"><img src="/static/images/open-source.svg" /></a>
+                <!-- twitter -->
+                <a href="https://twitter.com/tech_phantoms"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.5001 9.25003C24.2334 9.24982 23.0172 9.7469 22.1132 10.6343C21.2093 11.5217 20.6899 12.7285 20.6667 13.995L20.6201 16.62C20.6173 16.761 20.5848 16.8997 20.5247 17.0272C20.4646 17.1547 20.3782 17.2681 20.2711 17.3598C20.1641 17.4516 20.0389 17.5197 19.9037 17.5596C19.7685 17.5996 19.6264 17.6105 19.4867 17.5917L16.8851 17.2384C13.4617 16.7717 10.1817 15.195 7.03507 12.5734C6.03841 18.09 7.98507 21.9117 12.6734 24.86L15.5851 26.69C15.7234 26.777 15.8384 26.8965 15.9198 27.0381C16.0013 27.1798 16.0468 27.3392 16.0524 27.5025C16.058 27.6658 16.0235 27.828 15.9519 27.9749C15.8803 28.1217 15.7738 28.2488 15.6417 28.345L12.9884 30.2834C14.5667 30.3817 16.0651 30.3117 17.3084 30.065C25.1717 28.495 30.4001 22.5784 30.4001 12.8184C30.4001 12.0217 28.7134 9.25003 25.5001 9.25003ZM17.3334 13.9334C17.3625 12.3268 17.8649 10.7645 18.7777 9.44206C19.6905 8.11965 20.9731 7.09589 22.4649 6.49897C23.9568 5.90205 25.5916 5.75849 27.1646 6.08627C28.7377 6.41405 30.1791 7.1986 31.3084 8.34169C32.4934 8.33336 33.5017 8.63336 35.7567 7.2667C35.1984 10 34.9234 11.1867 33.7334 12.8184C33.7334 25.555 25.9051 31.7484 17.9617 33.3334C12.5151 34.42 4.59507 32.635 2.32507 30.265C3.48174 30.175 8.18174 29.67 10.8984 27.6817C8.60007 26.1667 -0.54826 20.7834 5.46341 6.31003C8.28507 9.60503 11.1467 11.8484 14.0467 13.0384C15.9767 13.83 16.4501 13.8134 17.3351 13.935L17.3334 13.9334Z"
+                                fill="#00A3FF" />
+                        </svg>
+                    </span></a>
+
+                <!-- github -->
+                <a href="https://github.com/Tech-phantoms"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 3.33325C10.7917 3.33325 3.33338 10.7916 3.33338 19.9999C3.33149 23.4987 4.4314 26.9093 6.47707 29.7477C8.52274 32.5862 11.4103 34.7084 14.73 35.8133C15.5634 35.9583 15.875 35.4583 15.875 35.0199C15.875 34.6249 15.8534 33.3133 15.8534 31.9166C11.6667 32.6883 10.5834 30.8966 10.25 29.9583C10.0617 29.4783 9.25004 27.9999 8.54171 27.6033C7.95838 27.2916 7.12504 26.5199 8.52004 26.4999C9.83338 26.4783 10.77 27.7083 11.0834 28.2083C12.5834 30.7283 14.98 30.0199 15.9367 29.5833C16.0834 28.4999 16.52 27.7716 17 27.3549C13.2917 26.9383 9.41671 25.4999 9.41671 19.1249C9.41671 17.3116 10.0617 15.8133 11.125 14.6449C10.9584 14.2283 10.375 12.5199 11.2917 10.2283C11.2917 10.2283 12.6867 9.79159 15.875 11.9383C17.2318 11.5617 18.6337 11.3722 20.0417 11.3749C21.4584 11.3749 22.875 11.5616 24.2084 11.9366C27.395 9.76992 28.7917 10.2299 28.7917 10.2299C29.7084 12.5216 29.125 14.2299 28.9584 14.6466C30.02 15.8133 30.6667 17.2916 30.6667 19.1249C30.6667 25.5216 26.7717 26.9383 23.0634 27.3549C23.6667 27.8749 24.1884 28.8749 24.1884 30.4383C24.1884 32.6666 24.1667 34.4583 24.1667 35.0216C24.1667 35.4583 24.48 35.9783 25.3134 35.8116C28.6218 34.6946 31.4966 32.5682 33.5332 29.7318C35.5699 26.8954 36.6658 23.4918 36.6667 19.9999C36.6667 10.7916 29.2084 3.33325 20 3.33325Z"
+                                fill="black" />
+                        </svg>
+                    </span></a>
+
+                <!-- discord -->
+                <a href="https://discord.apihacks.co"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.19 24.2999C22.9228 24.3651 22.6538 24.4229 22.3833 24.4732C20.9157 24.7495 19.4089 24.7438 17.9433 24.4566C17.6867 24.4066 17.3233 24.3182 16.855 24.1932L15.32 26.1882C11.5317 26.0666 10.0917 23.5282 10.0917 23.5282C10.0917 17.8932 12.56 13.3249 12.56 13.3249C15.0283 11.4366 17.3767 11.4883 17.3767 11.4883L18.0483 12.3633C18.1102 12.3546 18.1725 12.349 18.235 12.3466C19.5153 12.1769 20.8128 12.1825 22.0917 12.3633L22.8283 11.4883C22.8283 11.4883 25.1783 11.4366 27.645 13.3266C27.645 13.3266 30.115 17.8932 30.115 23.5282C30.115 23.5282 28.6567 26.0649 24.8683 26.1882L23.19 24.2983V24.2999ZM16.7933 18.3333C15.7917 18.3333 15 19.0833 15 19.9999C15 20.9166 15.8083 21.6666 16.7933 21.6666C17.7933 21.6666 18.585 20.9166 18.585 19.9999C18.6017 19.0833 17.795 18.3333 16.7933 18.3333ZM23.2067 18.3333C22.2067 18.3333 21.415 19.0833 21.415 19.9999C21.415 20.9166 22.2233 21.6666 23.2067 21.6666C24.2083 21.6666 25 20.9166 25 19.9999C25 19.0833 24.2083 18.3333 23.2067 18.3333ZM35 38.3332L26.6833 29.9999H31.6667V6.66658H8.33333V29.9999H26.6717L27.6217 33.3332H8.33333C7.44928 33.3332 6.60143 32.9821 5.97631 32.3569C5.35119 31.7318 5 30.884 5 29.9999V6.66658C5 5.78253 5.35119 4.93468 5.97631 4.30956C6.60143 3.68444 7.44928 3.33325 8.33333 3.33325H31.6667C32.5507 3.33325 33.3986 3.68444 34.0237 4.30956C34.6488 4.93468 35 5.78253 35 6.66658V38.3332Z"
+                                fill="#4A51FF" />
+                        </svg>
+                    </span></a>
+
+                <!-- open-collective -->
+                <a href="https://opencollective.com/techphantoms"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 3.33325C29.205 3.33325 36.6667 10.7949 36.6667 19.9999C36.6667 27.3333 31.9317 33.5599 25.3517 35.7882L24.975 35.9116L20.135 23.3283C21.9167 23.2499 23.3334 21.7566 23.3334 19.9999C23.3334 18.1583 21.8417 16.6666 20 16.6666C18.1584 16.6666 16.6667 18.1583 16.6667 19.9999C16.6667 21.7949 18.085 23.2583 19.8617 23.3299L15.0234 35.9116L14.6484 35.7882C8.06671 33.5599 3.33337 27.3333 3.33337 19.9999C3.33337 10.7949 10.795 3.33325 20 3.33325ZM20 6.66659C12.6367 6.66659 6.66671 12.6366 6.66671 19.9999C6.66671 24.8666 9.27337 29.1249 13.1684 31.4533L15.635 25.0383C14.2234 23.8166 13.3334 22.0116 13.3334 19.9999C13.3334 16.3166 16.3167 13.3333 20 13.3333C23.6834 13.3333 26.6667 16.3166 26.6667 19.9999C26.6667 22.0116 25.775 23.8166 24.3667 25.0383C25.3084 27.4949 26.1317 29.6332 26.8317 31.4549C30.725 29.1249 33.3334 24.8666 33.3334 19.9999C33.3334 12.6366 27.3634 6.66659 20 6.66659Z"
+                                fill="#289A00" />
+                        </svg>
+                    </span></a>
             </div>
         </div>
         <div>
             <div class="code-commits center-align-box">
                 code commits at
             </div>
-            <a href="https://postman.com" target="_blank" rel="noopenner noreferrer"><img 
-            class="code-commits-img" 
-            src="/static/code_commits/pm.png" 
-            /></a>
-            <a href="https://travisci.com" target="_blank" rel="noopenner noreferrer"><img
-            class="code-commits-img" 
-            src="/static/code_commits/travisci.png" 
-            /></a>
-            <a href="https://mozilla.com" target="_blank" rel="noopenner noreferrer"><img 
-            class="code-commits-img" 
-            src="/static/code_commits/mz.png" 
-            /></a>
-            <a href="https://flutter.dev" target="_blank" rel="noopenner noreferrer"><img 
-            class="code-commits-img" 
-            src="/static/code_commits/f.png" 
-            /></a>
-            <a href="https://asyncapi.com" target="_blank" rel="noopenner noreferrer"><img 
-            class="code-commits-img" 
-            src="/static/code_commits/asa.png" 
-            /></a>
-            <a href="https://hackclub.com"  target="_blank" rel="noopenner noreferrer">
-            <img class="code-commits-img" width="120" src="/static/code_commits/hackclub.png" />
-                </a>
+            <a href="https://postman.com" target="_blank" rel="noopenner noreferrer"><img class="code-commits-img"
+                    src="static/code_commits/pm.png" /></a>
+            <a href="https://travisci.com" target="_blank" rel="noopenner noreferrer"><img class="code-commits-img"
+                    src="static/code_commits/travisci.png" /></a>
+            <a href="https://mozilla.com" target="_blank" rel="noopenner noreferrer"><img class="code-commits-img"
+                    src="static/code_commits/mz.png" /></a>
+            <a href="https://flutter.dev" target="_blank" rel="noopenner noreferrer"><img class="code-commits-img"
+                    src="static/code_commits/f.png" /></a>
+            <a href="https://asyncapi.com" target="_blank" rel="noopenner noreferrer"><img class="code-commits-img"
+                    src="static/code_commits/asa.png" /></a>
+            <a href="https://hackclub.com" target="_blank" rel="noopenner noreferrer">
+                <img class="code-commits-img" width="120" src="/static/code_commits/hackclub.png" />
+            </a>
         </div>
         <div class="center-align-box" style="margin-top:40px;">
-            <br /> <p>We break the loop of Job and Experience.. <br />Scroll Down to see how.</p>
-</div>
+            <br />
+            <p id="text">We break the loop of Job and Experience.. Scroll Down to see how.</p>
+        </div>
     </div>
     <div id="middle">
         <h2 id="middle-title">
             Stuck in the loop of Job and Experience
         </h2>
         <p>We help you to get yourself the a verified development experience and also build your personal brand.</p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="boxes">
             <div class="box" id="hack_club_Box">
-                <img src="./static/images/hackc.png" width="120px"/>
+                <img src="./static/images/hackc.png" width="120px" />
                 <div>
                     <p>Its very important to build your personal brand and Tech Phantoms Hack Club focusses
-                        on building yours with an inclusive space to host and enjoy events, talk and discuss with our global community.</p>
-                    <br/><br/>
-                    <p>Tech Phantoms Hack Club is an inclusive space means we are open to all...  :)</p>
-           <br/><br/> <h2>
-        <a href="https://hackclub.com/slack/" class="button button-invert">       
-            Join HackClub
-        </a>
-        </h2>
-            </div>
+                        on building yours with an inclusive space to host and enjoy events, talk and discuss with our
+                        global community.</p>
+                    <br /><br />
+                    <p>Tech Phantoms Hack Club is an inclusive space means we are open to all... :)</p>
+                    <br /><br />
+                    <h2>
+                        <a href="https://hackclub.com/slack/" class="button button-invert">
+                            Join HackClub
+                        </a>
+                    </h2>
+                </div>
             </div>
             <div class="box" id="github_Box">
-                <img src="/static/images/github.svg" width="100"/><br/>
-                <p>If you are looking to gain experience as an early career software engineering or even preparing for your 
+                <span>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20 3.33325C10.7917 3.33325 3.33338 10.7916 3.33338 19.9999C3.33149 23.4987 4.4314 26.9093 6.47707 29.7477C8.52274 32.5862 11.4103 34.7084 14.73 35.8133C15.5634 35.9583 15.875 35.4583 15.875 35.0199C15.875 34.6249 15.8534 33.3133 15.8534 31.9166C11.6667 32.6883 10.5834 30.8966 10.25 29.9583C10.0617 29.4783 9.25004 27.9999 8.54171 27.6033C7.95838 27.2916 7.12504 26.5199 8.52004 26.4999C9.83338 26.4783 10.77 27.7083 11.0834 28.2083C12.5834 30.7283 14.98 30.0199 15.9367 29.5833C16.0834 28.4999 16.52 27.7716 17 27.3549C13.2917 26.9383 9.41671 25.4999 9.41671 19.1249C9.41671 17.3116 10.0617 15.8133 11.125 14.6449C10.9584 14.2283 10.375 12.5199 11.2917 10.2283C11.2917 10.2283 12.6867 9.79159 15.875 11.9383C17.2318 11.5617 18.6337 11.3722 20.0417 11.3749C21.4584 11.3749 22.875 11.5616 24.2084 11.9366C27.395 9.76992 28.7917 10.2299 28.7917 10.2299C29.7084 12.5216 29.125 14.2299 28.9584 14.6466C30.02 15.8133 30.6667 17.2916 30.6667 19.1249C30.6667 25.5216 26.7717 26.9383 23.0634 27.3549C23.6667 27.8749 24.1884 28.8749 24.1884 30.4383C24.1884 32.6666 24.1667 34.4583 24.1667 35.0216C24.1667 35.4583 24.48 35.9783 25.3134 35.8116C28.6218 34.6946 31.4966 32.5682 33.5332 29.7318C35.5699 26.8954 36.6658 23.4918 36.6667 19.9999C36.6667 10.7916 29.2084 3.33325 20 3.33325Z"
+                            fill="black" />
+                    </svg>
+                </span>
+                <p>If you are looking to gain experience as an early career software engineering or even preparing for
+                    your
                     first internship.</p>
-                    <br/>
-                    <br/>
-                <p>We can onboard you on our open source/premium projects and give you exposure to learn stuff.  
+                <br />
+                <br />
+                <p>We can onboard you on our open source/premium projects and give you exposure to learn stuff.
                     and offer you a verified credential for your contributions.</p>
-                <br/><br/><h3>
-                    <a
-                    class="button"
-                    href="https://github.com/tech-phantoms">
+                <br /><br />
+                <h3>
+                    <a class="button" href="https://github.com/tech-phantoms">
                         Know More
-                    </a></h3>
+                    </a>
+                </h3>
             </div>
 
         </div>
     </div>
     <div id="footer">
         <div>
-            <br/>
+            <br />
             <div class="center-align-box">
-                <a href="https://twitter.com/tech_phantoms"><img width="25" src="/static/images/twitter.svg" /></a>
-                <a href="https://github.com/tech-phantoms"><img width="25" src="/static/images/github_light.svg" /></a>
-                <a href="https://discord.apihacks.co"><img width="25" src="/static/images/discord.svg" /></a>
-                <a href="https://opencollective.com/techphantoms"><img width="25" src="/static/images/open-source.svg" /></a>
+                <!-- twitter -->
+                <a href="https://twitter.com/tech_phantoms"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.5001 9.25003C24.2334 9.24982 23.0172 9.7469 22.1132 10.6343C21.2093 11.5217 20.6899 12.7285 20.6667 13.995L20.6201 16.62C20.6173 16.761 20.5848 16.8997 20.5247 17.0272C20.4646 17.1547 20.3782 17.2681 20.2711 17.3598C20.1641 17.4516 20.0389 17.5197 19.9037 17.5596C19.7685 17.5996 19.6264 17.6105 19.4867 17.5917L16.8851 17.2384C13.4617 16.7717 10.1817 15.195 7.03507 12.5734C6.03841 18.09 7.98507 21.9117 12.6734 24.86L15.5851 26.69C15.7234 26.777 15.8384 26.8965 15.9198 27.0381C16.0013 27.1798 16.0468 27.3392 16.0524 27.5025C16.058 27.6658 16.0235 27.828 15.9519 27.9749C15.8803 28.1217 15.7738 28.2488 15.6417 28.345L12.9884 30.2834C14.5667 30.3817 16.0651 30.3117 17.3084 30.065C25.1717 28.495 30.4001 22.5784 30.4001 12.8184C30.4001 12.0217 28.7134 9.25003 25.5001 9.25003ZM17.3334 13.9334C17.3625 12.3268 17.8649 10.7645 18.7777 9.44206C19.6905 8.11965 20.9731 7.09589 22.4649 6.49897C23.9568 5.90205 25.5916 5.75849 27.1646 6.08627C28.7377 6.41405 30.1791 7.1986 31.3084 8.34169C32.4934 8.33336 33.5017 8.63336 35.7567 7.2667C35.1984 10 34.9234 11.1867 33.7334 12.8184C33.7334 25.555 25.9051 31.7484 17.9617 33.3334C12.5151 34.42 4.59507 32.635 2.32507 30.265C3.48174 30.175 8.18174 29.67 10.8984 27.6817C8.60007 26.1667 -0.54826 20.7834 5.46341 6.31003C8.28507 9.60503 11.1467 11.8484 14.0467 13.0384C15.9767 13.83 16.4501 13.8134 17.3351 13.935L17.3334 13.9334Z"
+                                fill="#00A3FF" />
+                        </svg>
+                    </span></a>
+
+                <!-- github -->
+                <a href="https://github.com/tech-phantoms"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 3.33325C10.7917 3.33325 3.33338 10.7916 3.33338 19.9999C3.33149 23.4987 4.4314 26.9093 6.47707 29.7477C8.52274 32.5862 11.4103 34.7084 14.73 35.8133C15.5634 35.9583 15.875 35.4583 15.875 35.0199C15.875 34.6249 15.8534 33.3133 15.8534 31.9166C11.6667 32.6883 10.5834 30.8966 10.25 29.9583C10.0617 29.4783 9.25004 27.9999 8.54171 27.6033C7.95838 27.2916 7.12504 26.5199 8.52004 26.4999C9.83338 26.4783 10.77 27.7083 11.0834 28.2083C12.5834 30.7283 14.98 30.0199 15.9367 29.5833C16.0834 28.4999 16.52 27.7716 17 27.3549C13.2917 26.9383 9.41671 25.4999 9.41671 19.1249C9.41671 17.3116 10.0617 15.8133 11.125 14.6449C10.9584 14.2283 10.375 12.5199 11.2917 10.2283C11.2917 10.2283 12.6867 9.79159 15.875 11.9383C17.2318 11.5617 18.6337 11.3722 20.0417 11.3749C21.4584 11.3749 22.875 11.5616 24.2084 11.9366C27.395 9.76992 28.7917 10.2299 28.7917 10.2299C29.7084 12.5216 29.125 14.2299 28.9584 14.6466C30.02 15.8133 30.6667 17.2916 30.6667 19.1249C30.6667 25.5216 26.7717 26.9383 23.0634 27.3549C23.6667 27.8749 24.1884 28.8749 24.1884 30.4383C24.1884 32.6666 24.1667 34.4583 24.1667 35.0216C24.1667 35.4583 24.48 35.9783 25.3134 35.8116C28.6218 34.6946 31.4966 32.5682 33.5332 29.7318C35.5699 26.8954 36.6658 23.4918 36.6667 19.9999C36.6667 10.7916 29.2084 3.33325 20 3.33325Z"
+                                fill="white" />
+                        </svg>
+                    </span></a>
+
+                <!-- discord -->
+                <a href="https://discord.apihacks.co"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.19 24.2999C22.9228 24.3651 22.6538 24.4229 22.3833 24.4732C20.9157 24.7495 19.4089 24.7438 17.9433 24.4566C17.6867 24.4066 17.3233 24.3182 16.855 24.1932L15.32 26.1882C11.5317 26.0666 10.0917 23.5282 10.0917 23.5282C10.0917 17.8932 12.56 13.3249 12.56 13.3249C15.0283 11.4366 17.3767 11.4883 17.3767 11.4883L18.0483 12.3633C18.1102 12.3546 18.1725 12.349 18.235 12.3466C19.5153 12.1769 20.8128 12.1825 22.0917 12.3633L22.8283 11.4883C22.8283 11.4883 25.1783 11.4366 27.645 13.3266C27.645 13.3266 30.115 17.8932 30.115 23.5282C30.115 23.5282 28.6567 26.0649 24.8683 26.1882L23.19 24.2983V24.2999ZM16.7933 18.3333C15.7917 18.3333 15 19.0833 15 19.9999C15 20.9166 15.8083 21.6666 16.7933 21.6666C17.7933 21.6666 18.585 20.9166 18.585 19.9999C18.6017 19.0833 17.795 18.3333 16.7933 18.3333ZM23.2067 18.3333C22.2067 18.3333 21.415 19.0833 21.415 19.9999C21.415 20.9166 22.2233 21.6666 23.2067 21.6666C24.2083 21.6666 25 20.9166 25 19.9999C25 19.0833 24.2083 18.3333 23.2067 18.3333ZM35 38.3332L26.6833 29.9999H31.6667V6.66658H8.33333V29.9999H26.6717L27.6217 33.3332H8.33333C7.44928 33.3332 6.60143 32.9821 5.97631 32.3569C5.35119 31.7318 5 30.884 5 29.9999V6.66658C5 5.78253 5.35119 4.93468 5.97631 4.30956C6.60143 3.68444 7.44928 3.33325 8.33333 3.33325H31.6667C32.5507 3.33325 33.3986 3.68444 34.0237 4.30956C34.6488 4.93468 35 5.78253 35 6.66658V38.3332Z"
+                                fill="#4A51FF" />
+                        </svg>
+                    </span></a>
+
+                <!-- open-source -->
+                <a href="https://opencollective.com/techphantoms"><span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 3.33325C29.205 3.33325 36.6667 10.7949 36.6667 19.9999C36.6667 27.3333 31.9317 33.5599 25.3517 35.7882L24.975 35.9116L20.135 23.3283C21.9167 23.2499 23.3334 21.7566 23.3334 19.9999C23.3334 18.1583 21.8417 16.6666 20 16.6666C18.1584 16.6666 16.6667 18.1583 16.6667 19.9999C16.6667 21.7949 18.085 23.2583 19.8617 23.3299L15.0234 35.9116L14.6484 35.7882C8.06671 33.5599 3.33337 27.3333 3.33337 19.9999C3.33337 10.7949 10.795 3.33325 20 3.33325ZM20 6.66659C12.6367 6.66659 6.66671 12.6366 6.66671 19.9999C6.66671 24.8666 9.27337 29.1249 13.1684 31.4533L15.635 25.0383C14.2234 23.8166 13.3334 22.0116 13.3334 19.9999C13.3334 16.3166 16.3167 13.3333 20 13.3333C23.6834 13.3333 26.6667 16.3166 26.6667 19.9999C26.6667 22.0116 25.775 23.8166 24.3667 25.0383C25.3084 27.4949 26.1317 29.6332 26.8317 31.4549C30.725 29.1249 33.3334 24.8666 33.3334 19.9999C33.3334 12.6366 27.3634 6.66659 20 6.66659Z"
+                                fill="#289A00" />
+                        </svg>
+                    </span></a>
             </div>
 
 
         </div>
-        <div style="text-align: center;" id="footer-info">Tech Phantoms is a registered open collective under Open Collective, USA<br/>@tech_phantoms </div>
+        <div style="text-align: center;" id="footer-info">Tech Phantoms is a registered open collective under Open
+            Collective, USA<br />@tech_phantoms </div>
         <div>
-        <a href="https://github.com/Tech-Phantoms/community/blob/main/privacy-policy.md">
-            Privacy Policy
-        </a>
+            <a href="https://github.com/Tech-Phantoms/community/blob/main/privacy-policy.md">
+                Privacy Policy
+            </a>
         </div>
     </div>
+
+    <script>
+        ; (function () {
+            function id(v) { return document.getElementById(v); }
+            function loadbar() {
+                var ovrl = id("overlay"),
+
+                    img = document.images,
+                    c = 0;
+                tot = img.length;
+
+                function imgLoaded() {
+                    c += 1;
+                    var perc = ((1200 / tot * c) << 0) + "%";
+                    if (c === tot) return doneLoading();
+                }
+                function doneLoading() {
+
+                    setTimeout(function () {
+                        ovrl.remove();
+                        const typeAnim = document.querySelector("#text");
+                        typeAnim.classList.add("animatedText");
+                    }, 1700);
+
+                }
+                for (var i = 0; i < tot; i++) {
+                    var tImg = new Image();
+                    tImg.onload = imgLoaded;
+                    tImg.onerror = imgLoaded;
+                    tImg.src = img[i].src;
+                }
+            }
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+
+        }());
+    </script>
+
 </body>
 
 </html>
-<style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    #overlay{
-    position:fixed;
-    color:white;
-    text-align: center;
-    z-index:99999;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background:rgba(0,0,0,0.9);
-    width: 100%;
-    transition: 1s 0.4s;
-    }
-    #overlay>h2{
-    margin:0 auto; 
-
-    }
-    html, body {
-        font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-        height: 100%;
-        margin: 0;
-    }
-
-    .code-commits-img {
-        padding-left: 5px;
-        padding-right: 5px;
-        justify-content: space-evenly;
-    }
-
-    .center-align-box {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
-    .subheading-1 {
-        color: #716767;
-        text-align: center;
-        font-size: 1.5rem;
-        width: 80%
-    }
-
-    .heading {
-        font-size: 4rem;
-        text-align: center;
-
-    }
-    .button{
-        background-color: black;
-        text-decoration: none;
-        color:blanchedalmond;
-        padding:5px;
-        border-radius: 6px;
-
-    }
-    .button-invert{
-        color: black;
-        background-color:blanchedalmond;
-    }
-    #top {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background: linear-gradient(180deg, #FFFFFF 52.22%, #E7E7E7 100%);
-        height: 100%;
-        padding: 10rem;
-    }
-
-    .socials_box {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-
-    #middle {
-        background: linear-gradient(253.78deg, #FF4141 20.79%, #FFE600 111.38%);
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 120px;
-        padding-bottom: 150px;
-         height: 100%;
-    }
-
-    .boxes {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .box {
-        width: 350px;
-        height: 350px;
-        left: 220px;
-        top: 148px;
-        padding:15px;
-        background: #FFFFFF;
-        box-shadow: 5px 4px 73px rgba(0, 0, 0, 0.25);
-        border-radius: 40px;
-    }
-    #footer{
-        background-color: black;
-        color:blanchedalmond;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width:100%;
-    }
-    #footer>div>a{
-        color:blanchedalmond;
-        
-        text-decoration: none;
-    }
-
-    @media (max-width: 1000px) {
-        #top {
-            height: auto;
-            padding: 5rem 0;
-        }
-
-        #main-info {
-            width: 80vw;
-            padding: 2rem 0;
-            line-height: 1.5;
-        }
-
-        .code-commits-img {
-            display: block;
-            margin: 0 auto;
-            padding: 10px 0;
-        }
-    }
-
-    @media (max-width: 900px) {
-        .boxes {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #middle {
-            height: auto;
-        }
-
-        #middle-title {
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        #middle p {
-            width: 75%;
-            text-align: center;
-        }
-
-        .box {
-            margin-top: 30px;
-            height: auto;
-            text-align: center;
-        }
-
-        .box p {
-            margin: 0 auto;
-        }
-
-        #footer {
-            flex-direction: column;
-            padding-bottom: 10px;
-        }
-
-        #footer-info {
-            width: 60%;
-            padding-bottom: 10px;
-        }
-
-    }
-
-</style>
