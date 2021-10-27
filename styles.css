@@ -4,20 +4,20 @@
     padding: 0;
 }
 #overlay{
-position:fixed;
-color:white;
-text-align: center;
-z-index:99999;
-top:0;
-left:0;
-bottom:0;
-right:0;
-background:rgba(0,0,0,0.9);
-width: 100%;
-transition: 1s 0.4s;
+    position:fixed;
+    color:white;
+    text-align: center;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,0.9);
+    width: 100%;
+    transition: 1s 0.4s;
 }
 #overlay>h2{
-margin:0 auto; 
+    margin:0 auto; 
 
 }
 html, body {
@@ -197,5 +197,4 @@ html, body {
         width: 60%;
         padding-bottom: 10px;
     }
-
 }
