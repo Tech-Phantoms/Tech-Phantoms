@@ -1,0 +1,22 @@
+{
+  "name": "tech_phantoms_website",
+  "version": "1.0.0",
+  "description": "Tech Phantoms website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tech-Phantoms/Tech_Phantoms_website.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Tech Phantoms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tech-Phantoms/Tech_Phantoms_website/issues"
+  },
+  "homepage": "https://github.com/Tech-Phantoms/Tech_Phantoms_website#readme"
+}
