@@ -1,7 +1,5 @@
-# Tech Phantoms Community Website
-
 <p align="center">
-<img width=70% src="https://raw.githubusercontent.com/Tech-Phantoms/community/main/assets/repo-banner.png">
+<img width=70% src="https://raw.githubusercontent.com/Tech-Phantoms/community/main/assets/banner1.png">
 <h1 align="center">Tech Phantoms Community Website</h1>
 
 This repository serves as official repository for the Community Website hosted at [techphantoms.tech](http://techphantoms.tech) <br/>
