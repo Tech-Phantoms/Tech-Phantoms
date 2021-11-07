@@ -25,17 +25,17 @@ We are now on [Instagram @tech_phantoms](https://www.instagram.com/tech_phantoms
 <p align="justify">
 
 Tech Phantoms is an open tech organization and ❤ to build Open Source software applications.
-We are powered by one of the [Microsoft Learn Student Ambassadors](https://studentambassadors.microsoft.com/en-US/profile/49532). We want to enable people to adapt and change technology according to their own ideas and needs and validate science and knowledge through an Open Access approach. Its launched by dedicated efforts of two undergraduate students and a fully functional core team. We also organize events, mentoring sessions and much more. You can register on V1 website of tech phantoms [here](techphantoms.onrender.com)
+We are powered by one of the [Microsoft Learn Student Ambassadors](https://studentambassadors.microsoft.com/en-US/profile/49532). We want to enable people to adapt and change technology according to their own ideas and needs and validate science and knowledge through an Open Access approach. It's launched by dedicated efforts of two undergraduate students and a fully functional core team. We also organize events, make mentoring sessions, and so much more. You can register on V1 website of Tech Phantoms [here](https://techphantoms.onrender.com)
 
 </p>
 
 <p>
-  
+
 **We use highly secured Airtable servers with highest possible API based encryption for our data safety measures**
 
 </p>
 
-### Notice: Please read the contributing guidelines and README before sending the PR
+### Notice: Please read our contributing guidelines before sending a PR
 
 ### 🎉 We are following best open source practices
 
@@ -59,7 +59,7 @@ If you are facing problem in understanding codebase, here is [Project Structure 
 1. Clone the repository
 
 ```bash
-$ git clone github.com/your_username/Tech_Phantoms_website.git
+$ git clone https://github.com/your_username/Tech_Phantoms_website.git
 ```
 
 2. Open the folder in your favorite code editor and start adding modifications.
