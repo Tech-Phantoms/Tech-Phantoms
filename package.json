@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tech-Phantoms/Tech_Phantoms_website.git"
+    "url": "git+https://github.com/Tech-Phantoms/Tech-Phantoms.git"
   },
   "keywords": [
     ""
@@ -16,7 +16,7 @@
   "author": "Tech Phantoms",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tech-Phantoms/Tech_Phantoms_website/issues"
+    "url": "https://github.com/Tech-Phantoms/Tech-Phantoms/issues"
   },
-  "homepage": "https://github.com/Tech-Phantoms/Tech_Phantoms_website#readme"
+  "homepage": "https://github.com/Tech-Phantoms/Tech-Phantoms#readme"
 }
