@@ -102,12 +102,6 @@ Please adhere towards our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## ❤️ Thanks to our awesome contributors ✨✨
 
-<table>
-  <tr>
-    <td>
-<a href="https://github.com/Tech-Phantoms/Tech_Phantoms_website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Tech-Phantoms/Tech_Phantoms_website" />
-</a>
-    </td></tr></table>
+[![Contributors](https://contrib.rocks/image?repo=Tech-Phantoms/Tech-Phantoms)](https://github.com/Tech-Phantoms/Tech-Phantoms/graphs/contributors)
 
 ### 🌟 STAR AND FORK THE REPOSITORY FOR YOUR FUTURE REFERENCE 🌟
