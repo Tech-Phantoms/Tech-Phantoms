@@ -1,23 +1,23 @@
 <p align="center">
-<img width=70% src="https://raw.githubusercontent.com/Tech-Phantoms/community/main/assets/banner1.png">
-<h1 align="center">Tech Phantoms Community Website</h1>
+
+<img width=70% src="https://user-images.githubusercontent.com/53480076/145616265-875d2cd7-c20e-4587-b5b3-63f541005552.png">
+<h1 align="center">Community Website Repository</h1>
+
+***
+Canary branch is the development branch, raise your pull requests to canary.
+***
 
 This repository serves as official repository for the Community Website, hosted at [techphantoms.co](http://techphantoms.co) <br/>
 
 We are now on [Instagram @tech_phantoms](https://www.instagram.com/tech_phantoms/)
 
 </p>
-
-![License](https://img.shields.io/badge/license-MIT-brightgreen)
-![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
-![Maintained](https://img.shields.io/maintenance/yes/2020)
-![Last Commit](https://img.shields.io/github/last-commit/tech-phantoms/Tech_Phantoms_website)
-![Release Date](https://img.shields.io/github/release-date/tech-phantoms/Tech_Phantoms_website)
-![Issues](https://img.shields.io/github/issues/tech-phantoms/Tech_Phantoms_website)
-![Stars GitHub](https://img.shields.io/github/stars/tech-phantoms/Tech_Phantoms_website)
-![Language](https://img.shields.io/github/languages/top/tech-phantoms/Tech_Phantoms_website)
-![Size](https://img.shields.io/github/repo-size/tech-phantoms/Tech_Phantoms_website)
-
+<div align="center">
+<a href="https://discord.apihacks.co/"><img src="https://img.shields.io/discord/848276970851926036.svg?logo=discord&colorB=5865F2" /></a>
+<a href="https://twitter.com/tech_phantoms"><img src="https://img.shields.io/badge/Twitter-Tech%20Phantoms-blue?logo=twitter&logoColor=blue&color=blue"/></a>
+<a href="https://www.linkedin.com/company/techphantoms/"><img src="https://img.shields.io/badge/LinkedIn-Tech%20Phantoms-blue?logo=linkedin&logoColor=blue&color=darkcyan" /></a>
+<a href="https://www.instagram.com/tech_phantoms/"><img src="https://img.shields.io/badge/Instagram-Tech%20Phantoms-red?logo=instagram&logoColor=red&color=red" /></a>
+</div>
 <br/>
 
 ## 👩‍ Who are we?
