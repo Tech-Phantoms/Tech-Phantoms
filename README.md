@@ -4,7 +4,7 @@
 <h1 align="center">Community Website Repository</h1>
 
 ***
-Canary branch is the development branch, raise your pull requests to canary.
+**[Canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary) branch is the development branch, raise your pull requests to [canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary).**
 ***
 
 This repository serves as official repository for the Community Website, hosted at [techphantoms.co](http://techphantoms.co) <br/>
