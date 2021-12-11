@@ -4,19 +4,33 @@
     "description": "Tech Phantoms website",
     "main": "index.html",
     "scripts": {
-      "build": "echo \"Error: no test specified\""
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Tech-Phantoms/Tech-Phantoms.git"
+        "type": "git",
+        "url": "git+https://github.com/Tech-Phantoms/Tech-Phantoms.git"
     },
     "keywords": [
-      ""
+        ""
     ],
     "author": "Tech Phantoms",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/Tech-Phantoms/Tech-Phantoms/issues"
+        "url": "https://github.com/Tech-Phantoms/Tech-Phantoms/issues"
     },
-    "homepage": "https://github.com/Tech-Phantoms/Tech-Phantoms#readme"
+    "homepage": "https://github.com/Tech-Phantoms/Tech-Phantoms#readme",
+    "dependencies": {
+        "next": "^12.0.7",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.37",
+        "postcss-preset-env": "^7.0.1",
+        "tailwindcss": "^3.0.1",
+        "typescript": "^4.5.3"
+    }
 }
