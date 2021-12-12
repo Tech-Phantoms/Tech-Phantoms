@@ -6,7 +6,7 @@
 
 ***
 **[Canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary) branch is the development branch, raise your pull requests to [canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary).**
-> We are re-building our website with Next JS <br/> Fork this repo and make your contribution count✨
+> We are re-building our website with Next JS <br/> Fork this repository and make your contribution count ✨
 ***
 
 This repository serves as official repository for the Community Website, hosted at [techphantoms.co](http://techphantoms.co) <br/>
