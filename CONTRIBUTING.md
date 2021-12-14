@@ -115,6 +115,15 @@ In general, we follow the following workflow:
 
 <br/>
 
+## Guidelines
+
+- Issues will be assigned on a first come, first serve basis. You just have to comment on the issue, asking to be assigned, and it will be done if found fit.
+- Preferably, you cannot work on any issue that is not assigned to you.
+- If you have anything else in mind, create an issue and please wait for it to be assigned to you. You can then start working on it and create a PR.
+- All PRs must be made from a Branch. Create a separate branch for every Issue you are working upon and once found fit, make a PR.
+
+<br/>
+
 ## Getting Help
 
 Join us in the [Tech-Phantoms Community](https://discord.apihacks.co/) and post your question there in the correct category with a descriptive tag. 
