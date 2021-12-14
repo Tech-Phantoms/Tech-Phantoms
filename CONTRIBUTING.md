@@ -33,18 +33,18 @@ If you find an Issue that addresses the problem you're having, please add your r
 
 <br/>
 
-## How Can I Contribute?
+## 🤔 How Can I Contribute?
 
-### Reporting Bugs
+### 💣 Reporting Bugs
 
-This section guides you through submitting a bug report for Tech Phantoms. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
+This section guides you through submitting a bug report for Tech Phantoms. Following these guidelines helps maintainers and the community understand your report :pencil: reproduce the behavior :computer: and find related reports :mag_right:
 
 **Before creating bug reports**, please check [this list](https://github.com/Tech-Phantoms/Tech-Phantoms/issues?q=is%3Aopen+is%3Aissue+label%3A%22type%3A+bug%22) to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one. Also adding a [reaction](https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) can also help be indicating to our maintainers that a particular problem is affecting more than just the reporter. 
 <br/>When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template](https://github.com/Tech-Phantoms/Tech-Phantoms/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yml&title=%5BBUG%5D), the information it asks for helps us resolve issues faster.
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
-#### How Do I Submit A (Good) Bug Report?
+#### 💥 How Do I Submit A (Good) Bug Report?
 
 Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined what your bug is, create an issue and provide the following information by filling in [the template](https://github.com/Tech-Phantoms/Tech-Phantoms/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yml&title=%5BBUG%5D).
 
@@ -60,15 +60,14 @@ Explain the problem and include additional details to help maintainers reproduce
 
 <br/>
 
-
-### Suggesting Enhancements
+### 🛠 Suggesting Enhancements
 
 This section guides you through submitting an enhancement suggestion for Tech-Phantoms website, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion :pencil: and find related suggestions :mag_right:.
 
 **Before creating enhancement suggestions**, please check [this list](https://github.com/Tech-Phantoms/Tech-Phantoms/issues?q=is%3Aopen+is%3Aissue+label%3Adesign+label%3A%22type%3A+feature%22) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one. Also adding a [reaction](https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) can also help be indicating to our maintainers that a particular suggestion is affecting more than just the reporter.
 <br/>When you are creating an enhacement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion). Fill out [the required template](https://github.com/Tech-Phantoms/Tech-Phantoms/issues/new?assignees=&labels=type%3A+feature&template=feature_request.yml&title=%5BFEATURE%5D), the information it asks for helps us resolve issues faster.
 
-#### How Do I Submit A (Good) Enhancement Suggestion?
+#### 🎓 How Do I Submit A (Good) Enhancement Suggestion?
 
 Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined what your enhancement suggestion is related to, create an issue on that repository and provide the following information:
 
@@ -81,7 +80,7 @@ Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com
 
 <br/>
 
-### Code Contribution
+### 🟩 Code Contribution
 
 We work hard to makes sure issues are handled in a timely manner but, depending on the impact, it could take a while to investigate the root cause. A friendly ping in the comment thread to the submitter or a contributor can help draw attention if your issue is blocking.
 If you have never contributed before, you can start by looking through these [`good-first`](https://github.com/Tech-Phantoms/Tech-Phantoms/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) issues:
@@ -91,8 +90,7 @@ Both issue lists are sorted by total number of comments. While not perfect, numb
 
 <br/>
 
-
-## Pull Requests
+## 📣 Pull Requests
 
 PRs to our libraries are always welcome and can be a quick way to get your fix or improvement slated for the next release. In general, PRs should:
 
@@ -115,7 +113,7 @@ In general, we follow the following workflow:
 
 <br/>
 
-## Guidelines
+## 📝 Guidelines
 
 - Issues will be assigned on a first come, first serve basis. You just have to comment on the issue, asking to be assigned, and it will be done if found fit.
 - Preferably, you cannot work on any issue that is not assigned to you.
@@ -124,6 +122,6 @@ In general, we follow the following workflow:
 
 <br/>
 
-## Getting Help
+## 🎉 Getting Help
 
 Join us in the [Tech-Phantoms Community](https://discord.apihacks.co/) and post your question there in the correct category with a descriptive tag. 
