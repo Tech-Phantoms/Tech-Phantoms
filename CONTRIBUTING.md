@@ -23,7 +23,7 @@ We take our open source community seriously and hold ourselves and other contrib
 
 <br/>
 
-## Issues
+## 🚫 Issues
 
 Issues should be used to report problems with the website, request a new feature, or to discuss potential changes before a PR is created. When you create a new Issue, a template will be loaded that will guide you through collecting and providing the information we need to investigate.
 
