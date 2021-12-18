@@ -9,7 +9,8 @@ const NavItemList = () => {
             <>
               <div>
                 <p
-                  className="ml-4 p-2 mr-4 text-sm text-white rounded
+                  className="ml-4 p-3 mr-4  rounded
+                            md:text-xl text-white
                             hover:bg-orange-300
                             hover:rounded 
                             hover:text-black
@@ -25,9 +26,12 @@ const NavItemList = () => {
         })}
       <div>
         <p
-          className=" bg-indigo-500 rounded ml-4 p-2 mr-4 text-sm text-white
+          className=" bg-indigo-500 rounded ml-4 p-3 mr-4 
+                text-sm text-white md:text-xl
                 hover:bg-indigo-600
                 hover:cursor-pointer
+                transition ease-in-out delay-150
+
                 "
         >
           Join Discord
@@ -35,9 +39,12 @@ const NavItemList = () => {
       </div>
       <div>
         <p
-          className="bg-lime-600 rounded ml-4 p-2 mr-4 text-sm text-white
+          className="bg-lime-600 rounded ml-4 p-3 mr-4 
+                text-sm text-white md:text-xl
                 hover:bg-lime-700	
                 hover:cursor-pointer
+                transition ease-in-out delay-150
+
                 "
         >
           Join Github
@@ -67,6 +74,7 @@ const Navbar = (props: any) => {
 
   return (
     <>
+      {/* Mobile Menu */}
       {mobileMenu && (
         <div
           className="
@@ -82,6 +90,7 @@ const Navbar = (props: any) => {
           </div>
         </div>
       )}
+      {/* Desktop Menu */}
       {!mobileMenu && (
         <>
           {" "}
@@ -100,7 +109,7 @@ const Navbar = (props: any) => {
               <Image src="/images/system/menu.svg" height="24" width="24" />
             </p>
           </div>
-          <div className="hidden md:text-3xl  md:p-4 md:bg-stone-900 md:flex">
+          <div className="hidden md:text-3xl  md:p-8 md:bg-stone-900 md:flex">
             <div className="grow">
               <p className="font-bold text-white">Tech Phantoms</p>
             </div>
