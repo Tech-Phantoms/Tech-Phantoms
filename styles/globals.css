@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: local('IBM Plex Sans'), url(../public/fonts/ibm-plex-sans-var.ttf) format('truetype');
+}
+
+@tailwind utilities;
