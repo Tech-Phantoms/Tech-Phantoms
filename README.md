@@ -73,22 +73,6 @@ $ git clone https://github.com/your_username/Tech_Phantoms_website.git
 
 We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
 
-## 💻 API KEY Installation (DUMMY)
-
-In order to facilitate development / testing phases, we have generated the following dummy API keys to be used in your environment variables
-
-### Setting Up dummy API KEY
-
-1. Install dotenv `npm i dotenv`
-2. Create .env file in root directory `/`
-3. Paste the following code inside .env file.
-
-```js
-REACT_APP_AIRTABLE_API_KEY = keyl7IrslG0riVZjW;
-REACT_APP_TEAM_BASE = appeFoa7ggqSOwivF;
-REACT_APP_EVENT_BASE = appC2QPeeuXQPAxgr;
-```
-
 ## 💻 System Requirements
 
 - Google Chrome
