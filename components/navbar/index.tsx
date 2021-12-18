@@ -9,11 +9,13 @@ const NavItemList = () => {
             <>
               <div>
                 <p
-                  className="ml-4 p-2 mr-4 text-sm text-white 
+                  className="ml-4 p-2 mr-4 text-sm text-white rounded
                             hover:bg-orange-300
                             hover:rounded 
                             hover:text-black
-                            hover:cursor-pointer"
+                            hover:cursor-pointer
+                            transition ease-in-out delay-150
+                            "
                 >
                   {item.text}
                 </p>
