@@ -4,10 +4,13 @@
 <img width=70% src="https://user-images.githubusercontent.com/53480076/145616265-875d2cd7-c20e-4587-b5b3-63f541005552.png">
 <h1 align="center">Community Website Repository</h1>
 
-***
+---
+
 **[Canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary) branch is the development branch, raise your pull requests to [canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary).**
+
 > We are re-building our website with Next JS <br/> Fork this repository and make your contribution count ✨
-***
+
+---
 
 This repository serves as official repository for the Community Website, hosted at [techphantoms.co](http://techphantoms.co) <br/>
 
@@ -81,9 +84,9 @@ In order to facilitate development / testing phases, we have generated the follo
 3. Paste the following code inside .env file.
 
 ```js
-REACT_APP_AIRTABLE_API_KEY=keyl7IrslG0riVZjW
-REACT_APP_TEAM_BASE=appeFoa7ggqSOwivF
-REACT_APP_EVENT_BASE=appC2QPeeuXQPAxgr
+REACT_APP_AIRTABLE_API_KEY = keyl7IrslG0riVZjW;
+REACT_APP_TEAM_BASE = appeFoa7ggqSOwivF;
+REACT_APP_EVENT_BASE = appC2QPeeuXQPAxgr;
 ```
 
 ## 💻 System Requirements
