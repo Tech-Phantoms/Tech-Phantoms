@@ -1,5 +1,5 @@
 function HomePage() {
-    return <div>Welcome to Next.js! CANARY</div>
+    return <div>Welcome to Next!!!</div>
 }
 
 export default HomePage
