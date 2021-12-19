@@ -4,10 +4,13 @@
 <img width=70% src="https://user-images.githubusercontent.com/53480076/145616265-875d2cd7-c20e-4587-b5b3-63f541005552.png">
 <h1 align="center">Community Website Repository</h1>
 
-***
+---
+
 **[Canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary) branch is the development branch, raise your pull requests to [canary](https://github.com/Tech-Phantoms/Tech-Phantoms/tree/canary).**
+
 > We are re-building our website with Next JS <br/> Fork this repository and make your contribution count ✨
-***
+
+---
 
 This repository serves as official repository for the Community Website, hosted at [techphantoms.co](http://techphantoms.co) <br/>
 
@@ -69,22 +72,6 @@ $ git clone https://github.com/your_username/Tech_Phantoms_website.git
 ## 💻 Development guidelines
 
 We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
-
-## 💻 API KEY Installation (DUMMY)
-
-In order to facilitate development / testing phases, we have generated the following dummy API keys to be used in your environment variables
-
-### Setting Up dummy API KEY
-
-1. Install dotenv `npm i dotenv`
-2. Create .env file in root directory `/`
-3. Paste the following code inside .env file.
-
-```js
-REACT_APP_AIRTABLE_API_KEY=keyl7IrslG0riVZjW
-REACT_APP_TEAM_BASE=appeFoa7ggqSOwivF
-REACT_APP_EVENT_BASE=appC2QPeeuXQPAxgr
-```
 
 ## 💻 System Requirements
 
