@@ -71,7 +71,7 @@ $ git clone https://github.com/your_username/Tech_Phantoms_website.git
 
 ## 💻 Development guidelines
 
-We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
+We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `canary` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
 
 ## 💻 System Requirements
 
