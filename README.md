@@ -57,7 +57,7 @@ The project is created using create-react-app and based on React.js framework.
 
 We made this section for beginners, to feel comfortable while contributing to this project.
 
-If you are facing problem in understanding codebase, here is [Project Structure Documentation](https://github.com/tech-phantoms/Tech_Phantoms_website/blob/development/projectStructure.md)
+If you are facing any problem in understanding the codebase, here is the [Project Structure Documentation](https://github.com/tech-phantoms/Tech_Phantoms_website/blob/development/projectStructure.md).
 
 ## 🚀 Steps to setup development environment
 
