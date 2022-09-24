@@ -1,11 +1,17 @@
 import "../styles/globals.css";
 import { MDXProvider } from "@mdx-js/react";
+import { ThemeProvider } from "next-themes";
+import LayoutWrapper from "../components/layoutWrapper";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <MDXProvider components={getMDXComponents()}>
-      <Component {...pageProps} />
-    </MDXProvider>
+    <ThemeProvider attribute="class" defaultTheme="system">
+      <MDXProvider components={getMDXComponents()}>
+        <LayoutWrapper>
+          <Component {...pageProps} />
+        </LayoutWrapper>
+      </MDXProvider>
+    </ThemeProvider>
   );
 }
 
@@ -16,7 +22,7 @@ const getMDXComponents = () => {
         {...props}
         className={`${
           props.className || ""
-        } my-4 font-heading antialiased font-semibold tracking-heading text-gray-900 text-2xl`}
+        } my-4 font-heading antialiased font-semibold tracking-heading text-gray-900 text-2xl dark:text-gray-50`}
       />
     ),
     h2: (props) => (

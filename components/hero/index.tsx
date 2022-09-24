@@ -13,18 +13,13 @@ const sponsors = [
 const Hero = () => {
   return (
     <>
-      <div
-        className="w-screen h-screen
-    bg-stone-900 
-    flex
-    "
-      >
-        <div className=" p-20 w-1/2 text-white">
-          <p className="text-4xl md:text-8xl">
+      <div className="flex">
+        <div className="w-1/2">
+          <p className="text-3xl md:text-8xl">
             Build-Network <br />
             Open Source
           </p>
-          <div className="text-4xl mt-12 p-2">
+          <div className="text-3xl mt-12 p-2">
             Build with a Community which is just as exciting as you!
           </div>
           <p
@@ -51,7 +46,7 @@ const Hero = () => {
             ))}
           </p>
         </div>
-        <div className="hidden p-4 md:block md:flex w-1/2 text-white">
+        <div className="hidden p-4  md:flex w-1/2">
           <div className="w-full h-full">
             <Image
               src="/images/system/hero.svg"
