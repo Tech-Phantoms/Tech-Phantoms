@@ -24,7 +24,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
 
           <div className="flex items-center text-base leading-5">
-            {[{ href: "/blog", title: "Blog" }].map((link) => (
+            {[{ href: "/blogs", title: "Blog" }].map((link) => (
               <Link key={link.title} href={link.href}>
                 <h1 className="p-1 font-semibold cursor-pointer">
                   {link.title}
