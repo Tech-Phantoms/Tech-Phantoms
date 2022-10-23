@@ -31,7 +31,9 @@ const Hero = () => {
 
                 "
           >
-            Join Us
+           <a target="_blank" href="https://github.com/Tech-Phantoms/community/issues/new?assignees=&labels=github-invitation&template=invitation.yml&title=Please+invite+me+to+the+GitHub+Community+Organization">
+             Join Us
+            </a>
           </p>
           <p className="text-gray-400 text-md mt-12 p-3">Sponsored by:</p>
           <p className="text-gray-400 text-md  p-3">
