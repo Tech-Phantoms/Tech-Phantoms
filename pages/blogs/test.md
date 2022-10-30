@@ -16,6 +16,4 @@
     - l1
     - l2
 
-```js
-console.log('code blocks')
-```
+`console.log('code blocks')`
