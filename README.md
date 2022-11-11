@@ -61,23 +61,39 @@ If you are facing any problem in understanding the codebase, here is the [Projec
 
 ## 🚀 Steps to setup development environment
 
-1. Clone the repository
+1. Fork the repository [**here**](https://github.com/Tech-Phantoms/Tech-Phantoms/fork).
+1. Clone the forked repository.
 
 ```bash
-$ git clone https://github.com/your_username/Tech_Phantoms_website.git
+$ git clone https://github.com/your_username/Tech-Phantoms.git
 ```
 
-2. Open the folder in your favorite code editor and start adding modifications.
+2. Open the folder in your favorite code editor and start making changes.
+   - If you want to make bigger changes (such as redesigning the website), [**create an issue**](https://github.com/Tech-Phantoms/Tech-Phantoms/issues/choose) to discuss with the community about it.
+3. Stage your changes one by one.
+
+```bash
+$ git add <filename> # `git add .` to stage all changes
+```
+
+4. Commit and push.
+
+```bash
+$ git commit -m "commit title" -m "commit description" # Optional. You can use `git` commit without the extra parameters, and your favorite editor will be opened and you'll be able to choose a commit title and commit description.
+$ git push # `git push origin local_branch:remote_branch` to push from and to a certain branch.
+```
+
+5. You're done! :tada: Now you need to submit a [**pull request**](https://github.com/Tech-Phantoms/Tech-Phantoms/compare) and the maintainers will review it.
 
 ## 💻 Development guidelines
 
-We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through Contributing guidelines.
+We are open to contributions. On a note, the deployed branch is `master` we will be merging all your contributions to `development` branch. To know more about how we accept contributions, we recommend you to go through our contributing guidelines.
 
 ## 💻 System Requirements
 
-- Google Chrome
-- Git
-- Code Editor (Visual Studio Code, Sublime Text)
+- A Chromium-based broswer
+- [VCS Git](https://git-scm.com)
+- Code Editor ([Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), etc.)
 
 ## 🏆 Contributing
 
@@ -85,8 +101,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to contrib
 
 ## 💼 Code of Conduct
 
-We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.
-
+We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.\
 Please adhere towards our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## ❤️ Thanks to our awesome contributors ✨✨
